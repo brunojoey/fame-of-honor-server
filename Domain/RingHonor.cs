@@ -7,6 +7,6 @@ namespace Domain
     {
         public string History { get; set; } // Ring of Honor history
         public virtual Teams Team { get; set; }
-        public virtual Players Players { get; set; }
+        public virtual Players Player { get; set; }
     }
 }

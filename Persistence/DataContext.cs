@@ -11,5 +11,6 @@ namespace Persistence
     }
     public DbSet<RingHonor> RingHonor { get; set; }
     public DbSet<Players> Players { get; set; }
+    public DbSet<Teams> Teams { get; set; }
   }
 }
