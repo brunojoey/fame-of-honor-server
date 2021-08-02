@@ -1,15 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Domain;
+using Microsoft.AspNetCore.Identity;
 
 namespace Persistence
 {
     public class Seed
     {
-        public static async Task SeedData(DataContext context)
+
+    public static async Task SeedData(DataContext context)
         {
             if (!context.RingHonor.Any())
             {
-                RingHonor = new List<RingHonor>
+                var ringHonor = new List<RingHonor>
                 {
                     new RingHonor
                     {
@@ -27,7 +32,7 @@ namespace Persistence
                                     Notes = "The Tie Between Two Cities",
                                     YearInducted = 2001,
                                     YearsActive = "1996 - 2003",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -35,7 +40,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2002,
                                     YearsActive = "1956 - 1972",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -43,7 +48,7 @@ namespace Persistence
                                     Position = "HB",
                                     YearInducted = 2002,
                                     YearsActive = "1956 - 1967",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -51,7 +56,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2002,
                                     YearsActive = "1953 - 1961",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -59,7 +64,7 @@ namespace Persistence
                                     Position = "OL",
                                     YearInducted = 2002,
                                     YearsActive = "1957 = 1967",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -67,7 +72,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2002,
                                     YearsActive = "1955 - 1967",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -75,7 +80,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2002,
                                     YearsActive = "1969 - 1973",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players 
                                 {
@@ -83,7 +88,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2002,
                                     YearsActive = "1963 - 1971",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -91,7 +96,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2002,
                                     YearsActive = "1953 = 1966",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -100,7 +105,7 @@ namespace Persistence
                                     Notes = "Returned the NFL to Baltimore",
                                     YearInducted = 2004,
                                     YearsActive = "1996 - 2003",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -108,7 +113,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2004,
                                     YearsActive = "1997 - 2002",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -116,7 +121,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2006,
                                     YearsActive = "1997 - 2005",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -124,7 +129,7 @@ namespace Persistence
                                     Position = "LT",
                                     YearInducted = 2008,
                                     YearsActive = "1996 - 2007",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -132,7 +137,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2011,
                                     YearsActive = "1996 - 2008",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -140,7 +145,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2012,
                                     YearsActive = "2000 - 2006",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -148,7 +153,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2013,
                                     YearsActive = "1996 - 2012",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -156,7 +161,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2014,
                                     YearsActive = "2001 - 2010",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -164,7 +169,7 @@ namespace Persistence
                                     Position = "FS",
                                     YearInducted = 2015,
                                     YearsActive = "2002 - 2012",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -172,7 +177,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2019,
                                     YearsActive = "1999 - 2007",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -180,7 +185,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2021,
                                     YearsActive = "2006 - 2014",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 },
                                 new Players
                                 {
@@ -188,7 +193,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2021,
                                     YearsActive = "2007 - 2019",
-                                    Team = "Baltimore Ravens"
+                                    PlayerTeam = "Baltimore Ravens"
                                 }
                             }
                         }
@@ -208,15 +213,31 @@ namespace Persistence
                                     Position = "Team Founder" + ", " + "Head Coach" + ", " + "General Manager",
                                     YearInducted = 2021,
                                     YearsActive = "1968 - 1991",
-                                    Team = "Cincinnati Bengals"
+                                    PlayerTeam = "Cincinnati Bengals"
                                 },
                                 new Players
                                 {
-                                    Name = "Anthony Mu&#241;oz",
+                                    Name = "Anthony Munoz",
                                     Position = "OT",
                                     YearInducted = 2021,
-                                    YearsActive = "1980 = 1992",
-                                    Team = "Cincinnati Bengals"
+                                    YearsActive = "1980 - 1992",
+                                    PlayerTeam = "Cincinnati Bengals"
+                                },
+                                new Players
+                                {
+                                    Name = "Ken Anderson",
+                                    Position = "QB",
+                                    YearInducted = 2021,
+                                    YearsActive = "1971 - 1986",
+                                    PlayerTeam = "Cincinnati Bengals"
+                                },
+                                new Players
+                                {
+                                    Name = "Ken Riley",
+                                    Position = "CB",
+                                    YearInducted = 2021,
+                                    YearsActive = "1969 - 1983",
+                                    PlayerTeam = "Cincinnati Bengals"
                                 }
                             }
                         }
@@ -236,15 +257,15 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 2010,
                                     YearsActive = "1957 - 1965",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
-                                new Player
+                                new Players
                                 {
                                     Name = "Paul Brown",
                                     Position = "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1962",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -252,7 +273,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2010,
                                     YearsActive = "1980 - 1984",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -260,7 +281,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2010,
                                     YearsActive = "1950 - 1957",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -268,7 +289,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1956",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -276,7 +297,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1955",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -284,7 +305,7 @@ namespace Persistence
                                     Position = "OT" + ", " + "K",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1959" + ", " + "1961 - 1967",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -292,7 +313,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2010,
                                     YearsActive = "1958 - 1960" + ", " + "1962 - 1973",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -300,7 +321,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1964 - 1973",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -308,7 +329,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1956",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -316,7 +337,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2010,
                                     YearsActive = "1954 - 1962",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -324,7 +345,7 @@ namespace Persistence
                                     Position = "WR" + ", " + "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1958 - 1961",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -332,7 +353,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1953",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -340,7 +361,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2010,
                                     YearsActive = "1978 - 1990",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players 
                                 {
@@ -348,7 +369,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2010,
                                     YearsActive = "1964 - 1969" + ", " + "1976 - 1977",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -356,7 +377,7 @@ namespace Persistence
                                     Position = "OT" + ", " + "OG",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1953",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -364,7 +385,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2018,
                                     YearsActive = "2007 - 2017",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 },
                                 new Players
                                 {
@@ -372,7 +393,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2019,
                                     YearsActive = "1978 - 1993",
-                                    Team = "Cleveland Browns"
+                                    PlayerTeam = "Cleveland Browns"
                                 }
                             }
                         }
@@ -392,7 +413,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2017,
                                     YearsActive = "1996 - 2005",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -400,7 +421,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2017,
                                     YearsActive = "1970 - 1983",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -408,7 +429,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2017,
                                     YearsActive = "1970 - 1983",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -416,7 +437,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2017,
                                     YearsActive = "1951 - 1959",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                     {
@@ -424,7 +445,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2017,
                                     YearsActive = "1988 - 2000",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -432,7 +453,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2017,
                                     YearsActive = "1942" + ", " + "1945 - 1946",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -440,7 +461,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2017,
                                     YearsActive = "1969 - 1981",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -448,7 +469,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2017,
                                     YearsActive = "1993 - 1995",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -456,7 +477,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2017,
                                     YearsActive = "1969 - 1981",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -464,7 +485,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2017,
                                     YearsActive = "1971 - 1982",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -472,7 +493,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2017,
                                     YearsActive = "1972 - 1983",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -480,7 +501,7 @@ namespace Persistence
                                     Position = "RB" + ", " + "Coach",
                                     YearInducted = 2017,
                                     YearsActive = "1961 - 1970" + ", " + "1972 - 2006",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -488,7 +509,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 2017,
                                     YearsActive = "1960 - 1965",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -496,7 +517,7 @@ namespace Persistence
                                     Position = "OG" + ", " + "Head Coach",
                                     YearInducted = 2017,
                                     YearsActive = "1937 - 1939" + ", " + "1939 - 1944" + ", " + "1954 - 1956",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -504,7 +525,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2017,
                                     YearsActive = "1974 - 1984",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -512,7 +533,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2017,
                                     YearsActive = "1958 - 1962",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -521,7 +542,7 @@ namespace Persistence
                                     Notes = "Hired to be a Player and the Head Coach in 1937",
                                     YearInducted = 2017,
                                     YearsActive = "1934" + ", " + "1937 - 1939",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -529,7 +550,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2017,
                                     YearsActive = "1969 - 1991",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -537,7 +558,7 @@ namespace Persistence
                                     Position = "Founding Owner" + ", " + "President" + ", " + "Chairman of the Board",
                                     YearInducted = 2017,
                                     YearsActive = "1933 - 1988",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -545,7 +566,7 @@ namespace Persistence
                                     Position = "President" + ", " + "Chairman",
                                     YearInducted = 2017,
                                     YearsActive = "1955 - 2017",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -553,7 +574,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2017,
                                     YearsActive = "1963" + ", " + "1966 - 1976",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -561,7 +582,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2017,
                                     YearsActive = "1974 - 1987",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -569,7 +590,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2017,
                                     YearsActive = "1974 - 1987",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -577,7 +598,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2017,
                                     YearsActive = "1950 - 1963",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -585,7 +606,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2017,
                                     YearsActive = "1974 - 1982",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -593,7 +614,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2017,
                                     YearsActive = "1974 - 1988",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -601,7 +622,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2017,
                                     YearsActive = "1987 - 1996",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -609,7 +630,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2018,
                                     YearsActive = "1968" + ", " + "1970 - 1980",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -617,7 +638,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2018,
                                     YearsActive = "1959 - 1963",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -625,7 +646,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2018,
                                     YearsActive = "1998 - 2007",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -633,7 +654,7 @@ namespace Persistence
                                     Position = "Scout" + ", " + "Senior Scout" + ", " + "Assistant Director Player Personnel",
                                     YearInducted = 2018,
                                     YearsActive = "1968 - 2014",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -641,7 +662,7 @@ namespace Persistence
                                     Position = "Personnel Director" + ", " + "Vice President",
                                     YearInducted = 2018,
                                     YearsActive = "1965 - 1986" + ", " + "1987 - Present",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -650,7 +671,7 @@ namespace Persistence
                                     Notes = "Switched to OT in 1977",
                                     YearInducted = 2019,
                                     YearsActive = "1971 - 1976" + ", " + "1977 - 1984",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -658,7 +679,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2019,
                                     YearsActive = "1992 - 2006",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -666,7 +687,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2019,
                                     YearsActive = "1947 - 1957",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -674,7 +695,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2019,
                                     YearsActive = "1998 - 2001",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -682,7 +703,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2020,
                                     YearsActive = "2002 - 2011",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -690,7 +711,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2020,
                                     YearsActive = "1988 - 1997",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -698,7 +719,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2020,
                                     YearsActive = "2003 - 2014",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -706,7 +727,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2020,
                                     YearsActive = "1971 - 1980",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                                 new Players
                                 {
@@ -714,7 +735,39 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2020,
                                     YearsActive = "1971 - 1980",
-                                    Team = "Pittsburgh Steelers"
+                                    PlayerTeam = "Pittsburgh Steelers"
+                                },
+                                new Players
+                                {
+                                    Name = "Tunch Ilkin",
+                                    Position = "OT",
+                                    YearInducted = 2021,
+                                    YearsActive = "1980 - 1992",
+                                    PlayerTeam = "Pittsburgh Steelers"
+                                },
+                                new Players
+                                {
+                                    Name = "Jon Kolb",
+                                    Position = "OT",
+                                    YearInducted = 2021,
+                                    YearsActive = "1969 - 1981",
+                                    PlayerTeam = "Pittsburgh Steelers"
+                                },
+                                new Players
+                                {
+                                    Name = "Carnell Lake",
+                                    Position = "S" + ", " + "CB",
+                                    YearInducted = 2021,
+                                    YearsActive = "1989 - 1998",
+                                    PlayerTeam = "Pittsburgh Steelers"
+                                },
+                                new Players
+                                {
+                                    Name = "Louis Lipps",
+                                    Position = "WR",
+                                    YearInducted = 2021,
+                                    YearsActive = "1984 - 1991",
+                                    PlayerTeam = "Pittsburgh Steelers"
                                 },
                             }
                         }
@@ -734,7 +787,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1980,
                                     YearsActive = "1969 - 1977",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -742,7 +795,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1984,
                                     YearsActive = "1962 - 1969",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -751,7 +804,7 @@ namespace Persistence
                                     Notes = "Was instrumental in bringing the Bills to Buffalo during the beginning years of the AFL.",
                                     YearInducted = 1985,
                                     YearsActive = "1961 - 1974",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -759,7 +812,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1987,
                                     YearsActive = "1962 - 1968",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -767,7 +820,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1988,
                                     YearsActive = "1961 - 1969",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -775,7 +828,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 1989,
                                     YearsActive = "1959 - 2014",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -783,7 +836,7 @@ namespace Persistence
                                     Position = "Fans",
                                     YearInducted = 1992,
                                     YearsActive = "1960 - Present",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -791,7 +844,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1993,
                                     YearsActive = "1960 - 1968",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -799,7 +852,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1994,
                                     YearsActive = "1962 - 1972",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -807,7 +860,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1995,
                                     YearsActive = "1973 - 1984",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -815,7 +868,7 @@ namespace Persistence
                                     Position = "Head Coach" + ", " + "General Manager",
                                     YearInducted = 1996,
                                     YearsActive = "1986 - 1997" + ", " + "2006 - 2007",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -823,7 +876,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1997,
                                     YearsActive = "1973 - 1979" + ", " +  "1985",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -831,7 +884,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1998,
                                     YearsActive = "1969 - 1974",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -839,7 +892,7 @@ namespace Persistence
                                     Position = "Trainer",
                                     YearInducted = 1999,
                                     YearsActive = "1960 - 1996",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -848,7 +901,7 @@ namespace Persistence
                                     Notes = "Killed in Action during the Vietnam War in 1970 after he joined the US Army after the 1986 AFL Season.",
                                     YearInducted = 2000,
                                     YearsActive = "1968",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -856,7 +909,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2000,
                                     YearsActive = "1963 - 1969",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -864,7 +917,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2001,
                                     YearsActive = "1986 - 1996",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -872,7 +925,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2001,
                                     YearsActive = "1979 - 1989",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -880,7 +933,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2002,
                                     YearsActive = "1986 - 1996",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -888,7 +941,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2003,
                                     YearsActive = "1983 - 1994",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -896,7 +949,7 @@ namespace Persistence
                                     Position = "OG" + ", " + "C",
                                     YearInducted = 2004,
                                     YearsActive = "1980 - 1993",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -904,7 +957,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2005,
                                     YearsActive = "1988 - 1999",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -912,7 +965,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2006,
                                     YearsActive = "1985 - 1999",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -920,7 +973,7 @@ namespace Persistence
                                     Position = "WR" + ", " + "Special Teams",
                                     YearInducted = 2007,
                                     YearsActive = "1986 - 1997",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -928,7 +981,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2008,
                                     YearsActive = "1985 - 1999",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -936,7 +989,7 @@ namespace Persistence
                                     Position = "DB",
                                     YearInducted = 2010,
                                     YearsActive = "1962 - 1969",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -944,7 +997,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2011,
                                     YearsActive = "1991 - 2001",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -952,7 +1005,7 @@ namespace Persistence
                                     Position = "General Manager",
                                     YearInducted = 2012,
                                     YearsActive = "1984 - 1992",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -960,7 +1013,7 @@ namespace Persistence
                                     Position = "Broadcaster",
                                     YearInducted = 2014,
                                     YearsActive = "1960 - 1971" + ", " + "1977 - 2003",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -968,7 +1021,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2015,
                                     YearsActive = "1962 - 1965" + ", " + "1972 - 1976",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                                 new Players
                                 {
@@ -976,7 +1029,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2017,
                                     YearsActive = "1962 - 1964",
-                                    Team = "Buffalo Bills"
+                                    PlayerTeam = "Buffalo Bills"
                                 },
                             }
                         }
@@ -996,7 +1049,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 1990,
                                     YearsActive = "1966 - 1989",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1004,7 +1057,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 1990,
                                     YearsActive = "1968 - 1974" + ", " + "1979",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1012,7 +1065,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1990,
                                     YearsActive = "1967 - 1980",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1020,7 +1073,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 1990,
                                     YearsActive = "1970 - 1979",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1028,7 +1081,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1990,
                                     YearsActive = "1970 - 1974",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1036,7 +1089,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1991,
                                     YearsActive = "1969 - 1974" + ", " + "1976",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1044,7 +1097,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1993,
                                     YearsActive = "1969 - 1980",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1052,7 +1105,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 1994,
                                     YearsActive = "1980 - 1987",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1060,7 +1113,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1995,
                                     YearsActive = "1970 - 1995",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1068,7 +1121,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1996,
                                     YearsActive = "1970 - 1995",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1076,7 +1129,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1999,
                                     YearsActive = "1974 - 1986",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1084,7 +1137,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2000,
                                     YearsActive = "1983 - 1999",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1092,7 +1145,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2003,
                                     YearsActive = "1983 - 1992",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1100,7 +1153,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2003,
                                     YearsActive = "1982 - 1992",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1108,7 +1161,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2006,
                                     YearsActive = "1968 - 1977",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1116,7 +1169,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2006,
                                     YearsActive = "1990 - 2000",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1124,7 +1177,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2008,
                                     YearsActive = "1977 - 1986",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1132,7 +1185,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2008,
                                     YearsActive = "1978 - 1987",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1140,7 +1193,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2010,
                                     YearsActive = "1970 - 1975",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1148,7 +1201,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2010,
                                     YearsActive = "1969 - 1976",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1156,7 +1209,7 @@ namespace Persistence
                                     Position = "TE" + ", " + "Radio Broadcaster",
                                     YearInducted = 2011,
                                     YearsActive = "1970 - 1977" + ", " + "1992 - 2004" + ", " + "2007 - 2010",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1164,7 +1217,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2012,
                                     YearsActive = "1997 - 2007" + ", " + "2009" + ", " + "2011",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1172,7 +1225,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2012,
                                     YearsActive = "1996 - 2007",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1180,15 +1233,15 @@ namespace Persistence
                                     Position = "Defensive Coordinator",
                                     YearInducted = 2012,
                                     YearsActive = "1970 - 1973" + ", " + "1976 - 1983",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
                                     Name = "Super Bowl VII & VIII Team, 1972 Perfect Season Team 17-0",
                                     Notes = "The 1972 Team was inducted into the Honor Roll in 1992, but was updated in 2012 to include the Super Bowl VIII Team.",
                                     YearInducted = 2012,
-                                    YearsActive = 1972 - 1973,
-                                    Team = "Miami Dolphins"
+                                    YearsActive = "1972 - 1973",
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1196,7 +1249,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2013,
                                     YearsActive = "1986 - 1993",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                                 new Players
                                 {
@@ -1204,7 +1257,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2014,
                                     YearsActive = "1968 - 1975",
-                                    Team = "Miami Dolphins"
+                                    PlayerTeam = "Miami Dolphins"
                                 },
                             }
                         }
@@ -1224,7 +1277,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1991,
                                     YearsActive = "1973 - 1985",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1232,7 +1285,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1992,
                                     YearsActive = "1962 - 1968",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1240,7 +1293,7 @@ namespace Persistence
                                     Position = "WR" + ", " + "K",
                                     YearInducted = 1992,
                                     YearsActive = "1960 - 1970",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1248,7 +1301,7 @@ namespace Persistence
                                     Position = "DL",
                                     YearInducted = 1993,
                                     YearsActive = "1960 - 1967",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1256,7 +1309,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1993,
                                     YearsActive = "1960 - 1971",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1264,7 +1317,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1993,
                                     YearsActive = "1974 - 1987",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1272,7 +1325,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1993,
                                     YearsActive = "1961 - 1967",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1280,7 +1333,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1994,
                                     YearsActive = "1976 - 1982",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1288,7 +1341,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1995,
                                     YearsActive = "1975 - 1990",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1296,7 +1349,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1999,
                                     YearsActive = "1982 - 1993",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1304,7 +1357,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2001,
                                     YearsActive = "1987 - 2000",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1312,7 +1365,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2007,
                                     YearsActive = "1977 - 1989",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1320,7 +1373,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2008,
                                     YearsActive = "1991 - 1999",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1328,7 +1381,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 2009,
                                     YearsActive = "1965 - 1971",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1336,7 +1389,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 2009,
                                     YearsActive = "1960 - 1988",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1344,7 +1397,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1973 - 1982",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1352,7 +1405,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2011,
                                     YearsActive = "1993 - 2001",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1360,15 +1413,15 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2011,
                                     YearsActive = "1964 - 1974",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
                                     Name = "Troy Brown",
                                     Position = "WR" + ", " + "CB" + ", " + "Punt Returner",
                                     YearInducted = 2012,
-                                    YearsActive = 1993 - 2007,
-                                    Team = "New England Patriots"
+                                    YearsActive = "1993 - 2007",
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1376,7 +1429,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2013,
                                     YearsActive = "1996 - 2008",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1384,7 +1437,7 @@ namespace Persistence
                                     Position = "Broadcaster",
                                     YearInducted = 2013,
                                     YearsActive = "1972 - 1979" + ", " + "1991 - 2012",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1392,7 +1445,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2014,
                                     YearsActive = "1995 - 2004",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1400,7 +1453,7 @@ namespace Persistence
                                     Position = "DE" + ", " + "LB",
                                     YearInducted = 2015,
                                     YearsActive = "1994 - 2005",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1408,7 +1461,7 @@ namespace Persistence
                                     Position = "DL",
                                     YearInducted = 2015,
                                     YearsActive = "1961 - 1971",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1416,7 +1469,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2016,
                                     YearsActive = "1999 - 2011",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1424,7 +1477,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2017,
                                     YearsActive = "1977 - 1989",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1432,7 +1485,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2018,
                                     YearsActive = "2001 - 2011",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1440,7 +1493,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2019,
                                     YearsActive = "2003 - 2008",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1448,7 +1501,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2019,
                                     YearsActive = "1973 - 1978",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                                 new Players
                                 {
@@ -1456,7 +1509,7 @@ namespace Persistence
                                     Position = "DL",
                                     YearInducted = 2020,
                                     YearsActive = "2001 - 2008",
-                                    Team = "New England Patriots"
+                                    PlayerTeam = "New England Patriots"
                                 },
                             }
                         }
@@ -1476,7 +1529,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2010,
                                     YearsActive = "1965 - 1976",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1484,7 +1537,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1998 - 2006",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1492,7 +1545,7 @@ namespace Persistence
                                     Position = "DL",
                                     YearInducted = 2010,
                                     YearsActive = "1977 - 1987",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1500,7 +1553,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2010,
                                     YearsActive = "1960 - 1972",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1508,7 +1561,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2010,
                                     YearsActive = "1963 - 1976",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1516,7 +1569,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1963 - 1973",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1524,7 +1577,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2011,
                                     YearsActive = "1960 - 1972",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1532,7 +1585,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2011,
                                     YearsActive = "1981 - 1992",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1540,7 +1593,7 @@ namespace Persistence
                                     Position = "DL",
                                     YearInducted = 2011,
                                     YearsActive = "1964 - 1972",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1548,7 +1601,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2011,
                                     YearsActive = "1985 - 1992",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1556,7 +1609,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2012,
                                     YearsActive = "1977 - 1989",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                  new Players
                                 {
@@ -1564,7 +1617,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2012,
                                     YearsActive = "1979 - 1988",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1572,7 +1625,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2013,
                                     YearsActive = "1979 - 1989",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1580,7 +1633,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2014,
                                     YearsActive = "1995 - 2005",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1588,7 +1641,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2014,
                                     YearsActive = "1968 - 1999",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1596,7 +1649,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2015,
                                     YearsActive = "1966 - 1975",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1604,7 +1657,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2015,
                                     YearsActive = "1964 - 1972",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },
                                 new Players
                                 {
@@ -1612,7 +1665,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2017,
                                     YearsActive = "1998 - 2005",
-                                    Team = "New York Jets"
+                                    PlayerTeam = "New York Jets"
                                 },   
                             }
                         }
@@ -1632,7 +1685,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2017,
                                     YearsActive = "2003 - 2014",
-                                    Team = "Houston Texans"
+                                    PlayerTeam = "Houston Texans"
                                 },
                                 new Players
                                 {
@@ -1640,7 +1693,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 2019,
                                     YearsActive = "2002 - 2018",
-                                    Team = "Houston Texans"
+                                    PlayerTeam = "Houston Texans"
                                 }
                             }
                         }
@@ -1660,7 +1713,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 1996,
                                     YearsActive = "1972 - 1997",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1668,7 +1721,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1998,
                                     YearsActive = "1986 - 1992",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1676,7 +1729,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2000,
                                     YearsActive = "1975 - 1979" + ", " + "1992 - 1995",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1684,7 +1737,7 @@ namespace Persistence
                                     Position = "OT" + ", " + "OG",
                                     YearInducted = 2001,
                                     YearsActive = "1983 - 1989",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1692,7 +1745,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2005,
                                     YearsActive = "1994 - 1997",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1700,7 +1753,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "2002 - 2008",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1708,7 +1761,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2011,
                                     YearsActive = "1996 - 2008",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1716,7 +1769,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2012,
                                     YearsActive = "1999 - 2005",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1724,7 +1777,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2013,
                                     YearsActive = "1987 - 1991",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1732,7 +1785,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2013,
                                     YearsActive = "1994 - 1998",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1740,7 +1793,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2015,
                                     YearsActive = "1999 - 2011",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1748,7 +1801,7 @@ namespace Persistence
                                     Position = "President" + ", " + "General Manager",
                                     YearInducted = 2017,
                                     YearsActive = "1998 - 2011",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1756,7 +1809,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2017,
                                     YearsActive = "1998 - 2011",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1764,15 +1817,15 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2018,
                                     YearsActive = "2001 - 2014",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
-                                    Name = "Dwight Freeney".
+                                    Name = "Dwight Freeney",
                                     Position = "DE",
                                     YearInducted = 2019,
                                     YearsActive = "2002 - 2012",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 },
                                 new Players
                                 {
@@ -1780,7 +1833,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2021,
                                     YearsActive = "2003 - 2016",
-                                    Team = "Indianapolis Colts"
+                                    PlayerTeam = "Indianapolis Colts"
                                 }
                             }
                         }
@@ -1800,7 +1853,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2006,
                                     YearsActive = "1995 - 2001",
-                                    Team = "Jacksonville Jaguars"
+                                    PlayerTeam = "Jacksonville Jaguars"
                                 },
                                 new Players
                                 {
@@ -1808,7 +1861,7 @@ namespace Persistence
                                     Position = "Founding Owners",
                                     YearInducted = 2011,
                                     YearsActive = "1993 - 2011",
-                                    Team = "Jacksonville Jaguars"
+                                    PlayerTeam = "Jacksonville Jaguars"
                                 },
                                 new Players
                                 {
@@ -1816,7 +1869,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2012,
                                     YearsActive = "1998 - 2003",
-                                    Team = "Jacksonville Jaguars"
+                                    PlayerTeam = "Jacksonville Jaguars"
                                 },
                                 new Players
                                 {
@@ -1824,7 +1877,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2013,
                                     YearsActive = "1995 - 2003",
-                                    Team = "Jacksonville Jaguars"
+                                    PlayerTeam = "Jacksonville Jaguars"
                                 },
                                 new Players
                                 {
@@ -1832,7 +1885,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2016,
                                     YearsActive = "1995 - 2005",
-                                    Team = "Jacksonville Jaguars"
+                                    PlayerTeam = "Jacksonville Jaguars"
                                 }
                             }
                         }
@@ -1852,7 +1905,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1999,
                                     YearsActive = "1968 - 1983",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1860,7 +1913,7 @@ namespace Persistence
                                     Position = "QB" + ", " + "K",
                                     YearInducted = 1999,
                                     YearsActive = "1960 - 1966",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1868,7 +1921,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1999,
                                     YearsActive = "1978 - 1984",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1876,7 +1929,7 @@ namespace Persistence
                                     Position = "General Manager",
                                     YearInducted = 1999,
                                     YearsActive = "1989 - 1993",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1884,7 +1937,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 1999,
                                     YearsActive = "1967 - 1972",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1892,7 +1945,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1999,
                                     YearsActive = "1982 - 1993",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1900,7 +1953,7 @@ namespace Persistence
                                     Position = "P",
                                     YearInducted = 1999,
                                     YearsActive = "1960 - 1968",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1908,7 +1961,7 @@ namespace Persistence
                                     Position = "OL",
                                     YearInducted = 2002,
                                     YearsActive = "1983 - 2001",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1916,7 +1969,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2007,
                                     YearsActive = "1984 - 1993",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1924,7 +1977,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 2008,
                                     YearsActive = "1959 - 2013",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1932,7 +1985,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2008,
                                     YearsActive = "1996 - 2003",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1940,7 +1993,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2008,
                                     YearsActive = "1995 - 2005",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1948,7 +2001,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2008,
                                     YearsActive = "1995 - 2003",
-                                    Team = "Tennessee Titans"
+                                    PlayerTeam = "Tennessee Titans"
                                 },
                                 new Players
                                 {
@@ -1956,8 +2009,32 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2018,
                                     YearsActive = "1975 - 1984",
-                                    Team = "Tennessee Titans"
-                                }
+                                    PlayerTeam = "Tennessee Titans"
+                                },
+                                new Players
+                                {
+                                    Name = "Bum Phillips",
+                                    Position = "Defensive Coordinator" + ", " + "Head Coach",
+                                    YearInducted = 2021,
+                                    YearsActive = "1974 - 1980",
+                                    PlayerTeam = "Tennessee Titans"
+                                },
+                                new Players
+                                {
+                                    Name = "Jeff Fisher",
+                                    Position = "Defensive Coordinator" + ", " + "Head Coach",
+                                    YearInducted = 2021,
+                                    YearsActive = "1994 - 2010",
+                                    PlayerTeam = "Tennessee Titans"
+                                },
+                                new Players
+                                {
+                                    Name = "Floyd Reese",
+                                    Position = "Linebackers Coach" + ", " + "Assistant General Manager" + "General Manager",
+                                    YearInducted = 2021,
+                                    YearsActive = "1986 - 2006",
+                                    PlayerTeam = "Tennessee Titans"
+                                },
                             }
                         }
                     },
@@ -1976,7 +2053,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 1984,
                                     YearsActive = "1960 - 1966",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -1984,7 +2061,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1984,
                                     YearsActive = "1967 - 1972",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -1992,7 +2069,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1984,
                                     YearsActive = "1967 - 1975",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2000,7 +2077,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1984,
                                     YearsActive = "1960 - 1966",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2008,7 +2085,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 1985,
                                     YearsActive = "1961 - 1981",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2016,7 +2093,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1986,
                                     YearsActive = "1972 - 1975",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2024,7 +2101,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1986,
                                     YearsActive = "1968 - 1978",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2032,7 +2109,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1986,
                                     YearsActive = "1960 - 1963",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2040,7 +2117,7 @@ namespace Persistence
                                     Position = "CB" + ", " + "S",
                                     YearInducted = 1987,
                                     YearsActive = "1969 - 1981",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2048,7 +2125,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1988,
                                     YearsActive = "1977 - 1982",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2056,7 +2133,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1988,
                                     YearsActive = "1972 - 1981",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2064,7 +2141,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 1988,
                                     YearsActive = "1971 - 1979",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2072,7 +2149,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1989,
                                     YearsActive = "1974 - 1983",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2080,7 +2157,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1992,
                                     YearsActive = "1973 - 1986",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2088,7 +2165,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1993,
                                     YearsActive = "1975 - 1986",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2096,7 +2173,7 @@ namespace Persistence
                                     Position = "QB" + ", " + "General Manager",
                                     YearInducted = 1999,
                                     YearsActive = "1983 - 1998" + ", " + "2011 - 2020",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2104,7 +2181,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2001,
                                     YearsActive = "1983 - 1995",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2112,7 +2189,7 @@ namespace Persistence
                                     Position = "SS",
                                     YearInducted = 2001,
                                     YearsActive = "1981 - 1994",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2120,7 +2197,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2003,
                                     YearsActive = "1993 - 1997",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2128,7 +2205,7 @@ namespace Persistence
                                     Position = "SS",
                                     YearInducted = 2005,
                                     YearsActive = "1989 - 1998",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2136,7 +2213,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2007,
                                     YearsActive = "1995 - 2001",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2144,7 +2221,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2009,
                                     YearsActive = "1990 - 1999" + ", " + "2002 - 2003",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2152,7 +2229,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2012,
                                     YearsActive = "1994 - 2006",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2160,7 +2237,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2012,
                                     YearsActive = "1994 - 2007",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2168,7 +2245,7 @@ namespace Persistence
                                     Position = "RB" + ", " + "K" + ", " + "Return Specialist",
                                     YearInducted = 2014,
                                     YearsActive = "1960 - 1964",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2176,7 +2253,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2014,
                                     YearsActive = "1981 - 1992",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2184,7 +2261,7 @@ namespace Persistence
                                     Position = "WR" + ", " + "Return Specialist",
                                     YearInducted = 2014,
                                     YearsActive = "1975 - 1983",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2192,7 +2269,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2015,
                                     YearsActive = "1984 - 2013",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2200,7 +2277,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2016,
                                     YearsActive = "1993 - 2007",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2208,7 +2285,7 @@ namespace Persistence
                                     Position = "LB" + ", " + "DE",
                                     YearInducted = 2016,
                                     YearsActive = "1985 - 1995",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2216,7 +2293,7 @@ namespace Persistence
                                     Position = "SS",
                                     YearInducted = 2016,
                                     YearsActive = "2004 - 2007",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2224,7 +2301,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2017,
                                     YearsActive = "1977 - 1980",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
                                 },
                                 new Players
                                 {
@@ -2232,7 +2309,15 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2019,
                                     YearsActive = "2004 - 2013",
-                                    Team = "Denver Broncos"
+                                    PlayerTeam = "Denver Broncos"
+                                },
+                                new Players
+                                {
+                                    Name = "Peyton Manning",
+                                    Position = "QB",
+                                    YearInducted = 2021,
+                                    YearsActive = "2012 - 2015",
+                                    PlayerTeam = "Denver Broncos"
                                 },
                             }
                         }
@@ -2252,7 +2337,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 1970,
                                     YearsActive = "1960 - 2006",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2261,7 +2346,7 @@ namespace Persistence
                                     Notes = "He passed away suddenly after a knee surgery after a game against the Buffalo Bills.",
                                     YearInducted = 1971,
                                     YearsActive = "1961 - 1974",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2269,7 +2354,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1972,
                                     YearsActive = "1961 - 1970",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2277,7 +2362,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 1973,
                                     YearsActive = "1962 - 1970",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2285,7 +2370,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 1974,
                                     YearsActive = "1960 - 1971",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2293,7 +2378,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1975,
                                     YearsActive = "1960 - 1967",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2301,7 +2386,7 @@ namespace Persistence
                                     Position = "C" + ", " + "LB",
                                     YearInducted = 1976,
                                     YearsActive = "1961 - 1970",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2309,7 +2394,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 1977,
                                     YearsActive = "1961 - 1973",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2317,7 +2402,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1978,
                                     YearsActive = "1966 - 1970",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2325,7 +2410,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1979,
                                     YearsActive = "1963 - 1975",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2333,7 +2418,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1980,
                                     YearsActive = "1963 - 1974",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2341,7 +2426,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1981,
                                     YearsActive = "1963 - 1975",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2349,7 +2434,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1982,
                                     YearsActive = "1965 - 1975",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2357,7 +2442,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 1984,
                                     YearsActive = "1963 - 1976",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2365,7 +2450,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1985,
                                     YearsActive = "1967 - 1977",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2373,7 +2458,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1986,
                                     YearsActive = "1966 - 1978",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2381,7 +2466,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1987,
                                     YearsActive = "1960 - 1974",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2389,7 +2474,7 @@ namespace Persistence
                                     Position = "P",
                                     YearInducted = 1988,
                                     YearsActive = "1963 - 1977",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2397,7 +2482,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1989,
                                     YearsActive = "1969 - 1977",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2405,7 +2490,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1990,
                                     YearsActive = "1967 - 1977",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2413,7 +2498,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1991,
                                     YearsActive = "1960 - 1964",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2421,7 +2506,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 1992,
                                     YearsActive = "1967 - 1979",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2429,7 +2514,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1993,
                                     YearsActive = "1960 - 1967",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2437,7 +2522,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 1994,
                                     YearsActive = "1969 - 1982",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2445,7 +2530,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1995,
                                     YearsActive = "1962 - 1969",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2453,7 +2538,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 1996,
                                     YearsActive = "1981 - 1991",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2461,7 +2546,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 1997,
                                     YearsActive = "1963 - 1974",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2469,7 +2554,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1998,
                                     YearsActive = "1978 - 1987",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2477,7 +2562,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 1999,
                                     YearsActive = "1981 - 1991",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2485,7 +2570,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2000,
                                     YearsActive = "1987 - 1991",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2494,7 +2579,7 @@ namespace Persistence
                                     Notes = "After the 1999 Season, Thomas was in a car accident that left him paralyzed. He passed away a few days after.",
                                     YearInducted = 2001,
                                     YearsActive = "1989 - 1999",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2502,7 +2587,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2002,
                                     YearsActive = "1984 - 1996",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2510,7 +2595,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2003,
                                     YearsActive = "1978 - 1986",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2519,7 +2604,7 @@ namespace Persistence
                                     Notes = "Passed away in 1983, after his second year with the Chiefs.",
                                     YearInducted = 2004,
                                     YearsActive = "1981 - 1982",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2527,7 +2612,7 @@ namespace Persistence
                                     Position = "President" + ", " + "General Manager",
                                     YearInducted = 2005,
                                     YearsActive = "1960 - 1989",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2535,7 +2620,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2006,
                                     YearsActive = "1988 - 1996",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2543,7 +2628,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2007,
                                     YearsActive = "1983 - 1993",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2551,7 +2636,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2008,
                                     YearsActive = "1968 - 1974",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2559,7 +2644,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2009,
                                     YearsActive = "1980 - 1993",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2567,7 +2652,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1989 - 1998",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2575,7 +2660,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2011,
                                     YearsActive = "1984 - 1993" + ", " + "1997",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2583,7 +2668,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2012,
                                     YearsActive = "1993 - 2006",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2591,7 +2676,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2013,
                                     YearsActive = "1976 - 1982",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2599,7 +2684,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2014,
                                     YearsActive = "2001 - 2007",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2607,7 +2692,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2015,
                                     YearsActive = "1977 - 1983",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2615,7 +2700,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 2016,
                                     YearsActive = "1995 - 2005",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2623,7 +2708,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2017,
                                     YearsActive = "1980 - 1989",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2631,7 +2716,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2018,
                                     YearsActive = "1997 - 2008",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                                 new Players
                                 {
@@ -2639,7 +2724,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2019,
                                     YearsActive = "2000 - 2010",
-                                    Team = "Kansas City Chiefs"
+                                    PlayerTeam = "Kansas City Chiefs"
                                 },
                             }
                         }
@@ -2659,6 +2744,7 @@ namespace Persistence
                     },
                     new RingHonor
                     {
+
                         History = "Began in 1976, the Chargers Hall of Fame acts as their Ring of Honor. All four inductees in this year were inducted posthumously. In 2012, the team allowed the fans to induct that year's inductee, choosing Punter, Darren Bennett. After moving to Los Angeles in 2017, the Chargers inducted Bobby Beathard to the Team Hall of Fame in 2018.",
                         Team = new Teams
                         {
@@ -2672,7 +2758,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1976,
                                     YearsActive = "1960 - 1966",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2680,7 +2766,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1976,
                                     YearsActive = "1962 - 1968",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2689,7 +2775,7 @@ namespace Persistence
                                     Notes = "Killed in 1961 after his second season.",
                                     YearInducted = 1976,
                                     YearsActive = "1960 - 1961",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2697,7 +2783,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 1976,
                                     YearsActive = "1961 - 1969",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2705,7 +2791,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1977,
                                     YearsActive = "1962 - 1970",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2713,7 +2799,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 1978,
                                     YearsActive = "1960- 1969",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2721,7 +2807,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1979,
                                     YearsActive = "1960 - 1968",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2729,7 +2815,7 @@ namespace Persistence
                                     Position = "Majority Founding Owner",
                                     YearInducted = 1980,
                                     YearsActive = "1960 - 1966",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2737,7 +2823,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1980,
                                     YearsActive = "1961 - 1968",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2745,7 +2831,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1981,
                                     YearsActive = "1961 - 1965",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2753,7 +2839,7 @@ namespace Persistence
                                     Position = "G",
                                     YearInducted = 1981,
                                     YearsActive = "1963 - 1973",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2761,7 +2847,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1983,
                                     YearsActive = "1962 - 1972",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2769,7 +2855,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1984,
                                     YearsActive = "1961 - 1969",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2777,7 +2863,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1985,
                                     YearsActive = "1966 - 1976",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2785,7 +2871,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1985,
                                     YearsActive = "1961 - 1969" + ", " + "1971",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2793,7 +2879,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1986,
                                     YearsActive = "1961 - 1966",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2801,7 +2887,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1993,
                                     YearsActive = "1973 - 1987",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2809,7 +2895,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1993,
                                     YearsActive = "1976 - 1986",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2817,7 +2903,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1994,
                                     YearsActive = "1978 - 1986",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2825,7 +2911,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1995,
                                     YearsActive = "1968 - 1982",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2833,7 +2919,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 1995,
                                     YearsActive = "1968 - 1982",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2841,7 +2927,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 1995,
                                     YearsActive = "1979 - 1987",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2849,7 +2935,7 @@ namespace Persistence
                                     Position = "Minority Owner",
                                     YearInducted = 1996,
                                     YearsActive = "1961 - Present",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2857,7 +2943,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 1997,
                                     YearsActive = "1978 - 1987",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2865,7 +2951,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1998,
                                     YearsActive = "1983 - 1992",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2873,7 +2959,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1999,
                                     YearsActive = "1975 - 1984",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2881,7 +2967,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2000,
                                     YearsActive = "1971 - 1984",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2889,7 +2975,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2001,
                                     YearsActive = "1981 - 1987",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2897,7 +2983,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2002,
                                     YearsActive = "1992 - 1997",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2905,7 +2991,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2002,
                                     YearsActive = "1992 - 1996",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2913,7 +2999,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2003,
                                     YearsActive = "1975 - 1983",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2921,7 +3007,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2004,
                                     YearsActive = "1976 - 1989",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2929,7 +3015,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2004,
                                     YearsActive = "1978 - 1985",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2937,7 +3023,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2008,
                                     YearsActive = "1975 - 1981",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2945,7 +3031,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2011,
                                     YearsActive = "1990 - 2002",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2953,14 +3039,14 @@ namespace Persistence
                                     Position = "P",
                                     YearInducted = 2012,
                                     YearsActive = "1995 - 2003",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
                                     Name = "The 1963 AFL Championship Team",
                                     YearInducted = 2013,
                                     YearsActive = "1963",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2968,7 +3054,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2014,
                                     YearsActive = "1986 - 1995",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2976,7 +3062,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2015,
                                     YearsActive = "2001 - 2009",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                                 new Players
                                 {
@@ -2984,7 +3070,7 @@ namespace Persistence
                                     Position = "General Manager",
                                     YearInducted = 2018,
                                     YearsActive = "1990 - 2000",
-                                    Team = "Los Angeles Chargers"
+                                    PlayerTeam = "Los Angeles Chargers"
                                 },
                             }
                         }
@@ -3017,7 +3103,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2009,
                                     YearsActive = "1967 - 1977",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3025,7 +3111,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2018,
                                     YearsActive = "1960 - 1966",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3033,7 +3119,7 @@ namespace Persistence
                                     Position = "DB",
                                     YearInducted = 2009,
                                     YearsActive = "1951 - 1958",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3041,7 +3127,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2009,
                                     YearsActive = "1934 - 1938",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3049,7 +3135,7 @@ namespace Persistence
                                     Position = "OT" + ", " + "OG",
                                     YearInducted = 2009,
                                     YearsActive = "1950 - 1959",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3057,7 +3143,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2013,
                                     YearsActive = "1992 - 2012",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3065,7 +3151,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2018,
                                     YearsActive = "1958 - 1970",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3073,7 +3159,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2009,
                                     YearsActive = "1960 - 1965",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3081,7 +3167,7 @@ namespace Persistence
                                     Position = "CB" + ", " + "P",
                                     YearInducted = 2009,
                                     YearsActive = "1952 - 1953" + ", " + "1956 - 1964",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3089,7 +3175,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2009,
                                     YearsActive = "1961 - 1974",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3097,7 +3183,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2010,
                                     YearsActive = "1959 - 1972",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3105,7 +3191,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2018,
                                     YearsActive = "1991 - 2001",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3113,7 +3199,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2018,
                                     YearsActive = "1989 - 1998",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3121,7 +3207,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2009,
                                     YearsActive = "1968 - 1977",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3129,7 +3215,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2009,
                                     YearsActive = "1953 - 1965",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3137,7 +3223,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2009,
                                     YearsActive = "1952 - 1955",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3145,7 +3231,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2009,
                                     YearsActive = "1950 - 1955",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                                 new Players
                                 {
@@ -3153,7 +3239,7 @@ namespace Persistence
                                     Position = "C" + ", " +  "LB",
                                     YearInducted = 2009,
                                     YearsActive = "1938 - 1946",
-                                    Team = "Detroit Lions"
+                                    PlayerTeam = "Detroit Lions"
                                 },
                             }
                         }
@@ -3172,175 +3258,175 @@ namespace Persistence
                                     Name = "Herb Adderley",
                                     Position = "CB",
                                     YearsActive = "1961 - 1969",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Tony Canadeo",
                                     Position = "RB",
                                     YearsActive = "1941 - 1944" + ", " + "1946 - 1952",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Willie Davis",
                                     Position = "DE",
                                     YearsActive = "1960 - 1969",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Brett Favre",
                                     Position = "QB",
                                     YearsActive = "1992 - 2007",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Forrest Gregg",
                                     Position = "OT",
                                     YearsActive = "1956" + ", " + "1958 - 1970",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Arnie Herber",
                                     Position = "QB",
                                     YearsActive = "1930 - 1940",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Clarke Hinkle",
                                     Position = "FB",
                                     YearsActive = "1932 - 1941",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Paul Hornung",
                                     Position = "RB",
                                     YearsActive = "1956 - 1962" + ", " + "1964 - 1966",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Cal Hubbard",
                                     Position = "OT",
                                     YearsActive = "1929 - 1933" + ", " + "1935",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Don Hutson",
                                     Position = "TE" + ", " + "DE",
                                     YearsActive = "1935 - 1945",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Henry Jordan",
                                     Position = "DT",
                                     YearsActive = "1959 - 1969",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Jerry Kramer",
                                     Position = "OG",
                                     YearsActive = "1958 - 1968",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Earl 'Curly' Lambeau",
                                     Position = "RB" + ", " + "Head Coach",
                                     YearsActive = "1919 - 1929" + ", " + "1930 - 1949",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "James Lofton",
                                     Position = "WR",
                                     YearsActive = "1978 - 1986",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Vince Lombardi",
                                     Position = "Head Coach",
                                     YearsActive = "1959 - 1967",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Johnny 'Blood' McNally",
                                     Position = "RB",
                                     YearsActive = "1929 - 1933" + ", " + "1935 - 1936",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Mike Michalske",
                                     Position = "OG",
                                     YearsActive = "1929 - 1935" + ", " + "1937",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Ray Nitschke",
                                     Position = "LB",
                                     YearsActive = "1958 - 1972",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Jim Ringo",
                                     Position = "C",
                                     YearsActive = "1953 - 1963",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Dave Robinson",
                                     Position = "LB",
                                     YearsActive = "1963 - 1972",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Bart Starr",
                                     Position = "QB",
                                     YearsActive = "1956 - 1971",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Jim Taylor",
                                     Position = "FB",
                                     YearsActive = "1958 - 1966",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Reggie White",
                                     Position = "DE",
                                     YearsActive = "1993 - 1998",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Ron Wolf",
                                     Position = "General Manager",
                                     YearsActive = "1991 - 2001",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                                 new Players
                                 {
                                     Name = "Willie Wood",
                                     Position = "S",
                                     YearsActive = "1960 - 1971",
-                                    Team = "Green Bay Packers"
+                                    PlayerTeam = "Green Bay Packers"
                                 },
                             }
                         }
@@ -3360,7 +3446,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1998,
                                     YearsActive = "1961 - 1966" + ", " + "1972 - 1978",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3368,7 +3454,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1998,
                                     YearsActive = "1967 - 1978",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3376,7 +3462,7 @@ namespace Persistence
                                     Position = "General Manager",
                                     YearInducted = 1998,
                                     YearsActive = "1964 - 1973",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3384,7 +3470,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1998,
                                     YearsActive = "1967 - 1983" + ", " + "1985",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3392,7 +3478,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 1998,
                                     YearsActive = "1968 - 1979",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3400,7 +3486,7 @@ namespace Persistence
                                     Position = "Medical Adviser",
                                     YearInducted = 1998,
                                     YearsActive = "1961 - 2011",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3408,7 +3494,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1999,
                                     YearsActive = "1961 - 1979",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3416,7 +3502,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2001,
                                     YearsActive = "1968 - 1981",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3424,7 +3510,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2001,
                                     YearsActive = "1995 - 2000",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3432,7 +3518,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2001,
                                     YearsActive = "1962 - 1978",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3440,7 +3526,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2002,
                                     YearsActive = "1964 - 1978",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3448,7 +3534,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2003,
                                     YearsActive = "1990 - 2001",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3456,7 +3542,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2004,
                                     YearsActive = "1962 - 1974",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3464,7 +3550,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2005,
                                     YearsActive = "1986 - 1991",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3472,7 +3558,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2006,
                                     YearsActive = "1988 - 1999",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3480,7 +3566,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2007,
                                     YearsActive = "1973 - 1979",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3488,7 +3574,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2008,
                                     YearsActive = "1961 - 1974",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3496,7 +3582,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2009,
                                     YearsActive = "1977 - 1990",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3504,7 +3590,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2011,
                                     YearsActive = "1985 - 1993" + ", " + "1999",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3512,7 +3598,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2012,
                                     YearsActive = "1974 - 1985",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3520,7 +3606,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2013,
                                     YearsActive = "1983 - 1991",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3528,7 +3614,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2017,
                                     YearsActive = "1998 - 2004" + ", " + "2010",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3536,7 +3622,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2017,
                                     YearsActive = "1976 - 1982",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3544,7 +3630,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2018,
                                     YearsActive = "1992 - 2001",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                                 new Players
                                 {
@@ -3552,7 +3638,15 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2019,
                                     YearsActive = "1982 - 1994",
-                                    Team = "Minnesota Vikings"
+                                    PlayerTeam = "Minnesota Vikings"
+                                },
+                                new Players
+                                {
+                                    Name = "Kevin Williams",
+                                    Position = "DT",
+                                    YearInducted = 2021,
+                                    YearsActive = "2003 - 2013",
+                                    PlayerTeam = "Minnesota Vikings"
                                 },
                             }
                         }
@@ -3572,15 +3666,15 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1975,
                                     YearsActive = "1961 - 1974",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
                                     Name = "Don Meredith",
-                                    Posistion = "QB",
+                                    Position = "QB",
                                     YearInducted = 1976,
                                     YearsActive = "1960 - 1968",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3588,7 +3682,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 1976,
                                     YearsActive = "1961 - 1968",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3596,7 +3690,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1977,
                                     YearsActive = "1961 - 1973",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3604,7 +3698,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1981,
                                     YearsActive = "1964 - 1977",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3612,7 +3706,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1983,
                                     YearsActive = "1969 - 1979",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3620,7 +3714,7 @@ namespace Persistence
                                     Position = "LB" + ", " + "C",
                                     YearInducted = 1989,
                                     YearsActive = "1963 - 1976",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3628,7 +3722,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1993,
                                     YearsActive = "1960 - 1988",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players 
                                 {
@@ -3636,7 +3730,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1994,
                                     YearsActive = "1977 - 1987",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3644,7 +3738,7 @@ namespace Persistence
                                     Position = "DT" + ", " + "DE" + ", " + "LB",
                                     YearInducted = 1994,
                                     YearsActive = "1975 - 1988",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3652,7 +3746,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2001,
                                     YearsActive = "1965 - 1974",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3660,7 +3754,7 @@ namespace Persistence
                                     Position = "General Manager",
                                     YearInducted = 2003,
                                     YearsActive = "1960 - 1989",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3668,7 +3762,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2004,
                                     YearsActive = "1970 - 1979",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3676,7 +3770,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2004,
                                     YearsActive = "1967 - 1979",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3684,7 +3778,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2005,
                                     YearsActive = "1989 - 2000",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3692,7 +3786,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2005,
                                     YearsActive = "1988 - 1999",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3700,7 +3794,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2005,
                                     YearsActive = "1990 - 2002",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3708,7 +3802,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2011,
                                     YearsActive = "1973 - 1983",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3716,7 +3810,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2011,
                                     YearsActive = "1992 - 1996",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3724,7 +3818,7 @@ namespace Persistence
                                     Position = "OG" + ", " + "OT",
                                     YearInducted = 2011,
                                     YearsActive = "1994 - 2005",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3732,7 +3826,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2015,
                                     YearsActive = "1992 - 2004",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 },
                                 new Players
                                 {
@@ -3740,7 +3834,7 @@ namespace Persistence
                                     Position = "VP Player of Personnel",
                                     YearInducted = 2018,
                                     YearsActive = "1960 - 1988",
-                                    Team = "Dallas Cowboys"
+                                    PlayerTeam = "Dallas Cowboys"
                                 }
                             }
                         }
@@ -3760,7 +3854,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2010,
                                     YearsActive = "1993 - 2001",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3768,7 +3862,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1997 - 2006",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3777,7 +3871,7 @@ namespace Persistence
                                     Notes = "Died in World War II",
                                     YearInducted = 2010,
                                     YearsActive = "1942 - 1944",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3785,7 +3879,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2010,
                                     YearsActive = "1953 - 1965",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3793,7 +3887,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2010,
                                     YearsActive = "1976 - 1988",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3801,7 +3895,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2010,
                                     YearsActive = "1948 - 1961",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3809,7 +3903,7 @@ namespace Persistence
                                     Position = "RB" + ", " + "WR",
                                     YearInducted = 2010,
                                     YearsActive = "1952 - 1964",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3817,7 +3911,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2010,
                                     YearsActive = "1966 - 1974",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3825,7 +3919,7 @@ namespace Persistence
                                     Position = "C" + ", " + "LB",
                                     YearInducted = 2010,
                                     YearsActive = "1931 - 1945",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3833,7 +3927,7 @@ namespace Persistence
                                     Position = "TE" + ", " + "DE" + ", " + "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1937 - 1942" + ", " + "1946 - 1947" + ", " + "1954 - 1960",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3841,7 +3935,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2010,
                                     YearsActive = "1956 - 1963",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3849,7 +3943,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1936 - 1943",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3857,7 +3951,7 @@ namespace Persistence
                                     Position = "DB",
                                     YearInducted = 2010,
                                     YearsActive = "1958 - 1966",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3865,7 +3959,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1925 - 1965",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3873,7 +3967,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1925 - 1959",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3881,7 +3975,7 @@ namespace Persistence
                                     Position = "Ball Boy" + ", " + "Executive" + ", " + "Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1925 - 2005",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3889,7 +3983,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2010,
                                     YearsActive = "1975 - 1988",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3897,7 +3991,7 @@ namespace Persistence
                                     Position = "WR" + ", " + "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1959 - 1972",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3905,7 +3999,7 @@ namespace Persistence
                                     Position = "OT" + ", " + "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1926 - 1953",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3913,7 +4007,7 @@ namespace Persistence
                                     Position = "Linebacker Coach" + ", " + "Defensive Coordinator" + ", " + "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1979" + ", " + "1981 - 1990",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3921,7 +4015,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2010,
                                     YearsActive = "1956 - 1964",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3929,7 +4023,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2010,
                                     YearsActive = "1979 - 1993",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3937,7 +4031,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2010,
                                     YearsActive = "1993 - 2007",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3945,7 +4039,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2010,
                                     YearsActive = "1933 - 1935" + ", " + "1939" + ", " + "1944 - 1947",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3953,7 +4047,7 @@ namespace Persistence
                                     Position = "",
                                     YearInducted = 2010,
                                     YearsActive = "1981 - 1993",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3961,7 +4055,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1991 - 2005",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3969,7 +4063,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2010,
                                     YearsActive = "1961 - 1964",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3977,7 +4071,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2010,
                                     YearsActive = "1996 - 2008",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3985,7 +4079,7 @@ namespace Persistence
                                     Position = "DB" + ", " + "Scout" + ", " + "Assistant Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1948 - 1958" + ", " + "1963 - 1973",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -3993,7 +4087,7 @@ namespace Persistence
                                     Position = "Executive",
                                     YearInducted = 2010,
                                     YearsActive = "1979 - 1997",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4001,7 +4095,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2011,
                                     YearsActive = "1984 - 1992",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4009,7 +4103,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2011,
                                     YearsActive = "1985 - 1990",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4017,7 +4111,7 @@ namespace Persistence
                                     Position = "P",
                                     YearInducted = 2011,
                                     YearsActive = "1974 - 1984",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4025,7 +4119,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2011,
                                     YearsActive = "1973 - 1983",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4033,7 +4127,7 @@ namespace Persistence
                                     Position = "FB" + ", " + "Head Coach",
                                     YearInducted = 2011,
                                     YearsActive = "1955 - 1964, 1969 - 1973",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4041,7 +4135,7 @@ namespace Persistence
                                     Position = "Atheltic Trainer",
                                     YearInducted = 2015,
                                     YearsActive = "1948 - 2008",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4050,7 +4144,7 @@ namespace Persistence
                                     Notes = "Died in the Battle of Iwo Jima during World War II.",
                                     YearInducted = 2015,
                                     YearsActive = "1941",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4058,7 +4152,7 @@ namespace Persistence
                                     Position = "OG",
                                     YearInducted = 2015,
                                     YearsActive = "2004 - 2013",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4066,7 +4160,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2015,
                                     YearsActive = "2003 - 2012",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4074,7 +4168,7 @@ namespace Persistence
                                     Position = "Executive",
                                     YearInducted = 2016,
                                     YearsActive = "1994 - 2007",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4082,7 +4176,7 @@ namespace Persistence
                                     Position = "WR Coach" + ", " + "Head Coach",
                                     YearInducted = 2016,
                                     YearsActive = "1988 - 1990, 2004 - 2015",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                                 new Players
                                 {
@@ -4090,7 +4184,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2016,
                                     YearsActive = "2005- 2013",
-                                    Team = "New York Giants"
+                                    PlayerTeam = "New York Giants"
                                 },
                             }
                         }
@@ -4110,7 +4204,7 @@ namespace Persistence
                                     Position = "C" + ", " + "LB",
                                     YearInducted = 1987,
                                     YearsActive = "1949 - 1962",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4118,7 +4212,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 1987,
                                     YearsActive = "1933 - 1940",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4126,7 +4220,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1987,
                                     YearsActive = "1971 - 1983",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4134,7 +4228,7 @@ namespace Persistence
                                     Position = "TE" + ", " + "DE",
                                     YearInducted = 1987,
                                     YearsActive = "1936 - 1939" + ", " + "1943",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4142,7 +4236,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1987,
                                     YearsActive = "1957 - 1963",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4150,7 +4244,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1987,
                                     YearsActive = "1964 - 1966",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4158,7 +4252,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1987,
                                     YearsActive = "1977 - 1984",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4166,7 +4260,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1987,
                                     YearsActive = "1941 - 1950",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4174,7 +4268,7 @@ namespace Persistence
                                     Position = "TE" + ", " + "DE",
                                     YearInducted = 1987,
                                     YearsActive = "1947 - 1955",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4182,7 +4276,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 1987,
                                     YearsActive = "1964 - 1977",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4190,7 +4284,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1987,
                                     YearsActive = "1958 - 1960",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4198,7 +4292,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1987,
                                     YearsActive = "1944 - 1951",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4206,7 +4300,7 @@ namespace Persistence
                                     Position = "C" + ", " + "DT",
                                     YearInducted = 1987,
                                     YearsActive = "1946 - 1950",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4214,7 +4308,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 1988,
                                     YearsActive = "1974 - 1980",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4222,7 +4316,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1988,
                                     YearsActive = "1957 - 1963",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4230,7 +4324,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1989,
                                     YearsActive = "1953 - 1961",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4238,7 +4332,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 1989,
                                     YearsActive = "1956 - 1966",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4246,7 +4340,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1990,
                                     YearsActive = "1960 - 1967",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4254,7 +4348,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 1991,
                                     YearsActive = "1973 - 1987",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4262,7 +4356,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 1991,
                                     YearsActive = "1975 - 1983",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4270,7 +4364,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1992,
                                     YearsActive = "1977 - 1986",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4278,7 +4372,7 @@ namespace Persistence
                                     Position = "S" + ", " + "P",
                                     YearInducted = 1993,
                                     YearsActive = "1969 - 1976",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4286,7 +4380,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 1994,
                                     YearsActive = "1976 - 1982",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4294,7 +4388,7 @@ namespace Persistence
                                     Position = "Team Executive",
                                     YearInducted = 1995,
                                     YearsActive = "1949 - 1995",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4302,7 +4396,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1995,
                                     YearsActive = "1982 - 1990",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4310,7 +4404,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 1996,
                                     YearsActive = "1987 - 1991",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4318,21 +4412,21 @@ namespace Persistence
                                     Position = "Head Trainer",
                                     YearInducted = 1999,
                                     YearsActive = "1973 - 1995",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
                                     Name = "1948 NFL Championship Team",
                                     YearInducted = 1999,
                                     YearsActive = "1948",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
                                     Name = "1949 NFL Championship Team",
                                     YearInducted = 1999,
                                     YearsActive = "1949",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4340,7 +4434,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2004,
                                     YearsActive = "1964 - 1968",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4348,7 +4442,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2005,
                                     YearsActive = "1985 - 1992",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4356,7 +4450,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2009,
                                     YearsActive = "1943 - 1951",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4365,7 +4459,7 @@ namespace Persistence
                                     Notes = "Punted 20 times in his career.",
                                     YearInducted = 2009,
                                     YearsActive = "1985 - 1974",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4373,7 +4467,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2011,
                                     YearsActive = "1988 - 1994",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4381,7 +4475,7 @@ namespace Persistence
                                     Position = "Defensive Coordinator",
                                     YearInducted = 2011,
                                     YearsActive = "1999 - 2008",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4389,7 +4483,7 @@ namespace Persistence
                                     Position = "Ticket Managger",
                                     YearInducted = 2012,
                                     YearsActive = "1960 - 1982" + ", " + "1985 - 2015",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4397,7 +4491,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2012,
                                     YearsActive = "1996 - 2008",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4405,7 +4499,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2012,
                                     YearsActive = "1996 - 2003",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4413,7 +4507,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2013,
                                     YearsActive = "1999 - 2009",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4421,7 +4515,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2015,
                                     YearsActive = "2002 - 2009",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4429,7 +4523,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2015,
                                     YearsActive = "1960 - 1965",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4437,7 +4531,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2016,
                                     YearsActive = "1998 - 2001" + ", " + "2004 - 2006" + ", " + "2009",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4445,7 +4539,7 @@ namespace Persistence
                                     Position = "Radio Play by Play",
                                     YearInducted = 2016,
                                     YearsActive = "1977 - Present",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4453,7 +4547,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2017,
                                     YearsActive = "1999 - 2010",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4461,7 +4555,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2018,
                                     YearsActive = "1986 - 1993",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4469,7 +4563,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2018,
                                     YearsActive = "1986 - 1993",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                                 new Players
                                 {
@@ -4477,7 +4571,7 @@ namespace Persistence
                                     Position = "WR" + ", " + "TE" + ", " + " K",
                                     YearInducted = 2019,
                                     YearsActive = "1951 - 1962",
-                                    Team = "Philadelphia Eagles"
+                                    PlayerTeam = "Philadelphia Eagles"
                                 },
                             }
                         }
@@ -4496,77 +4590,77 @@ namespace Persistence
                                     Name = "George Allen",
                                     Position = "Head Coach",
                                     YearsActive = "1971 - 1977",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Cliff Battles",
                                     Position = "RB",
                                     YearsActive = "1932 - 1937",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Sammy Baugh",
                                     Position = "QB",
                                     YearsActive = "1937 - 1952",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
+                                },
+                                new Players
+                                {
+                                    Name = "Bobby Beathard",
+                                    Position = "General Manager",
+                                    YearsActive = "1978 - 1988",
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Jeff Bostic",
                                     Position = "C",
                                     YearsActive = "1980 - 1993",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Gene Brito",
                                     Position = "DE",
                                     YearsActive = "1951 - 1953" + ", " + "1955 - 1958",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Larry Brown",
                                     Position = "RB",
                                     YearsActive = "1969 - 1976",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Dave Butz",
                                     Position = "DT",
                                     YearsActive = "1975 - 1988",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Gary Clark",
                                     Position = "WR",
                                     YearsActive = "1985 - 1992",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Monte Coleman",
                                     Position = "LB",
                                     YearsActive = "1979 - 1994",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Jack Kent Cooke",
                                     Position = "Owner",
                                     YearsActive = "1961 - 1997",
-                                    Team = "Washington Football Team"
-                                },
-                                new Players
-                                {
-                                    Name = "Bill Dudley",
-                                    Position = "RB",
-                                    YearsActive = "1950 - 1951" + ", " + "1953",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
@@ -4574,259 +4668,273 @@ namespace Persistence
                                     Position = "Prince George's County Executive",
                                     Notes = "Was pivotal in helping move Washington to Landover, Maryland.",
                                     YearsActive = "1994 - 2002",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
+                                },
+                                new Players
+                                {
+                                    Name = "Bill Dudley",
+                                    Position = "RB",
+                                    YearsActive = "1950 - 1951" + ", " + "1953",
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Pat Fischer",
                                     Position = "CB",
                                     YearsActive = "1968 - 1977",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "London Fletcher",
                                     Position = "LB",
                                     YearsActive = "2007 - 2013",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Joe Gibbs",
                                     Position = "Head Coach",
                                     YearsActive = "1981 - 1992" + ", " + "2004 - 2007",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Darrell Green",
                                     Position = "CB",
                                     YearsActive = "1983 - 2002",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Russ Grimm",
                                     Position = "OG",
                                     YearsActive = "1981 - 1991",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Chris Hanburger",
                                     Position = "LB",
                                     YearsActive = "1965 - 1978",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Ken Harvey",
                                     Position = "LB",
                                     YearsActive = "1994 - 1998",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Len Hauss",
                                     Position = "C",
                                     YearsActive = "1964 - 1977",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Phil Hochberg",
                                     Position = "PA Announcer",
                                     YearsActive = "1963 - 2000",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Ken Houston",
                                     Position = "S",
                                     YearsActive = "1973 - 1980",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Sam Huff",
                                     Position = "LB",
                                     YearsActive = "1964 - 1967" + ", " + "1969",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Joe Jacoby",
                                     Position = "OT" + ", " + "OG",
                                     YearsActive = "1961 - 1974",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Dick James",
                                     Position = "RB",
                                     YearsActive = "1956 - 1963",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Sonny Jurgensen",
                                     Position = "QB",
                                     YearsActive = "1964 - 1974",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Charlie Justice",
                                     Position = "RB",
                                     YearsActive = "1950" + ", " + "1952 - 1954",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Billy Kilmer",
                                     Position = "QB",
                                     YearsActive = "1971 - 1978",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Eddie LeBaron",
                                     Position = "QB",
                                     YearsActive = "1952 - 1953" + ", " + "1955 - 1959",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Vince Lombardi",
                                     Position = "Head Coach",
                                     YearsActive = "1969",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Dexter Manley",
                                     Position = "DE",
                                     YearsActive = "1981 - 1989",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Charles Mann",
                                     Position = "DE",
                                     YearsActive = "1983 - 1993",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Wayne Millner",
                                     Position = "TE" + ", " + "DE",
                                     YearsActive = "1936 - 1941" + ", " + "1945",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Bobby Mitchell",
                                     Position = "WR",
                                     YearsActive = "1962 - 1968",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Brian Mitchell",
                                     Position = "RB" + ", " + "Return Specialist",
                                     YearsActive = "1990 - 1999",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Art Monk",
                                     Position = "WR",
                                     YearsActive = "1980 - 1993",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Mark Moseley",
                                     Position = "K",
                                     YearsActive = "1974 - 1986",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Brig Owens",
                                     Position = "DB",
                                     YearsActive = "1966 - 1977",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Richie Petitbon",
                                     Position = "S" + ", " + "Defensive Coordinator" + ", " + "Head Coach",
                                     YearsActive = "1971 - 1972" + ", " + "1981 - 1992" + ", " + "1993",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Vince Promuto",
                                     Position = "OG",
                                     YearsActive = "1960 - 1970",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "John Riggins",
                                     Position = "RB",
                                     YearsActive = "1976 - 1979" + ", " + "1981 - 1985",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
+                                },
+                                new Players
+                                {
+                                    Name = "Mark Rypien",
+                                    Position = "QB",
+                                    YearsActive = "1986 - 1993",
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Chris Samuels",
                                     Position = "OT",
                                     YearsActive = "2000 - 2009",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Jerry Smith",
                                     Position = "TE",
                                     YearsActive = "1965 - 1977",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Charley Taylor",
                                     Position = "WR",
                                     YearsActive = "1964 - 1977",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Sean Taylor",
                                     Position = "S",
                                     YearsActive = "2004 - 2007",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
                                     Name = "Joe Theismann",
                                     Position = "QB",
                                     YearsActive = "1974 - 1985",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
-                                    Name = "Lamar 'Bubba Tyler",
+                                    Name = "Lamar 'Bubba' Tyler",
                                     Position = "Athletic Trainer",
                                     YearsActive = "1971 - 2002" + ", " + "2004 - 2008",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                                 new Players
                                 {
-                                    Name = "Doug WIlliams",
+                                    Name = "Doug Williams",
                                     Position = "QB",
                                     YearsActive = "1986 - 1989",
-                                    Team = "Washington Football Team"
+                                    PlayerTeam = "Washington Football Team"
                                 },
                             }
                         }
@@ -4846,7 +4954,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2004,
                                     YearsActive = "1979 - 1983" + ", " + "1986",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4854,7 +4962,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2004,
                                     YearsActive = "1975 - 1985",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4862,7 +4970,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2004,
                                     YearsActive = "1966 - 1976",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4870,7 +4978,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2004,
                                     YearsActive = "1987 - 2000",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4878,7 +4986,7 @@ namespace Persistence
                                     Position = "C",
                                     YearInducted = 2006,
                                     YearsActive = "1969 - 1986",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4886,7 +4994,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2008,
                                     YearsActive = "1968 - 1978",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4894,7 +5002,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2008,
                                     YearsActive = "1978 - 1994",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4902,7 +5010,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2010,
                                     YearsActive = "1989 - 1993",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4910,7 +5018,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2013,
                                     YearsActive = "1982 - 1988",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4918,7 +5026,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2017,
                                     YearsActive = "2002 - 2007",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 },
                                 new Players
                                 {
@@ -4926,7 +5034,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2019,
                                     YearsActive = "2005 - 2015",
-                                    Team = "Atlanta Falcons"
+                                    PlayerTeam = "Atlanta Falcons"
                                 }
                             }
                         }
@@ -4946,7 +5054,7 @@ namespace Persistence
                                     Position = "President" + ", " + "General Manager",
                                     YearInducted = 1997,
                                     YearsActive = "1993 - 1997",
-                                    Team = "Carolina Panthers"
+                                    PlayerTeam = "Carolina Panthers"
                                 },
                                 new Players
                                 {
@@ -4954,7 +5062,7 @@ namespace Persistence
                                     Position = "LB" + ", " + "Coach",
                                     YearInducted = 1998,
                                     YearsActive = "1995 - 2004",
-                                    Team = "Carolina Panthers"
+                                    PlayerTeam = "Carolina Panthers"
                                 },
                                 new Players
                                 {
@@ -4962,7 +5070,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2019,
                                     YearsActive = "2001 - 2013",
-                                    Team = "Carolina Panthers"
+                                    PlayerTeam = "Carolina Panthers"
                                 },
                                 new Players
                                 {
@@ -4970,7 +5078,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2019,
                                     YearsActive = "2003 - 2009",
-                                    Team = "Carolina Panthers"
+                                    PlayerTeam = "Carolina Panthers"
                                 },
                                 new Players
                                 {
@@ -4978,7 +5086,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2019,
                                     YearsActive = "1996 - 2002",
-                                    Team = "Carolina Panthers"
+                                    PlayerTeam = "Carolina Panthers"
                                 },
                                 new Players
                                 {
@@ -4986,7 +5094,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2019,
                                     YearsActive = "2003 - 2013",
-                                    Team = "Carolina Panthers"
+                                    PlayerTeam = "Carolina Panthers"
                                 }
                             }
                         }
@@ -5006,7 +5114,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2013,
                                     YearsActive = "1971 - 1982",
-                                    Team = "New Orleans Saints"
+                                    PlayerTeam = "New Orleans Saints"
                                 },
                                 new Players
                                 {
@@ -5014,7 +5122,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2013,
                                     YearsActive = "1981 - 1993",
-                                    Team = "New Orleans Saints"
+                                    PlayerTeam = "New Orleans Saints"
                                 },
                                 new Players
                                 {
@@ -5022,7 +5130,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2013,
                                     YearsActive = "1993 - 2001",
-                                    Team = "New Orleans Saints"
+                                    PlayerTeam = "New Orleans Saints"
                                 },
                                 new Players
                                 {
@@ -5030,7 +5138,7 @@ namespace Persistence
                                     Position = "K",
                                     YearInducted = 2015,
                                     YearsActive = "1982 - 1994",
-                                    Team = "New Orleans Saints"
+                                    PlayerTeam = "New Orleans Saints"
                                 },
                                 new Players
                                 {
@@ -5038,7 +5146,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2019,
                                     YearsActive = "1985 - 2018",
-                                    Team = "New Orleans Saints"
+                                    PlayerTeam = "New Orleans Saints"
                                 },
                                 new Players
                                 {
@@ -5046,7 +5154,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2019,
                                     YearsActive = "2004 - 2013",
-                                    Team = "New Orleans Saints"
+                                    PlayerTeam = "New Orleans Saints"
                                 }
                             }
                         }
@@ -5066,7 +5174,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2009,
                                     YearsActive = "1976 - 1984",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5074,7 +5182,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2010,
                                     YearsActive = "1976 - 1984",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5082,7 +5190,7 @@ namespace Persistence
                                     Position = "TE",
                                     YearInducted = 2011,
                                     YearsActive = "1978 - 1986",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5090,7 +5198,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2012,
                                     YearsActive = "1988 - 1999",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5098,7 +5206,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2013,
                                     YearsActive = "1995 - 2003",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5106,7 +5214,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2014,
                                     YearsActive = "1995 - 2008",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5114,7 +5222,7 @@ namespace Persistence
                                     Position = "FB",
                                     YearInducted = 2015,
                                     YearsActive = "1996 - 2007",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5122,7 +5230,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2015,
                                     YearsActive = "1978 - 1982",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5130,7 +5238,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2016,
                                     YearsActive = "1993 - 2003",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5138,7 +5246,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2017,
                                     YearsActive = "1995 - 2014",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5146,7 +5254,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2017,
                                     YearsActive = "2002 - 2008",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players 
                                 {
@@ -5154,7 +5262,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2018,
                                     YearsActive = "1996 - 2001",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5162,7 +5270,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2019,
                                     YearsActive = "1997 - 2012",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 },
                                 new Players
                                 {
@@ -5170,7 +5278,7 @@ namespace Persistence
                                     Position = "Defensive Coordinator",
                                     YearInducted = 2020,
                                     YearsActive = "1996 - 2008",
-                                    Team = "Tampa Bay Buccaneers"
+                                    PlayerTeam = "Tampa Bay Buccaneers"
                                 }
                             }
                         }
@@ -5190,15 +5298,15 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2006,
                                     YearsActive = "1933 - 1947",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
                                     Name = "Jimmy Conzelman",
-                                    Position = "Head Coach".
+                                    Position = "Head Coach",
                                     YearInducted = 2006,
                                     YearsActive = "1940 - 1942" + ", " + "1946 - 1948",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5206,7 +5314,7 @@ namespace Persistence
                                     Position = "QB" + ", " + "Head Coach",
                                     YearInducted = 2006,
                                     YearsActive = "1920 - 1925" + ", " + "1920 - 1922",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5214,7 +5322,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2006,
                                     YearsActive = "1939 - 1943" + ", " + "1946 - 1948",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5222,7 +5330,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2006,
                                     YearsActive = "1954 - 1959",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5230,7 +5338,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2006,
                                     YearsActive = "1952" + ", " + "1954 - 1958",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5238,7 +5346,7 @@ namespace Persistence
                                     Position = "FB" + ", " + "Head Coach",
                                     YearInducted = 2006,
                                     YearsActive = "1929 - 1931" + ", " + "1930 - 1931" + ", " + "1939",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5246,7 +5354,7 @@ namespace Persistence
                                     Position = "RB" + ", " + "QB",
                                     YearInducted = 2006,
                                     YearsActive = "1947 - 1955",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5254,7 +5362,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2006,
                                     YearsActive = "1960 - 1972",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5262,7 +5370,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2006,
                                     YearsActive = "1971 - 1983",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5270,7 +5378,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2006,
                                     YearsActive = "1998 - 2001",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5278,14 +5386,14 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 2007,
                                     YearsActive = "1969 - 1982",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
                                     Name = "Aeneas Williams",
                                     Position = "CB",
-                                    YearInducted = 2008,,
-                                    Team = "Arizona Cardinals"
+                                    YearInducted = 2008,
+                                    PlayerTeam = "Arizona Cardinals",
                                     YearsActive = "1991 - 2000"
                                 },
                                 new Players
@@ -5294,7 +5402,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2014,
                                     YearsActive = "2005 - 2009",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5302,7 +5410,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2015,
                                     YearsActive = "2001 - 2012",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players 
                                 {
@@ -5310,7 +5418,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2016,
                                     YearsActive = "1979 - 1990",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5318,7 +5426,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2017,
                                     YearsActive = "1966 - 1983",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 },
                                 new Players
                                 {
@@ -5326,7 +5434,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2019,
                                     YearsActive = "2013 - 2017",
-                                    Team = "Arizona Cardinals"
+                                    PlayerTeam = "Arizona Cardinals"
                                 }
                             }
                         }
@@ -5359,7 +5467,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2009,
                                     YearsActive = "1987 - 1999",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5367,7 +5475,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2009,
                                     YearsActive = "1957 - 1973",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5375,7 +5483,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2009,
                                     YearsActive = "1951 - 1960",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5383,7 +5491,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2009,
                                     YearsActive = "1979 - 1992",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5391,7 +5499,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2009,
                                     YearsActive = "1948 - 1960" + ", " + "1963",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5399,7 +5507,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2009,
                                     YearsActive = "1954 - 1956",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5407,7 +5515,7 @@ namespace Persistence
                                     Position = "CB" + ", " + "WR",
                                     YearInducted = 2009,
                                     YearsActive = "1961 - 1976",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5415,7 +5523,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2009,
                                     YearsActive = "1952 - 1960",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5423,7 +5531,7 @@ namespace Persistence
                                     Position = "S" + ", " + "CB",
                                     YearInducted = 2009,
                                     YearsActive = "1981 - 1990",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5431,7 +5539,7 @@ namespace Persistence
                                     Position = "LB",
                                     YearInducted = 2009,
                                     YearsActive = "1964 - 1974",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5439,7 +5547,7 @@ namespace Persistence
                                     Position = "DL",
                                     YearInducted = 2009,
                                     YearsActive = "1959 - 1973",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5447,7 +5555,7 @@ namespace Persistence
                                     Position = "DT" + ", " + "OT",
                                     YearInducted = 2009,
                                     YearsActive = "1950 - 1963",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5455,7 +5563,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 2009,
                                     YearsActive = "1981 - 1985",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5463,7 +5571,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2009,
                                     YearsActive = "1953 - 1963",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5471,7 +5579,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2009,
                                     YearsActive = "1979 - 1987",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5479,7 +5587,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2009,
                                     YearsActive = "1978 - 2000",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5487,7 +5595,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2009,
                                     YearsActive = "1979 - 1988",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5495,7 +5603,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2010,
                                     YearsActive = "1985 - 2000",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5503,7 +5611,7 @@ namespace Persistence
                                     Position = "Founding Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1957",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5511,7 +5619,7 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2010,
                                     YearsActive = "1946 - 1964",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5519,7 +5627,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2011,
                                     YearsActive = "1957 - 1961",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5527,7 +5635,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 2011,
                                     YearsActive = "1983 - 1990",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5535,7 +5643,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2012,
                                     YearsActive = "1949 - 1958",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5543,7 +5651,7 @@ namespace Persistence
                                     Position = "Executive",
                                     YearInducted = 2013,
                                     YearsActive = "1980 - 1995" + ", " + "1998 - 1999",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5551,7 +5659,7 @@ namespace Persistence
                                     Position = "DB Coach" + ", " + "Defensive Coordinator" + ", " + "Head Coach",
                                     YearInducted = 2014,
                                     YearsActive = "1980 - 1982" + ", " + "1983 - 1988" + ", " + "1989 - 1996",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5559,7 +5667,7 @@ namespace Persistence
                                     Position = "DE" + ", " + "LB",
                                     YearInducted = 2015,
                                     YearsActive = "1986 - 1991" + ", " + "1998 - 1999",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5567,7 +5675,7 @@ namespace Persistence
                                     Position = "RB" + ", " + "RB Coach",
                                     YearInducted = 2017,
                                     YearsActive = "1986 - 1991" + ", " + "1997 - 2002" + ", " + "2009 - 2016",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5575,7 +5683,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 2018,
                                     YearsActive = "1996 - 2003",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                                 new Players
                                 {
@@ -5583,7 +5691,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2020,
                                     YearsActive = "1994 - 2007",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "San Francisco 49ers"
                                 },
                             }
                         }
@@ -5603,7 +5711,7 @@ namespace Persistence
                                     Position = "WR",
                                     YearInducted = 1989,
                                     YearsActive = "1976 - 1989",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5611,7 +5719,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 1991,
                                     YearsActive = "1976 - 1984",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5619,7 +5727,7 @@ namespace Persistence
                                     Position = "CB",
                                     YearInducted = 1992,
                                     YearsActive = "1976 - 1986",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5627,7 +5735,7 @@ namespace Persistence
                                     Position = "Radio Announcer",
                                     YearInducted = 1992,
                                     YearsActive = "1976 - 1992",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5635,7 +5743,7 @@ namespace Persistence
                                     Position = "RB",
                                     YearInducted = 1994,
                                     YearsActive = "1983 - 1989",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5643,7 +5751,7 @@ namespace Persistence
                                     Position = "DE",
                                     YearInducted = 1995,
                                     YearsActive = "1980 - 1991",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5651,7 +5759,7 @@ namespace Persistence
                                     Position = "S",
                                     YearInducted = 2002,
                                     YearsActive = "1981 - 1987",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5659,7 +5767,7 @@ namespace Persistence
                                     Position = "QB",
                                     YearInducted = 2004,
                                     YearsActive = "1980 - 1991",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5667,7 +5775,7 @@ namespace Persistence
                                     Position = "Head Coach",
                                     YearInducted = 2005,
                                     YearsActive = "1983 - 1991",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5675,7 +5783,7 @@ namespace Persistence
                                     Position = "DT",
                                     YearInducted = 2006,
                                     YearsActive = "1990 - 2000",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5683,7 +5791,7 @@ namespace Persistence
                                     Position = "OT",
                                     YearInducted = 2014,
                                     YearsActive = "1997 - 2009",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 },
                                 new Players
                                 {
@@ -5691,12 +5799,14 @@ namespace Persistence
                                     Position = "Owner",
                                     YearInducted = 2019,
                                     YearsActive = "1996 - 2018",
-                                    Team = "San Francisco 49ers"
+                                    PlayerTeam = "Seattle Seahawks"
                                 }
                             }
                         }
                     }
                 };
+            await context.RingHonor.AddRangeAsync(ringHonor);
+            await context.SaveChangesAsync();
             }
         }
     }
