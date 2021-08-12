@@ -1,0 +1,24 @@
+{
+  "name": "nfl-ring-honor",
+  "version": "1.0.0",
+  "description": "Displays of all of the NFL Ring of Honors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunojoey/nfl-ring-honor.git"
+  },
+  "author": "Joey Bruno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunojoey/nfl-ring-honor/issues"
+  },
+  "homepage": "https://github.com/brunojoey/nfl-ring-honor#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "util": "^0.12.4"
+  }
+}
