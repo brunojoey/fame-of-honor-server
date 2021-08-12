@@ -1,0 +1,8 @@
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.csprojAssemblyReference.cache
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.AssemblyInfoInputs.cache
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.AssemblyInfo.cs
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.csproj.CoreCompileInputs.cache
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.MvcApplicationPartsAssemblyInfo.cache
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.RazorAssemblyInfo.cache
+/Users/josephbruno/nfl-ring-honor/obj/Debug/net5.0/nfl-ring-honor.RazorAssemblyInfo.cs

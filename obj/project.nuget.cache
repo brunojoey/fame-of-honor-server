@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "3hVyzGkTY3PTyn4Q22rgG2rPuMYGiDHPm8YrytgGcHUkQxdmAyKRwdrdeDuOYvXntDSXp/wVoROEjUGEUb18tQ==",
+  "success": true,
+  "projectFilePath": "/Users/josephbruno/nfl-ring-honor/nfl-ring-honor.csproj",
+  "expectedPackageFiles": [
+    "/Users/josephbruno/.nuget/packages/microsoft.aspnetcore.spaservices.extensions/5.0.0/microsoft.aspnetcore.spaservices.extensions.5.0.0.nupkg.sha512",
+    "/Users/josephbruno/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "/Users/josephbruno/.nuget/packages/microsoft.extensions.fileproviders.physical/5.0.0/microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "/Users/josephbruno/.nuget/packages/microsoft.extensions.filesystemglobbing/5.0.0/microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "/Users/josephbruno/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
