@@ -5,26 +5,26 @@ USE ringHonorDB;
 
 CREATE TABLE ringHonor (
   id INT(100) AUTO_INCREMENT,
-  history VARCHAR(255) NOT NULL,
-  team_name VARCHAR(50) NOT NULL,
+  history VARCHAR(500) NOT NULL,
+  team_name VARCHAR(50) NOT NULL UNIQUE,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE team (
   id INT(100) AUTO_INCREMENT,
-  team_name VARCHAR(50) NOT NULL,
+  team_name VARCHAR(50) UNIQUE,
   logo VARCHAR(100) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE players (
-  id INT(1000) AUTO_INCREMENT,
-  full_name VARCHAR(50) NOT NULL,
-  player_position VARCHAR(50) NOT NULL,
-  player_team VARCHAR(50) NOT NULL,
-  notes VARCHAR(50) NULL,
-  years_active VARCHAR(50) NOT NULL,
-  year_inducted YEAR NULL,  --YEAR implicitly displays a width of 4 characters
+  id INT(100) AUTO_INCREMENT,
+  full_name VARCHAR(100),
+  player_position VARCHAR(100) NULL,
+  player_team VARCHAR(50),
+  notes VARCHAR(255) NULL,
+  years_active VARCHAR(50),
+  year_inducted YEAR NULL,
   PRIMARY KEY (id)
 );
 
