@@ -1,10 +1,12 @@
-const router = require('express').Router();
-const playersController = require("../controllers/playersController");
+import express from "express";
+const router = express.Router();
+
+import { findAll, findById } from "../controllers/playersController.js";
 
 // Matches with /api/players
-router.route("/").get(playersController.findAll);
+router.route("/").get(findAll);
 
 // Matches with /api/players/:id
-router.route("/:id").get(playersController.findById);
+router.route("/:playerId").get(findById);
 
-module.exports = router;
+export default router;

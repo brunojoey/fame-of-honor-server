@@ -1,10 +1,12 @@
-const router = require('express').Router();
-const ringHonorController = require("../controllers/ringHonorController");
+import express from "express";
+const router = express.Router();
+
+import { findAll, findById } from "../controllers/ringHonorController.js";
 
 // Matches with /api/ringHonor
-router.route("/").get(ringHonorController.findAll);
+router.route("/").get(findAll);
 
 // Matches with /api/ringHonor/:id
-router.route("/:id").get(ringHonorController.findById);
+router.route("/:ringHonorId").get(findById);
 
-module.exports = router;
+export default router;

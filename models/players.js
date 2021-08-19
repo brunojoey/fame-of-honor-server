@@ -1,4 +1,4 @@
-const db = require("../database");
+import connection from "../database/connection.js";
 
 const Players = function(players) {
   this.full_name = players.full_name;
@@ -10,7 +10,7 @@ const Players = function(players) {
 };
 
 Players.findAll = result => {
-  db.query("SELECT * FROM players", (err, res) => {
+  connection.query("SELECT * FROM players", (err, res) => {
     if (err) {
       console.log("error: " , err);
       result(null, err);
@@ -21,8 +21,8 @@ Players.findAll = result => {
   });
 };
 
-Players.findById = (result, playerId) => {
-  db.query(`SELECT * FROM players WHERE id = ${playerId}`, (err, res) => {
+Players.findById = (playerId, result) => {
+  connection.query(`SELECT * FROM players WHERE id = ${playerId}`, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
@@ -39,4 +39,4 @@ Players.findById = (result, playerId) => {
 };
 
 
-module.exports = Players;
+export default Players;

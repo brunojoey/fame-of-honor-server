@@ -166,7 +166,7 @@ VALUES
   ("San Francisco 49ers", "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/SF.svg"),
   ("Seattle Seahawks", "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/SEA.svg");
 
-INSERT INTO players (full_name, player_position, player_team, notes, years_active, year_inducted)
+INSERT INTO players (full_name, player_position, team_name, notes, years_active, year_inducted)
 VALUES
   -- Baltimore Ravens
   ("Ernest Byner", "RB & Coach", "Baltimore Ravens", "The Tie Between Two Cities", "1996 - 2003", 2001),
@@ -918,4 +918,4 @@ VALUES
   ("Chuck Knox", "Head Coach", "Seattle Seahawks", NULL, "1983 - 1991", 2005),
   ("Cortez Kennedy", "DT", "Seattle Seahawks", NULL, "1990 - 2000", 2006),
   ("Walter Jones", "OT", "Seattle Seahawks", NULL, "1997 - 2009", 2014),
-  ("Paul Allen", "Owner", "Seattle Seahawks", NULL, "1996 - 2018", 2019)
+  ("Paul Allen", "Owner", "Seattle Seahawks", NULL, "1996 - 2018", 2019);

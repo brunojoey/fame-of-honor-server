@@ -1,10 +1,12 @@
-const router = require('express').Router();
-const teamsController = require("../controllers/teamsController");
+import express from "express";
+const router = express.Router();
+
+import { findAll, findById } from "../controllers/teamsController.js";
 
 // Matches with /api/teams
-router.route("/").get(teamsController.findAll);
+router.route("/").get(findAll);
 
 // Matches with /api/teams/:id
-router.route("/:id").get(teamsController.findById);
+router.route("/:teamId").get(findById);
 
-module.exports = router;
+export default router;

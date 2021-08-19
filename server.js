@@ -1,18 +1,29 @@
-const express = require("express");
-const cors = require("cors");
+import express from "express";
+import cors from "cors";
+import connection from "./database/connection.js";
+
+import playerRoutes from "./routes/players.js";
+import teamRoutes from "./routes/teams.js";
+import ringHonorRoutes from "./routes/ringHonor.js";
 
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-var corsOptions = {
+// parse requests of content-type - application/json & application/x-www-form-urlencoded
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+connection; // Calls the Database
+
+let corsOptions = {
   origin: "http://localhost:3001"
 };
 
 app.use(cors(corsOptions));
 
-// parse requests of content-type - application/json & application/x-www-form-urlencoded
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use("/api/players", playerRoutes);
+app.use("/api/teams", teamRoutes);
+app.use("/api/ringHonor", ringHonorRoutes);
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`)

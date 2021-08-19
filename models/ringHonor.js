@@ -1,4 +1,4 @@
-const db = require("../database");
+import connection from "../database/connection.js";
 
 const RingHonor = function(ringHonor) {
   this.history = ringHonor.history;
@@ -6,7 +6,7 @@ const RingHonor = function(ringHonor) {
 };
 
 RingHonor.findAll = result => {
-  db.query("SELECT * FROM ringHonor", (err, res) => {
+  connection.query("SELECT * FROM ringHonor", (err, res) => {
     if (err) {
       console.log("error: " , err);
       result(null, err);
@@ -17,8 +17,8 @@ RingHonor.findAll = result => {
   });
 };
 
-RingHonor.findById = (result, ringHonorId) => {
-  db.query(`SELECT * FROM ringHonor WHERE id = ${ringHonorId}`, (err, res) => {
+RingHonor.findById = (ringHonorId, result) => {
+  connection.query(`SELECT * FROM ringHonor WHERE id = ${ringHonorId}`, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
@@ -35,4 +35,4 @@ RingHonor.findById = (result, ringHonorId) => {
 };
 
 
-module.exports = RingHonor;
+export default RingHonor;

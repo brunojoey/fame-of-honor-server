@@ -1,4 +1,4 @@
-const db = require("../database");
+import connection from "../database/connection.js";
 
 const Team = function(team) {
   this.team_name = team.team_name;
@@ -6,7 +6,7 @@ const Team = function(team) {
 };
 
 Team.findAll = result => {
-  db.query("SELECT * FROM team", (err, res) => {
+  connection.query("SELECT * FROM team", (err, res) => {
     if (err) {
       console.log("error: " , err);
       result(null, err);
@@ -17,8 +17,8 @@ Team.findAll = result => {
   });
 };
 
-Team.findById = (result, teamId) => {
-  db.query(`SELECT * FROM team WHERE id = ${teamId}`, (err, res) => {
+Team.findById = (teamId, result) => {
+  connection.query(`SELECT * FROM team WHERE id = ${teamId}`, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
@@ -34,4 +34,4 @@ Team.findById = (result, teamId) => {
   });
 };
 
-module.exports = Team;
+export default Team;

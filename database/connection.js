@@ -1,6 +1,6 @@
 // Creates the Connection to the Database
-const mysql = require("mysql");
-const util = require("util");
+import mysql from "mysql";
+import util from "util"
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -19,4 +19,4 @@ connection.connect(err => {
 
 connection.query = util.promisify(connection.query);
 
-module.exports = connection;
+export default connection;
