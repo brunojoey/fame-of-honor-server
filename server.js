@@ -4,7 +4,6 @@ import connection from "./database/connection.js";
 
 import playerRoutes from "./routes/players.js";
 import teamRoutes from "./routes/teams.js";
-import ringHonorRoutes from "./routes/ringHonor.js";
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -23,7 +22,6 @@ app.use(cors(corsOptions));
 
 app.use("/api/players", playerRoutes);
 app.use("/api/teams", teamRoutes);
-app.use("/api/ringHonor", ringHonorRoutes);
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`)
