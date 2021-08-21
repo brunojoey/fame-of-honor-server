@@ -3,16 +3,10 @@ CREATE DATABASE ringHonorDB;
 
 USE ringHonorDB;
 
-CREATE TABLE ringHonor (
-  id INT(100) AUTO_INCREMENT,
-  history VARCHAR(500) NOT NULL,
-  team_name VARCHAR(50) UNIQUE,
-  PRIMARY KEY (id)
-);
-
 CREATE TABLE team (
   id INT(100) AUTO_INCREMENT,
   team_name VARCHAR(50) UNIQUE,
+  history VARCHAR(500) NOT NULL,
   logo VARCHAR(100) NOT NULL,
   PRIMARY KEY (id)
 );
@@ -28,11 +22,8 @@ CREATE TABLE players (
   PRIMARY KEY (id)
 );
 
-ALTER TABLE team 
-ADD FOREIGN KEY (team_name) REFERENCES ringHonor(team_name);
-
--- ALTER TABLE players
--- ADD FOREIGN KEY (team_name) REFERENCES team(team_name);
+ALTER TABLE players
+ADD FOREIGN KEY (team_name) REFERENCES team(team_name);
 
 SELECT * FROM ringHonor;
 SELECT * FROM team;
