@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 connection; // Calls the Database
 
 let corsOptions = {
-  origin: "http://localhost:3001"
+  origin: "http://localhost:8080"
 };
 
 app.use(cors(corsOptions));

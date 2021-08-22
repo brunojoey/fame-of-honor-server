@@ -1,5 +1,5 @@
 <template>
   <footer>
-    <router-link to="/">Home</router-link>
+    FOOTER
   </footer>
 </template>

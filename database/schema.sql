@@ -20,11 +20,11 @@ CREATE TABLE players (
   years_active VARCHAR(50),
   year_inducted YEAR NULL,
   PRIMARY KEY (id)
+  FOREIGN KEY 
 );
 
-ALTER TABLE players
-ADD FOREIGN KEY (team_name) REFERENCES team(team_name);
+/* ALTER TABLE players
+ADD FOREIGN KEY (team_name) REFERENCES team(team_name); */
 
-SELECT * FROM ringHonor;
 SELECT * FROM team;
 SELECT * FROM players;

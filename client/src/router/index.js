@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home";
-import Disclaimer from "../views/Disclaimer";
+
+import Home from "../views/Home.vue"
+import Teams from "../views/Teams.vue"
+import Team from "../views/Team.vue"
+import Players from "../views/Players.vue"
+import Player from "../views/Player.vue"
+import Disclaimer from "../views/Disclaimer.vue";
 
 const routes = [
   {
@@ -17,16 +22,6 @@ const routes = [
     path: "/teams/:id",
     name: "Team",
     component: Team
-  },
-  {
-    path: "/ring-honor",
-    name: "Ring of Honor",
-    component: RingHonors
-  },
-  {
-    path: "/ring-honor/:id",
-    name: "Ring of Honor",
-    component: RingHonor
   },
   {
     path: "/players",
@@ -46,8 +41,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL), 
+  history: createWebHistory(process.env.baseURL), 
   routes
 });
 
-export default router;
+export default router
