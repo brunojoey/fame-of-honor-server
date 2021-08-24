@@ -20,7 +20,6 @@ CREATE TABLE players (
   years_active VARCHAR(50),
   year_inducted YEAR NULL,
   PRIMARY KEY (id)
-  FOREIGN KEY 
 );
 
 /* ALTER TABLE players

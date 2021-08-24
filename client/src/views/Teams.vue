@@ -1,6 +1,6 @@
 <template>
   <div :key="team.id" v-for="team in teams">
-    <h2><a v-bind:href="'/teams/' + team.id">{{team.team_name}}</a></h2>
+    <h2><router-link to="'/teams/' + team.id">{{team.team_name}}</router-link></h2>
     <img :src="team.logo" :alt="team.logo" />
   </div>
 </template>
@@ -12,7 +12,8 @@
    name: "teams",
    data() {
      return {
-       teams: []
+       teams: [],
+       currentTeam: {}
      }
    },
    methods: {

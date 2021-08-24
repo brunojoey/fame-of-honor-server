@@ -23,4 +23,15 @@ const findById = (req, res) => {
   });
 };
 
-export { findAll, findById };
+const findByTeam = (req, res) => {
+  teams.findByTeam(req.params.teamId, (err, data) => {
+    if (err) {
+      res.status(500).send({
+        message: err.message || `An error occurred while retrieving ${req.params.teamId} teams' players.`
+      });
+    }
+    else res.send(data);
+  });
+};
+
+export { findAll, findById, findByTeam };

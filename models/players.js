@@ -3,7 +3,7 @@ import connection from "../database/connection.js";
 const Players = function(players) {
   this.full_name = players.full_name;
   this.player_position = players.player_position;
-  this.player_team = players.player_team;
+  this.team_name = players.team_name;
   this.notes = players.notes;
   this.years_active = players.years_active;
   this.year_inducted = players.year_inducted;

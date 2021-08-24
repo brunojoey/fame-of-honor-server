@@ -6,7 +6,7 @@ VALUES (
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BAL.svg"
   ),
   (
-    "Cincinatti Bengals",
+    "Cincinnati Bengals",
     "The Cincinnati Bengals introduced a Ring of Honor for their historical team in April of 2021. They announced two inductees, but will let their fans choose two others between a list of 17 other great players to complete its first Ring of Honor class. The fans chose Ken Anderson and Ken Riley.",
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CIN.svg"
   ),
