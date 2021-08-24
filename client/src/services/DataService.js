@@ -9,12 +9,16 @@ class DataService {
     return http.get(`/teams/${id}`);
   }
 
+  getTeamInductees(id) {
+    return http.get(`/teams/${id}/inductees`);
+  }
+
   getAllPlayers() {
     return http.get("/players");
   }
 
   getOnePlayer(id) {
-    return http.get(`/players/${id}`)
+    return http.get(`/players/${id}`);
   }
 }
 

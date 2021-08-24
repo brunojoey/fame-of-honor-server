@@ -1,4 +1,5 @@
 <template>
+<h1>Players</h1>
   <div :key="player.id" v-for="player in players">
     <h2><a :href="'/players/' + player.id">{{player.full_name}}</a></h2>
   </div>
@@ -21,8 +22,8 @@
           this.players = response.data;
           console.log("Players", response.data);
         })
-        .catch(e => {
-          console.log("error", e)
+        .catch(err => {
+          console.log("error", err)
         });
      }
    },

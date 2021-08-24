@@ -38,5 +38,22 @@ Players.findById = (playerId, result) => {
   });
 };
 
+Players.findByPosition = (player_position, result) => {
+  connection.query(`SELECT * FROM players WHERE players.player_position LIKE '%${player_position}%' `, (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(null, err);
+      return;
+    }
+    if (res.length) {
+      console.log("Found Position: ", res);
+      result(null, res);
+      return;
+    }
+
+    result({ kind: "not_found" }, null);
+  });
+};
+
 
 export default Players;

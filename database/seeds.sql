@@ -3184,7 +3184,7 @@ VALUES -- Baltimore Ravens
     "WR",
     "Detroit Lions",
     NULL,
-    "1001 - 2001",
+    "1991 - 2001",
     2018
   ),
   (
