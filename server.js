@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import connection from "./database/connection.js";
 
-import playerRoutes from "./routes/players.js";
 import teamRoutes from "./routes/teams.js";
 import positionRoutes from "./routes/positions.js";
 
@@ -21,7 +20,6 @@ let corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/api/players", playerRoutes);
 app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
 

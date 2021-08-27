@@ -8,6 +8,7 @@ CREATE TABLE team (
   team_name VARCHAR(50) UNIQUE,
   history VARCHAR(500) NOT NULL,
   logo VARCHAR(100) NOT NULL,
+  color VARCHAR(25) NOT NULL,
   PRIMARY KEY (id)
 );
 

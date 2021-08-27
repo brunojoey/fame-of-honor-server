@@ -3,9 +3,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue"
 import Teams from "../views/Teams.vue"
 import Team from "../views/Team.vue"
-import Players from "../views/Players.vue"
-import Player from "../views/Player.vue"
-import Disclaimer from "../views/Disclaimer.vue";
+import Positions from "../views/Positions.vue"
+import Position from "../views/Position.vue"
+import Disclaimer from "../views/Disclaimer.vue"
+
 
 const routes = [
   {
@@ -24,14 +25,14 @@ const routes = [
     component: Team
   },
   {
-    path: "/players",
-    name: "Players",
-    component: Players
+    path: "/positions",
+    name: "Positions",
+    component: Positions
   },
   {
-    path: "/players/:id",
-    name: "Player",
-    component: Player
+    path: "/positions/:player_position",
+    name: "Position",
+    component: Position
   },
   {
     path: "/disclaimer",

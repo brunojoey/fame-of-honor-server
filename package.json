@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/brunojoey/nfl-ring-honor#readme",
   "dependencies": {
+    "@popperjs/core": "^2.9.3",
     "concurrently": "^6.2.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
