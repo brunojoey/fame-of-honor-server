@@ -1,5 +1,5 @@
 <template>
-  <h1>{{this.$route.params.player_position}}s</h1>
+  <h1 class="position-header">{{this.$route.params.player_position}}</h1>
   <div class="position-page">
     <div :key="position.id" v-for="position in positions" class="player-card">
       <p v-if="position.full_name"><strong>Name: </strong>{{position.full_name}}</p>
@@ -58,5 +58,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    box-shadow: .25ch .25ch .5ch grey;
   }
 </style>

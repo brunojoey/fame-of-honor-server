@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <h2>Disclaimer for Company Name</h2>
+  <div class="disclaimer-page">
+    <h1 class="disclaimer-header">Disclaimer for The Fame of Honors</h1>
     <p>
       If you require any more information or have any questions about our site's
-      disclaimer, please feel free to contact us by email at Email@Website.com.
+      disclaimer, please feel free to contact us by email at fameofhonors@gmail.com.
     </p>
-
-    <h3>Disclaimers for Company Name</h3>
     <p>
       All the information on this website is published in good faith and for
-      general information purpose only. Website Name does not make any
-      warranties about the completeness, reliability and accuracy of this
+      general information purpose only. The Fame of Honors does not make any
+      warranties about the completeness, reliability, and accuracy of this
       information. Any action you take upon the information you find on this
-      website (Website.com), is strictly at your own risk. will not be liable
+      website is strictly at your own risk. The Fame of Honors will not be liable
       for any losses and/or damages in connection with the use of our website.
     </p>
 
@@ -34,13 +32,13 @@
       information.
     </p>
 
-    <h3>Consent</h3>
+    <h3 class="disclaimer-header">Consent</h3>
     <p>
       By using our website, you hereby consent to our disclaimer and agree to
       its terms.
     </p>
 
-    <h3>Update</h3>
+    <h3 class="disclaimer-header">Update</h3>
     <p>
       Should we update, amend or make any changes to this document, those
       changes will be prominently posted here.
@@ -48,3 +46,10 @@
   </div>
 </template>
   
+<style>
+  .disclaimer-page {
+    margin: 1rem;
+    font-size: 1.15rem;
+  };
+  
+</style>

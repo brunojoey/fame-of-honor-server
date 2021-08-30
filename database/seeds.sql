@@ -1,197 +1,230 @@
 USE ringHonorDB;
-INSERT INTO team (team_name, history, logo, color)
+INSERT INTO team (team_name, history, logo, color, border_color)
 VALUES (
-    "Baltimore Ravens",
-    "Created in 2000, the Baltimore Ravens Ring of Honor is to honor former players and personnel who made outstanding contributions to the Baltimore Ravens and the Baltimore Colts organizations.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BAL.svg",
-    "#241773"
-  ),
-  (
-    "Cincinnati Bengals",
-    "The Cincinnati Bengals introduced a Ring of Honor for their historical team in April of 2021. They announced two inductees, but will let their fans choose two others between a list of 17 other great players to complete its first Ring of Honor class. The fans chose Ken Anderson and Ken Riley.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CIN.svg",
-    "#FB4F14"
-  ),
-  (
-    "Cleveland Browns",
-    "Established in 2010, the Cleveland Browns Ring of Honor commemorates the past greats of the Cleveland Browns franchise. The Inaugural class featured the 16 players who were already inducted into the Pro Football Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CLE.svg",
-    "#311D00"
-  ),
-  (
-    "Pittsburgh Steelers",
-    "Begun in 2017 with an inaugural inductee class of 27, the Pittsburgh Steelers Hall of Honor commemorates the franchise's history.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/PIT.svg",
-    "#FFB612"
-  ),
-  (
-    "Buffalo Bills",
-    "The Buffalo Bills Wall of Fame was created in 1980 to honor former players, administrators, and coaches who had a significant role in the franchise. The requirements to get inducted into the Wall of Fame are: the individual must have played with the team for three years and must be retired. The selection committee is comprised of club personnel and media members.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BUF.svg",
-    "#00338D"
-  ),
-  (
-    "Miami Dolphins",
-    "The Miami Dolphins Honor Roll was created in 1990 with the induction of five people from the franchise's history. The Honor Roll helps demonstrate the great players and adminstrators from the history of the Dolphins who helped make significant contributions to the team.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/MIA.svg",
-    "#008E97"
-  ),
-  (
-    "New England Patriots",
-    "Begun in 1991, the New England Patriots Team Hall of Fame features franchise greats who impacted the franchise greatly. In order to be eligible, players and coaches must be retired for at least four years.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NE.svg",
-    "#002244"
-  ),
-  (
-    "New York Jets",
-    "The New York Jets Ring of Honor was established in July 2010 to commemorate and honor former players. Players are nominated by an internal committee before being inducted into the Ring of Honor.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NYJ.svg",
-    "#125740"
-  ),
-  (
-    "Houston Texans",
-    "As the newest NFL Franchise, the Houston Texans began their Ring of Honor in 2017.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg",
-    "#03202F"
-  ),
-  (
-    "Indianapolis Colts",
-    "Established in 1996 and inducted longtime owner, Robert Irsay, as its first inductee before his passing the year following.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/IND.svg",
-    "#002C5F"
-  ),
-  (
-    "Jacksonville Jaguars",
-    "Called the Pride of the Jaguars by the fans in 2006, it represents the Ring of Honor for one of the newest franchises in the NFL. It was unveiled in the 2006 NFL season against the New York Jets.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/JAX.svg",
-    "#006778"
-  ),
-  (
-    "Tennessee Titans",
-    "Establishment of the Titans/Oilers Hall of Fame coincides with the 40th anniversary of the franchise by Owner, Bud Adams. It encompasses the history of the Houston Oilers and the Tennessee Titans respectively.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/TEN.svg",
-    "#0C2340"
-  ),
-  (
-    "Denver Broncos",
-    "Began in 1984, the Denver Broncos have a Ring of Fame to honor their former players, executives, and coaches who have made a great impact on the team.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DEN.svg",
-    "#FB4F14"
-  ),
-  (
-    "Kansas City Chiefs",
-    "A Team Hall of Fame that was established in 1970. Each year except 1983 and 2020, has included one inductee. Requirements for induction are that a player, coach, or contributor must have been with the team for four years and been retired for four years. Three exceptions to that are Mack Lee Hill, Joe Delaney, and Derrick Thomas.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/KC.svg",
-    "#E31837"
-  ),
-  (
-    "Las Vegas Raiders",
-    "The Las Vegas Raiders currently do not have a Ring of Honor or team Hall of Fame to commemorate their players, coaches, or executives.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LV.svg",
+    "Arizona Cardinals",
+    "To mark the opening of State Farm Stadium in 2006, the Cardinals began a Ring of Honor to showcase all eras of the franchise.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ARI.svg",
+    "#97233F",
     "#000000"
-  ),
-  (
-    "Los Angeles Chargers",
-    "Began in 1976, the Chargers Hall of Fame acts as their Ring of Honor. All four inductees in this year were inducted posthumously. In 2012, the team allowed the fans to induct that year's inductee, choosing Punter, Darren Bennett. After moving to Los Angeles in 2017, the Chargers inducted Bobby Beathard to the Team Hall of Fame in 2018.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LAC.svg",
-    "#0080C6"
-  ),
-  (
-    "Chicago Bears",
-    "The Chicago Bears currently do not have a Ring of Honor or team Hall of Fame to commemorate players, coaches, or executives.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CHI.svg",
-    "#0B162A"
-  ),
-  (
-    "Detroit Lions",
-    "The Pride of the Lions begun in 2009 with an introductory class of 12 players. Only three players in the Pride of the Lions are not in the Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DET.svg",
-    "#0076B6"
-  ),
-  (
-    "Green Bay Packers",
-    "For the Lambeau Field Ring of Honor that is dedicated to former Packers greats, the only requirements for to be inducted into it seemingly, is to be a Hall of Famer and contributed to the Packers organization in meaningful ways. The Packers do have a team Hall of Fame that includes over 150 former franchise greats.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/GB.svg",
-    "#203731"
-  ),
-  (
-    "Minnesota Vikings",
-    "Started in 1998, the Minnesota Vikings Ring of Honor was begun with six players, coaches, and executives.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/MIN.svg",
-    "#4F2683"
-  ),
-  (
-    "Dallas Cowboys",
-    "First introduced in Texas Stadium in Irving, Texas, the Cowboys Ring of Honor, in the words of Jerry Jones: 'stands for men who built this franchise and it had it call America's Team.'",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DAL.svg",
-    "#041E42"
-  ),
-  (
-    "New York Giants",
-    "The Giants Ring of Honor was unveiled in 2010 during a game against the Chicago Bears. Their inaugural induction class featured 30 players, coaches, and executives who made a great impact on the franchise.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NYG.svg",
-    "#0B2265"
-  ),
-  (
-    "Philadelphia Eagles",
-    "Began in 1987 as the Eagles Honor Roll, it serves to honors players, executives, and coaches from the franchise's long history. Their inaugural induction class in 1987 was included with every player who was inducted into the Pro Football Hall of Fame as an Eagle. Players must be retired for three years to be considered to be included in the Eagles Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/PHI.svg",
-    "#004C54"
-  ),
-  (
-    "Washington Football Team",
-    "Beginning with the creation of FedEx Field, the Washington Football Team begun having a Ring of Fame for their team history to honor players, executives and coaches who made a large impact on the team's history.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/WAS.svg",
-    "#773141"
   ),
   (
     "Atlanta Falcons",
     "While they don't retire jersey numbers, the Atlanta Falcons want to honor their former players by including them in their franchise's Ring of Honor.",
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ATL.svg",
-    "#A71930"
+    "#A71930",
+    "#000000"
+  ),
+  (
+    "Baltimore Ravens",
+    "Created in 2000, the Baltimore Ravens Ring of Honor is to honor former players and personnel who made outstanding contributions to the Baltimore Ravens and the Baltimore Colts organizations.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BAL.svg",
+    "#241773",
+    "#000000"
+  ),
+  (
+    "Buffalo Bills",
+    "The Buffalo Bills Wall of Fame was created in 1980 to honor former players, administrators, and coaches who had a significant role in the franchise. The requirements to get inducted into the Wall of Fame are: the individual must have played with the team for three years and must be retired. The selection committee is comprised of club personnel and media members.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BUF.svg",
+    "#00338D",
+    "#C60C30"
   ),
   (
     "Carolina Panthers",
     "The Hall of Honor was established in 1997 as a still young franchsie. They've inducted six people who define being a Carolina Panther.",
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CAR.svg",
-    "#0085CA"
+    "#0085CA",
+    "#101820"
   ),
   (
-    "New Orleans Saints",
-    "Beginning in 2013, the New Orleans Saints began honoring their history with the creation of the Ring of Honor in Caesars Superdome. They inducted the first three nominees during halftime against the Cowboys in 2013.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NO.svg",
-    "#D3BC8D"
+    "Chicago Bears",
+    "The Chicago Bears currently do not have a Ring of Honor or team Hall of Fame to commemorate players, coaches, or executives.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CHI.svg",
+    "#0B162A",
+    "#C83803"
   ),
   (
-    "Tampa Bay Buccaneers",
-    "In November 2009, the team unveiled a Ring of Honor at their current stadium, Raymond James Stadium.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/TB.svg",
-    "#D50A0A"
+    "Cincinnati Bengals",
+    "The Cincinnati Bengals introduced a Ring of Honor for their historical team in April of 2021. They announced two inductees, but will let their fans choose two others between a list of 17 other great players to complete its first Ring of Honor class. The fans chose Ken Anderson and Ken Riley.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CIN.svg",
+    "#FB4F14",
+    "#000000"
   ),
   (
-    "Arizona Cardinals",
-    "To mark the opening of State Farm Stadium in 2006, the Cardinals began a Ring of Honor to showcase all eras of the franchise.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ARI.svg",
-    "#97233F"
+    "Cleveland Browns",
+    "Established in 2010, the Cleveland Browns Ring of Honor commemorates the past greats of the Cleveland Browns franchise. The Inaugural class featured the 16 players who were already inducted into the Pro Football Hall of Fame.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CLE.svg",
+    "#311D00",
+    "#FF3C00"
+  ),
+  (
+    "Dallas Cowboys",
+    "First introduced in Texas Stadium in Irving, Texas, the Cowboys Ring of Honor, in the words of Jerry Jones: 'stands for men who built this franchise and it had it call America's Team.'",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DAL.svg",
+    "#041E42",
+    "#869397"
+  ),
+  (
+    "Denver Broncos",
+    "Began in 1984, the Denver Broncos have a Ring of Fame to honor their former players, executives, and coaches who have made a great impact on the team.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DEN.svg",
+    "#FB4F14",
+    "#002244"
+  ),
+  (
+    "Detroit Lions",
+    "The Pride of the Lions begun in 2009 with an introductory class of 12 players. Only three players in the Pride of the Lions are not in the Hall of Fame.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DET.svg",
+    "#0076B6",
+    "#B0B7BC"
+  ),
+  (
+    "Green Bay Packers",
+    "For the Lambeau Field Ring of Honor that is dedicated to former Packers greats, the only requirements for to be inducted into it seemingly, is to be a Hall of Famer and contributed to the Packers organization in meaningful ways. The Packers do have a team Hall of Fame that includes over 150 former franchise greats.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/GB.svg",
+    "#203731",
+    "#FFB612"
+  ),
+  (
+    "Houston Texans",
+    "As the newest NFL Franchise, the Houston Texans began their Ring of Honor in 2017.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg",
+    "#03202F",
+    "#A71930"
+  ),
+  (
+    "Indianapolis Colts",
+    "Established in 1996 and inducted longtime owner, Robert Irsay, as its first inductee before his passing the year following.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/IND.svg",
+    "#002C5F",
+    "#A2AAAD"
+  ),
+  (
+    "Jacksonville Jaguars",
+    "Called the Pride of the Jaguars by the fans in 2006, it represents the Ring of Honor for one of the newest franchises in the NFL. It was unveiled in the 2006 NFL season against the New York Jets.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/JAX.svg",
+    "#006778",
+    "#9F792C"
+  ),
+  (
+    "Kansas City Chiefs",
+    "A Team Hall of Fame that was established in 1970. Each year except 1983 and 2020, has included one inductee. Requirements for induction are that a player, coach, or contributor must have been with the team for four years and been retired for four years. Three exceptions to that are Mack Lee Hill, Joe Delaney, and Derrick Thomas.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/KC.svg",
+    "#E31837",
+    "#FFB81C"
+  ),
+  (
+    "Las Vegas Raiders",
+    "The Las Vegas Raiders currently do not have a Ring of Honor or team Hall of Fame to commemorate their players, coaches, or executives.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LV.svg",
+    "#000000",
+    "#A5ACAF"
+  ),
+  (
+    "Los Angeles Chargers",
+    "Began in 1976, the Chargers Hall of Fame acts as their Ring of Honor. All four inductees in this year were inducted posthumously. In 2012, the team allowed the fans to induct that year's inductee, choosing Punter, Darren Bennett. After moving to Los Angeles in 2017, the Chargers inducted Bobby Beathard to the Team Hall of Fame in 2018.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LAC.svg",
+    "#0080C6",
+    "#FFC20E"
   ),
   (
     "Los Angeles Rams",
     "While St. Louis did have a Ring of Fame for football in its city, the Los Angeles Rams do not specifically have a Ring of Honor or Team Hall of Fame.",
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LA.svg",
-    "#003594"
+    "#003594",
+    "#FF8200"
+  ),
+  (
+    "Miami Dolphins",
+    "The Miami Dolphins Honor Roll was created in 1990 with the induction of five people from the franchise's history. The Honor Roll helps demonstrate the great players and adminstrators from the history of the Dolphins who helped make significant contributions to the team.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/MIA.svg",
+    "#008E97",
+    "#FC4C02"
+  ),
+  (
+    "Minnesota Vikings",
+    "Started in 1998, the Minnesota Vikings Ring of Honor was begun with six players, coaches, and executives.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/MIN.svg",
+    "#4F2683",
+    "#FFC62F"
+  ),
+  (
+    "New England Patriots",
+    "Begun in 1991, the New England Patriots Team Hall of Fame features franchise greats who impacted the franchise greatly. In order to be eligible, players and coaches must be retired for at least four years.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NE.svg",
+    "#002244",
+    "#B0B7BC"
+  ),
+  (
+    "New Orleans Saints",
+    "Beginning in 2013, the New Orleans Saints began honoring their history with the creation of the Ring of Honor in Caesars Superdome. They inducted the first three nominees during halftime against the Cowboys in 2013.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NO.svg",
+    "#101820",
+    "#D3BC8D"
+  ),
+  (
+    "New York Giants",
+    "The Giants Ring of Honor was unveiled in 2010 during a game against the Chicago Bears. Their inaugural induction class featured 30 players, coaches, and executives who made a great impact on the franchise.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NYG.svg",
+    "#0B2265",
+    "#A71930"
+  ),
+  (
+    "New York Jets",
+    "The New York Jets Ring of Honor was established in July 2010 to commemorate and honor former players. Players are nominated by an internal committee before being inducted into the Ring of Honor.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NYJ.svg",
+    "#125740",
+    "#000000"
+  ),
+  (
+    "Philadelphia Eagles",
+    "Began in 1987 as the Eagles Honor Roll, it serves to honors players, executives, and coaches from the franchise's long history. Their inaugural induction class in 1987 was included with every player who was inducted into the Pro Football Hall of Fame as an Eagle. Players must be retired for three years to be considered to be included in the Eagles Hall of Fame.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/PHI.svg",
+    "#004C54",
+    "#A5ACAF"
+  ),
+  (
+    "Pittsburgh Steelers",
+    "Begun in 2017 with an inaugural inductee class of 27, the Pittsburgh Steelers Hall of Honor commemorates the franchise's history.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/PIT.svg",
+    "#000000",
+    "#FFB612"
   ),
   (
     "San Francisco 49ers",
     "Started in 2009, the Edward DeBartolo Sr. 49ers Hall of Fame is the team's official hall of honor.",
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/SF.svg",
-    "#AA0000"
+    "#AA0000",
+    "#B3995D"
   ),
   (
     "Seattle Seahawks",
     "The Seattle Seahawks Ring of Honor was established in 1989 and has inducted 12 people thus far who exemplify being a Seattle Seahawk.",
     "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/SEA.svg",
-    "#002244"
+    "#002244",
+    "#69BE28"
+  ),
+  (
+    "Tampa Bay Buccaneers",
+    "In November 2009, the team unveiled a Ring of Honor at their current stadium, Raymond James Stadium.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/TB.svg",
+    "#D50A0A",
+    "#34302B"
+  ),
+  (
+    "Tennessee Titans",
+    "Establishment of the Titans/Oilers Hall of Fame coincides with the 40th anniversary of the franchise by Owner, Bud Adams. It encompasses the history of the Houston Oilers and the Tennessee Titans respectively.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/TEN.svg",
+    "#0C2340",
+    "#4B92DB"
+  ),
+  (
+    "Washington Football Team",
+    "Beginning with the creation of FedEx Field, the Washington Football Team begun having a Ring of Fame for their team history to honor players, executives and coaches who made a large impact on the team's history.",
+    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/WAS.svg",
+    "#5a1414",
+    "#FFB612"
   );
+
 INSERT INTO players (
     full_name,
     player_position,
@@ -200,12 +233,255 @@ INSERT INTO players (
     years_active,
     year_inducted
   )
-VALUES -- Baltimore Ravens
+VALUES 
+  -- Arizona Cardinals
   (
-    "Ernest Byner",
-    "RB & Coach",
+    "Charles Bidwill",
+    "Owner",
+    "Arizona Cardinals",
+    NULL,
+    "1933 - 1947",
+    2006
+  ),
+  (
+    "Jimmy Conzelman",
+    "Head Coach",
+    "Arizona Cardinals",
+    NULL,
+    "1940 - 1942, 1946 - 1948",
+    2006
+  ),
+  (
+    "John 'Paddy' Driscoll",
+    "QB & Head Coach",
+    "Arizona Cardinals",
+    "Was the Head Coach in 1920 and ended his tenure in 1922, while continuing to be the QB until 1925",
+    "1920 - 1925, 1920 - 1922",
+    2006
+  ),
+  (
+    "Marshall Goldberg",
+    "RB",
+    "Arizona Cardinals",
+    NULL,
+    "1939 - 1943, 1946 - 1948",
+    2006
+  ),
+  (
+    "Dick 'Night Train' Lane",
+    "CB",
+    "Arizona Cardinals",
+    NULL,
+    "1954 - 1959",
+    2006
+  ),
+  (
+    "Ollie Matson",
+    "RB",
+    "Arizona Cardinals",
+    NULL,
+    "1952, 1954 - 1958",
+    2006
+  ),
+  (
+    "Ollie Matson",
+    "RB",
+    "Arizona Cardinals",
+    NULL,
+    "1952, 1954 - 1958",
+    2006
+  ),
+  (
+    "Ernie Nevers",
+    "FB & Head Coach",
+    "Arizona Cardinals",
+    "Was the Head Coach of the 1930, 1931, and 1939 seasons",
+    "1929 - 1931, 1930 - 1931, 1939",
+    2006
+  ),
+  (
+    "Charley Trippi",
+    "RB & QB",
+    "Arizona Cardinals",
+    NULL,
+    "1947 - 1955",
+    2006
+  ),
+  (
+    "Larry Wilson",
+    "Safety",
+    "Arizona Cardinals",
+    NULL,
+    "1960 - 1972",
+    2006
+  ),
+  (
+    "Dan Dierdorf",
+    "OT",
+    "Arizona Cardinals",
+    NULL,
+    "1971 - 1983",
+    2006
+  ),
+  (
+    "Pat Tillman",
+    "Safety",
+    "Arizona Cardinals",
+    "Was Killed in Action while serving in the US Army",
+    "1998 - 2001",
+    2007
+  ),
+  (
+    "Roger Wehrli",
+    "CB",
+    "Arizona Cardinals",
+    NULL,
+    "1969 - 1982",
+    2008
+  ),
+  (
+    "Aeneas Williams",
+    "CB",
+    "Arizona Cardinals",
+    NULL,
+    "1991 - 2000",
+    2008
+  ),
+  (
+    "Kurt Warner",
+    "QB",
+    "Arizona Cardinals",
+    NULL,
+    "2005 - 2009",
+    2014
+  ),
+  (
+    "Adrian Wilson",
+    "Safety",
+    "Arizona Cardinals",
+    NULL,
+    "2001 - 2012",
+    2015
+  ),
+  (
+    "Roy Green",
+    "WR",
+    "Arizona Cardinals",
+    NULL,
+    "1979 - 1990",
+    2016
+  ),
+  (
+    "Jim Hart",
+    "QB",
+    "Arizona Cardinals",
+    NULL,
+    "1966 - 1983",
+    2017
+  ),
+  (
+    "Carson Palmer",
+    "QB",
+    "Arizona Cardinals",
+    NULL,
+    "2013 - 2017",
+    2019
+  ),
+  -- Atlanta Falcons 
+  (
+    "William Andrews",
+    "RB",
+    "Atlanta Falcons",
+    NULL,
+    "1979 - 1983, 1986",
+    2004
+  ),
+  (
+    "Steve Bartkowski",
+    "QB",
+    "Atlanta Falcons",
+    NULL,
+    "1975 - 1985",
+    2004
+  ),
+  (
+    "Tommy Nobis",
+    "LB",
+    "Atlanta Falcons",
+    NULL,
+    "1966 - 1976",
+    2004
+  ),
+  (
+    "Jessie Tuggle",
+    "LB",
+    "Atlanta Falcons",
+    NULL,
+    "1987 - 2000",
+    2004
+  ),
+  (
+    "Jeff Van Note",
+    "Center",
+    "Atlanta Falcons",
+    NULL,
+    "1969 - 1986",
+    2006
+  ),
+  (
+    "Claude Humphrey",
+    "DE",
+    "Atlanta Falcons",
+    NULL,
+    "1968 - 1978",
+    2008
+  ),
+  (
+    "Mike Kenn",
+    "OT",
+    "Atlanta Falcons",
+    NULL,
+    "1978 - 1994",
+    2008
+  ),
+  (
+    "Deion Sanders",
+    "CB",
+    "Atlanta Falcons",
+    NULL,
+    "1989 - 1993",
+    2010
+  ),
+  (
+    "Gerald Riggs",
+    "RB",
+    "Atlanta Falcons",
+    NULL,
+    "1982 - 1988",
+    2013
+  ),
+  (
+    "Warrick Dunn",
+    "RB",
+    "Atlanta Falcons",
+    NULL,
+    "2002 - 2007",
+    2017
+  ),
+  (
+    "Roddy White",
+    "WR",
+    "Atlanta Falcons",
+    NULL,
+    "2005 - 2015",
+    2019
+  ),
+  -- Baltimore Ravens
+  (
+    "Earnest Byner",
+    "RB & Executive",
     "Baltimore Ravens",
-    "The Tie Between Two Cities",
+    NULL,
     "1996 - 2003",
     2001
   ),
@@ -277,7 +553,7 @@ VALUES -- Baltimore Ravens
     "Art Modell",
     "Founding Owner",
     "Baltimore Ravens",
-    "Returned the NFL to Baltimore",
+    "Brought Baltimore back to the NFL",
     "1996 - 2004",
     2004
   ),
@@ -299,7 +575,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jonathan Ogden",
-    "LT",
+    "OT",
     "Baltimore Ravens",
     NULL,
     "1996 - 2007",
@@ -307,7 +583,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Matt Stover",
-    "K",
+    "Kicker",
     "Baltimore Ravens",
     NULL,
     "1996 - 2008",
@@ -339,7 +615,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Ed Reed",
-    "S",
+    "Safety",
     "Baltimore Ravens",
     NULL,
     "2002 - 2012",
@@ -368,6 +644,304 @@ VALUES -- Baltimore Ravens
     NULL,
     "2007 - 2019",
     2021
+  ),
+  -- Buffalo Bills
+  (
+    "OJ Simpson",
+    "RB",
+    "Buffalo Bills",
+    NULL,
+    "1969 - 1977",
+    1980
+  ),
+  (
+    "Jack Kemp",
+    "QB",
+    "Buffalo Bills",
+    NULL,
+    "1962 - 1969",
+    1984
+  ),
+  (
+    "Pat McGroder",
+    "Contributor & General Manager",
+    "Buffalo Bills",
+    "Was instrumental in bringing the Bills to Buffalo during the beginning years of the AFL",
+    "1961 - 1974",
+    1985
+  ),
+  (
+    "Tom Sestak",
+    "DT",
+    "Buffalo Bills",
+    NULL,
+    "1962 - 1968",
+    1987
+  ),
+  (
+    "Billy Shaw",
+    "OG",
+    "Buffalo Bills",
+    NULL,
+    "1961 - 1969",
+    1988
+  ),
+  (
+    "Ralph C. Wilson Jr.",
+    "Founding Owner",
+    "Buffalo Bills",
+    NULL,
+    "1959 - 2014",
+    1989
+  ),
+  (
+    "The 12th Man",
+    "Fans",
+    "Buffalo Bills",
+    NULL,
+    "1960 - Present",
+    1992
+  ),
+  (
+    "Elbert Dubenion",
+    "WR",
+    "Buffalo Bills",
+    NULL,
+    "1960 - 1968",
+    1993
+  ),
+  (
+    "Mike Stratton",
+    "LB",
+    "Buffalo Bills",
+    NULL,
+    "1962 - 1972",
+    1994
+  ),
+  (
+    "Joe Ferguson",
+    "QB",
+    "Buffalo Bills",
+    NULL,
+    "1973 - 1984",
+    1995
+  ),
+  (
+    "Marv Levy",
+    "Head Coach & General Manager",
+    "Buffalo Bills",
+    NULL,
+    "1986 - 1997, 2006 - 2007",
+    1996
+  ),
+  (
+    "Joe DeLamielleure",
+    "OG",
+    "Buffalo Bills",
+    NULL,
+    "1973 - 1979, 1985",
+    1997
+  ),
+  (
+    "Robert James",
+    "CB",
+    "Buffalo Bills",
+    NULL,
+    "1969 - 1974",
+    1998
+  ),
+  (
+    "Edward Abramoski",
+    "Trainer",
+    "Buffalo Bills",
+    NULL,
+    "1960 - 1996",
+    1999
+  ),
+  (
+    "Bob Kalsu",
+    "OG",
+    "Buffalo Bills",
+    "Killed in Action during the Vietnam War in 1970 after he joined the US Army after the 1968 AFL Season",
+    "1968",
+    2000
+  ),
+  (
+    "George Saimes",
+    "Safety",
+    "Buffalo Bills",
+    NULL,
+    "1963 - 1969",
+    2000
+  ),
+  (
+    "Jim Kelly",
+    "QB",
+    "Buffalo Bills",
+    NULL,
+    "1986 - 1996",
+    2001
+  ),
+  (
+    "Fred Smerlas",
+    "DT",
+    "Buffalo Bills",
+    NULL,
+    "1979 - 1989",
+    2001
+  ),
+  (
+    "Kent Hull",
+    "Center",
+    "Buffalo Bills",
+    NULL,
+    "1986 - 1996",
+    2002
+  ),
+  (
+    "Darryl Talley",
+    "LB",
+    "Buffalo Bills",
+    NULL,
+    "1983 - 1994",
+    2003
+  ),
+  (
+    "Jim Ritcher",
+    "OG & Center",
+    "Buffalo Bills",
+    NULL,
+    "1980 - 1993",
+    2004
+  ),
+  (
+    "Thurman Thomas",
+    "RB",
+    "Buffalo Bills",
+    NULL,
+    "1988 - 1999",
+    2005
+  ),
+  (
+    "Andre Reed",
+    "WR",
+    "Buffalo Bills",
+    NULL,
+    "1985 - 1999",
+    2006
+  ),
+  (
+    "Steve Tasker",
+    "WR & Special Teams",
+    "Buffalo Bills",
+    NULL,
+    "1986 - 1997",
+    2007
+  ),
+  (
+    "Bruce Smith",
+    "DE",
+    "Buffalo Bills",
+    NULL,
+    "1985 - 1999",
+    2008
+  ),
+  (
+    "Booker Edgerson",
+    "CB",
+    "Buffalo Bills",
+    NULL,
+    "1962 - 1969",
+    2010
+  ),
+  (
+    "Phil Hansen",
+    "DE",
+    "Buffalo Bills",
+    NULL,
+    "1991 - 2001",
+    2011
+  ),
+  (
+    "Bill Polian",
+    "General Manager",
+    "Buffalo Bills",
+    NULL,
+    "1984 - 1992",
+    2012
+  ),
+  (
+    "Van Miller",
+    "Broadcaster",
+    "Buffalo Bills",
+    NULL,
+    "1960 - 1971, 1977 - 2003",
+    2014
+  ),
+  (
+    "Lou Saban",
+    "Head Coach",
+    "Buffalo Bills",
+    NULL,
+    "1962 - 1965, 1972 - 1976",
+    2015
+  ),
+  (
+    "Cookie Gilchrist",
+    "RB",
+    "Buffalo Bills",
+    NULL,
+    "1962 - 1964",
+    2017
+  ),
+  -- Carolina Panthers 
+  (
+    "Mike McCormack",
+    "President & General Manager",
+    "Carolina Panthers",
+    NULL,
+    "1993 - 1997",
+    1997
+  ),
+  (
+    "Sam Mills",
+    "LB & LB Coach",
+    "Carolina Panthers",
+    "Passed away in 2005 due to cancer",
+    "1995 - 2004",
+    1998
+  ),
+  (
+    "Steve Smith Sr.",
+    "WR",
+    "Carolina Panthers",
+    NULL,
+    "2001 - 2013",
+    2019
+  ),
+  (
+    "Jake Delhomme",
+    "QB",
+    "Carolina Panthers",
+    NULL,
+    "2003 - 2009",
+    2019
+  ),
+  (
+    "Wesley Walls",
+    "TE",
+    "Carolina Panthers",
+    NULL,
+    "1996 - 2002",
+    2019
+  ),
+  (
+    "Jordan Gross",
+    "OT",
+    "Carolina Panthers",
+    NULL,
+    "2003 - 2013",
+    2019
   ),
   -- Cincinatti Bengals
   (
@@ -437,7 +1011,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Frank Gatski",
-    "C",
+    "Center",
     "Cleveland Browns",
     NULL,
     "1946 - 1956",
@@ -453,7 +1027,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Lou Groza",
-    "OT & K",
+    "OT & Kicker",
     "Cleveland Browns",
     NULL,
     "1946 - 1959, 1961 - 1967",
@@ -533,7 +1107,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Joe Thomas",
-    "LT",
+    "OT",
     "Cleveland Browns",
     NULL,
     "2007 - 2017",
@@ -547,1218 +1121,810 @@ VALUES -- Baltimore Ravens
     "1978 - 1993",
     2019
   ),
-  -- Pittsburgh Steelers
+  -- Chicago Bears
   (
-    "Jerome Bettis",
-    "RB",
-    "Pittsburgh Steelers",
+    "No Team Ring of Honor or Team Hall of Fame",
     NULL,
-    "1996 - 2005",
-    2017
-  ),
-  (
-    "Mel Blount",
-    "CB",
-    "Pittsburgh Steelers",
+    "Chicago Bears",
     NULL,
-    "1970 - 1983",
-    2017
-  ),
-  (
-    "Terry Bradshaw",
-    "QB",
-    "Pittsburgh Steelers",
     NULL,
-    "1970 - 1983",
-    2017
+    NULL
   ),
+  -- Dallas Cowboys
   (
-    "Jack Butler",
-    "CB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1951 - 1959",
-    2017
-  ),
-  (
-    "Dermontti Dawson",
-    "C",
-    "Pittsburgh Steelers",
-    NULL,
-    "1988 - 2000",
-    2017
-  ),
-  (
-    "Bill Dudley",
-    "RB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1942, 1945 - 1946",
-    2017
-  ),
-  (
-    "Joe Greene",
+    "Bob Lilly",
     "DT",
-    "Pittsburgh Steelers",
+    "Dallas Cowboys",
     NULL,
-    "1969 - 1981",
-    2017
-  ),
-  (
-    "Kevin Greene",
-    "LB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1993 - 1995",
-    2017
-  ),
-  (
-    "L.C. Greenwood",
-    "DE",
-    "Pittsburgh Steelers",
-    NULL,
-    "1969 - 1981",
-    2017
-  ),
-  (
-    "Jack Ham",
-    "LB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1971 - 1982",
-    2017
-  ),
-  (
-    "Franco Harris",
-    "FB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1972 - 1983",
-    2017
-  ),
-  (
-    "Dick Hook",
-    "RB, Coach",
-    "Pittsburgh Steelers",
-    NULL,
-    "1961 - 1970, 1972 - 2006",
-    2017
-  ),
-  (
-    "John Henry Johnson",
-    "FB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1960 - 1965",
-    2017
-  ),
-  (
-    "Walt Kiesling",
-    "OG, Head Coach",
-    "Pittsburgh Steelers",
-    NULL,
-    "1937 - 1939, 1939 - 1944, 1954 - 1956",
-    2017
-  ),
-  (
-    "Jack Lambert",
-    "LB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1974 - 1984",
-    2017
-  ),
-  (
-    "Bobby Layne",
-    "QB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1958 - 1962",
-    2017
-  ),
-  (
-    "Johnny 'Blood' McNally",
-    "FB, Head Coach",
-    "Pittsburgh Steelers",
-    "Hired to be a Player and the Head Coach in 1937",
-    "1934, 1937 - 1939",
-    2017
-  ),
-  (
-    "Chuck Noll",
-    "Head Coach",
-    "Pittsburgh Steelers",
-    NULL,
-    "1969 - 1991",
-    2017
-  ),
-  (
-    "Art Rooney Sr.",
-    "Founding Owner, President, Chairman of the Board",
-    "Pittsburgh Steelers",
-    NULL,
-    "1933 - 1988",
-    2017
-  ),
-  (
-    "Dan Rooney Sr.",
-    "President, Chairman",
-    "Pittsburgh Steelers",
-    NULL,
-    "1955 - 2017",
-    2017
-  ),
-  (
-    "Andy Russell",
-    "LB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1963, 1966 - 1976",
-    2017
-  ),
-  (
-    "Donnie Shell",
-    "S",
-    "Pittsburgh Steelers",
-    NULL,
-    "1974 - 1987",
-    2017
-  ),
-  (
-    "John Stallworth",
-    "WR",
-    "Pittsburgh Steelers",
-    NULL,
-    "1974 - 1987",
-    2017
-  ),
-  (
-    "Ernie Stautner",
-    "DT",
-    "Pittsburgh Steelers",
-    NULL,
-    "1950 - 1963",
-    2017
-  ),
-  (
-    "Lynn Swann",
-    "WR",
-    "Pittsburgh Steelers",
-    NULL,
-    "1974 - 1982",
-    2017
-  ),
-  (
-    "Mike Webster",
-    "C",
-    "Pittsburgh Steelers",
-    NULL,
-    "1974 - 1988",
-    2017
-  ),
-  (
-    "Rod Woodson",
-    "CB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1987 - 1996",
-    2017
-  ),
-  (
-    "Rocky Bleier",
-    "RB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1968, 1970 - 1980",
-    2018
-  ),
-  (
-    "Buddy Dial",
-    "WR",
-    "Pittsburgh Steelers",
-    NULL,
-    "1959 - 1963",
-    2018
-  ),
-  (
-    "Alan Faneca",
-    "OG",
-    "Pittsburgh Steelers",
-    NULL,
-    "1998 - 2007",
-    2018
-  ),
-  (
-    "Bill Nunn",
-    "Scout, Senior Scout, Assistant Director of Player Personnel",
-    "Pittsburgh Steelers",
-    NULL,
-    "1968 - 2014",
-    2018
-  ),
-  (
-    "Art Rooney Jr.",
-    "Personnel Director, Vice President",
-    "Pittsburgh Steelers",
-    NULL,
-    "1965 - 1986, 1987 - Present",
-    2018
-  ),
-  (
-    "Larry Brown",
-    "TE, OT",
-    "Pittsburgh Steelers",
-    "Switched to OT in 1977",
-    "1971 - 1976, 1977 - 1984",
-    2019
-  ),
-  (
-    "Bill Cowher",
-    "Head Coach",
-    "Pittsburgh Steelers",
-    NULL,
-    "1992 - 2006",
-    2019
-  ),
-  (
-    "Elbi Nickel",
-    "TE",
-    "Pittsburgh Steelers",
-    NULL,
-    "1947 - 1957",
-    2019
-  ),
-  (
-    "Hines Ward",
-    "WR",
-    "Pittsburgh Steelers",
-    NULL,
-    "1998 - 2011",
-    2019
-  ),
-  (
-    "James Farrior",
-    "LB",
-    "Pittsburgh Steelers",
-    NULL,
-    "2002 - 2011",
-    2020
-  ),
-  (
-    "Greg Lloyd",
-    "LB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1988 - 1997",
-    2020
-  ),
-  (
-    "Troy Polamalu",
-    "S",
-    "Pittsburgh Steelers",
-    NULL,
-    "2003 - 2014",
-    2020
-  ),
-  (
-    "Mike Wagner",
-    "S",
-    "Pittsburgh Steelers",
-    NULL,
-    "1971 - 1980",
-    2020
-  ),
-  (
-    "Dwight White",
-    "DE",
-    "Pittsburgh Steelers",
-    NULL,
-    "1971 - 1980",
-    2020
-  ),
-  (
-    "Tunch Ilkin",
-    "OT",
-    "Pittsburgh Steelers",
-    NULL,
-    "1980 - 1992",
-    2021
-  ),
-  (
-    "Jon Kolb",
-    "OT",
-    "Pittsburgh Steelers",
-    NULL,
-    "1969 - 1981",
-    2021
-  ),
-  (
-    "Carnell Lake",
-    "S, CB",
-    "Pittsburgh Steelers",
-    NULL,
-    "1989 - 1998",
-    2021
-  ),
-  (
-    "Louis Lipps",
-    "WR",
-    "Pittsburgh Steelers",
-    NULL,
-    "1984 - 1991",
-    2021
-  ),
-  -- Buffalo Bills
-  (
-    "OJ Simpson",
-    "RB",
-    "Buffalo Bills",
-    NULL,
-    "1969 - 1977",
-    1980
-  ),
-  (
-    "Jack Kemp",
-    "QB",
-    "Buffalo Bills",
-    NULL,
-    "1962 - 1969",
-    1984
-  ),
-  (
-    "Pat McGroder",
-    "Contributor, General Manager",
-    "Buffalo Bills",
-    "Was instrumental in bringing the Bills to Buffalo during the beginning years of the AFL",
     "1961 - 1974",
-    1985
+    1975
   ),
   (
-    "Tom Sestak",
-    "DT",
-    "Buffalo Bills",
+    "Don Meredith",
+    "QB",
+    "Dallas Cowboys",
     NULL,
-    "1962 - 1968",
-    1987
+    "1960 - 1968",
+    1976
   ),
   (
-    "Billy Shaw",
-    "OG",
-    "Buffalo Bills",
+    "Don Perkins",
+    "FB",
+    "Dallas Cowboys",
     NULL,
-    "1961 - 1969",
-    1988
+    "1961 - 1968",
+    1976
   ),
   (
-    "Ralph C. Wilson Jr.",
-    "Founding Owner",
-    "Buffalo Bills",
+    "Chuck Howley",
+    "LB",
+    "Dallas Cowboys",
     NULL,
-    "1959 - 2014",
+    "1961 - 1973",
+    1977
+  ),
+  (
+    "Mel Renfro",
+    "CB",
+    "Dallas Cowboys",
+    NULL,
+    "1964 - 1977",
+    1981
+  ),
+  (
+    "Roger Staubach",
+    "QB",
+    "Dallas Cowboys",
+    NULL,
+    "1969 - 1979",
+    1983
+  ),
+  (
+    "Lee Roy Jordan",
+    "Center & LB",
+    "Dallas Cowboys",
+    NULL,
+    "1963 - 1976",
     1989
   ),
   (
-    "The 12th Man",
-    "Fans",
-    "Buffalo Bills",
+    "Tom Landry",
+    "Head Coach",
+    "Dallas Cowboys",
     NULL,
-    "1960 - Present",
-    1992
-  ),
-  (
-    "Elbert Dubenion",
-    "WR",
-    "Buffalo Bills",
-    NULL,
-    "1960 - 1968",
+    "1960 - 1988",
     1993
   ),
   (
-    "Mike Stratton",
-    "LB",
-    "Buffalo Bills",
+    "Tony Dorsett",
+    "RB",
+    "Dallas Cowboys",
     NULL,
-    "1962 - 1972",
+    "1977 - 1987",
     1994
   ),
   (
-    "Joe Ferguson",
-    "QB",
-    "Buffalo Bills",
+    "Randy White",
+    "DL & LB",
+    "Dallas Cowboys",
     NULL,
-    "1973 - 1984",
-    1995
+    "1975 - 1988",
+    1994
   ),
   (
-    "Marv Levy",
-    "Head Coach, General Manager",
-    "Buffalo Bills",
+    "Bob Hayes",
+    "WR",
+    "Dallas Cowboys",
     NULL,
-    "1986 - 1997, 2006 - 2007",
-    1996
-  ),
-  (
-    "Joe DeLamielleure",
-    "OG",
-    "Buffalo Bills",
-    NULL,
-    "1973 - 1979, 1985",
-    1997
-  ),
-  (
-    "Robert James",
-    "CB",
-    "Buffalo Bills",
-    NULL,
-    "1969 - 1974",
-    1998
-  ),
-  (
-    "Edward Abramoski",
-    "Trainer",
-    "Buffalo Bills",
-    NULL,
-    "1960 - 1996",
-    1999
-  ),
-  (
-    "Bob Kalsu",
-    "OG",
-    "Buffalo Bills",
-    "Killed in Action during the Vietnam War in 1970 after he joined the US Army after the 1968 AFL Season.",
-    "1968",
-    2000
-  ),
-  (
-    "George Saimes",
-    "S",
-    "Buffalo Bills",
-    NULL,
-    "1963 - 1969",
-    2000
-  ),
-  (
-    "Jim Kelly",
-    "QB",
-    "Buffalo Bills",
-    NULL,
-    "1986 - 1996",
+    "1965 - 1974",
     2001
   ),
   (
-    "Fred Smerlas",
-    "DT",
-    "Buffalo Bills",
+    "Tex Schramm",
+    "General Manager",
     NULL,
-    "1979 - 1989",
-    2001
-  ),
-  (
-    "Kent Hull",
-    "C",
-    "Buffalo Bills",
-    NULL,
-    "1986 - 1996",
-    2002
-  ),
-  (
-    "Darryl Talley",
-    "LB",
-    "Buffalo Bills",
-    NULL,
-    "1983 - 1994",
+    "Dallas Cowboys",
+    "1960 - 1989",
     2003
   ),
   (
-    "Jim Ritcher",
-    "OG, C",
-    "Buffalo Bills",
+    "Cliff Harris",
+    "Safety",
+    "Dallas Cowboys",
     NULL,
-    "1980 - 1993",
+    "1970 - 1979",
     2004
   ),
   (
-    "Thurman Thomas",
-    "RB",
-    "Buffalo Bills",
+    "Rayfield Wright",
+    "OT",
+    "Dallas Cowboys",
+    NULL,
+    "1967 - 1979",
+    2004
+  ),
+  (
+    "Troy Aikman",
+    "QB",
+    "Dallas Cowboys",
+    NULL,
+    "1989 - 2000",
+    2005
+  ),
+  (
+    "Michael Irvin",
+    "WR",
+    "Dallas Cowboys",
     NULL,
     "1988 - 1999",
     2005
   ),
   (
-    "Andre Reed",
+    "Emmitt Smith",
+    "RB",
+    "Dallas Cowboys",
+    NULL,
+    "1990 - 2002",
+    2005
+  ),
+  (
+    "Drew Pearson",
     "WR",
-    "Buffalo Bills",
+    "Dallas Cowboys",
     NULL,
-    "1985 - 1999",
-    2006
-  ),
-  (
-    "Steve Tasker",
-    "WR, Special Teams",
-    "Buffalo Bills",
-    NULL,
-    "1986 - 1997",
-    2007
-  ),
-  (
-    "Bruce Smith",
-    "DE",
-    "Buffalo Bills",
-    NULL,
-    "1985 - 1999",
-    2008
-  ),
-  (
-    "Booker Edgerson",
-    "CB",
-    "Buffalo Bills",
-    NULL,
-    "1962 - 1969",
-    2010
-  ),
-  (
-    "Phil Hansen",
-    "DE",
-    "Buffalo Bills",
-    NULL,
-    "1991 - 2001",
+    "1973 - 1983",
     2011
   ),
   (
-    "Bill Polian",
-    "General Manager",
-    "Buffalo Bills",
+    "Charles Haley",
+    "DE",
+    "Dallas Cowboys",
     NULL,
-    "1984 - 1992",
-    2012
+    "1992 - 1996",
+    2011
   ),
   (
-    "Van Miller",
-    "Broadcaster",
-    "Buffalo Bills",
+    "Larry Allen",
+    "OG & OT",
+    "Dallas Cowboys",
     NULL,
-    "1960 - 1971, 1977 - 2003",
-    2014
+    "1994 - 2005",
+    2011
   ),
   (
-    "Lou Saban",
-    "Head Coach",
-    "Buffalo Bills",
+    "Darren Woodson",
+    "Safety",
+    "Dallas Cowboys",
     NULL,
-    "1962 - 1965, 1972 - 1976",
+    "1992 - 2004",
     2015
   ),
   (
-    "Cookie Gilchrist",
+    "Gil Brandt",
+    "VP Player of Personnel",
+    "Dallas Cowboys",
+    NULL,
+    "1960 - 1988",
+    2018
+  ),
+  -- Denver Broncos
+  (
+    "Goose Gonsoulin",
+    "Safety",
+    "Denver Broncos",
+    NULL,
+    "1960 - 1966",
+    1984
+  ),
+  (
+    "Rich Jackson",
+    "DE",
+    "Denver Broncos",
+    NULL,
+    "1967 - 1972",
+    1984
+  ),
+  (
+    "Floyd Little",
     "RB",
-    "Buffalo Bills",
+    "Denver Broncos",
     NULL,
-    "1962 - 1964",
-    2017
-  ),
-  -- Miami Dolphins
-  (
-    "Joe Robbie",
-    "Founding Owner",
-    "Miami Dolphins",
-    NULL,
-    "1966 - 1989",
-    1990
+    "1967 - 1975",
+    1984
   ),
   (
-    "Larry Csonka",
-    "FB",
-    "Miami Dolphins",
+    "Lionel Taylor",
+    "WR",
+    "Denver Broncos",
     NULL,
-    "1968 - 1974, 1979",
-    1990
+    "1960 - 1966",
+    1984
   ),
   (
-    "Bob Griese",
+    "Gerald Phipps",
+    "Owner",
+    "Denver Broncos",
+    NULL,
+    "1961 - 1981",
+    1984
+  ),
+  (
+    "Charley Johnson",
     "QB",
-    "Miami Dolphins",
+    "Denver Broncos",
     NULL,
-    "1967 - 1980",
-    1990
+    "1972 - 1975",
+    1986
   ),
   (
-    "Jim Langer",
-    "C",
-    "Miami Dolphins",
+    "Paul Smith",
+    "DE",
+    "Denver Broncos",
     NULL,
-    "1970 - 1979",
-    1990
+    "1968 - 1978",
+    1986
   ),
   (
-    "Paul Warfield",
-    "WR",
-    "Miami Dolphins",
-    NULL,
-    "1970 - 1974",
-    1990
-  ),
-  (
-    "Nick Buoniconti",
-    "LB",
-    "Miami Dolphins",
-    NULL,
-    "1969 - 1974, 1976",
-    1991
-  ),
-  (
-    "Larry Little",
-    "OG",
-    "Miami Dolphins",
-    NULL,
-    "1969 - 1980",
-    1993
-  ),
-  (
-    "Dwight Stephenson",
-    "C",
-    "Miami Dolphins",
-    NULL,
-    "1980 - 1987",
-    1994
-  ),
-  (
-    "Bob Kuechenberg",
-    "OG",
-    "Miami Dolphins",
-    NULL,
-    "1970 - 1984",
-    1995
-  ),
-  (
-    "Don Shula",
-    "Head Coach",
-    "Miami Dolphins",
-    NULL,
-    "1970 - 1995",
-    1996
-  ),
-  (
-    "Nat Moore",
-    "WR",
-    "Miami Dolphins",
-    NULL,
-    "1974 - 1986",
-    1999
-  ),
-  (
-    "Dan Marino",
+    "Frank Tripucka",
     "QB",
-    "Miami Dolphins",
+    "Denver Broncos",
     NULL,
-    "1983 - 1999",
-    2000
+    "1960 - 1963",
+    1986
   ),
   (
-    "Mark Clayton",
+    "Billy Thompson",
+    "CB & Safety",
+    "Denver Broncos",
+    NULL,
+    "1969 - 1981",
+    1987
+  ),
+  (
+    "Craig Morton",
+    "QB",
+    "Denver Broncos",
+    NULL,
+    "1977 - 1982",
+    1988
+  ),
+  (
+    "Haven Moses",
     "WR",
-    "Miami Dolphins",
+    "Denver Broncos",
     NULL,
-    "1983 - 1992",
-    2003
+    "1972 - 1981",
+    1988
   ),
   (
-    "Mark Duper",
-    "WR",
-    "Miami Dolphins",
+    "Jim Turner",
+    "Kicker",
+    "Denver Broncos",
     NULL,
-    "1982 - 1992",
-    2003
+    "1971 - 1979",
+    1988
   ),
   (
-    "Dick Anderson",
-    "S",
-    "Miami Dolphins",
-    NULL,
-    "1968 - 1977",
-    2006
-  ),
-  (
-    "Richmond Webb",
-    "OT",
-    "Miami Dolphins",
-    NULL,
-    "1990 - 2000",
-    2006
-  ),
-  (
-    "Bob Baumhower",
-    "DT",
-    "Miami Dolphins",
-    NULL,
-    "1977 - 1986",
-    2008
-  ),
-  (
-    "Doug Betters",
-    "DE",
-    "Miami Dolphins",
-    NULL,
-    "1978 - 1987",
-    2008
-  ),
-  (
-    "Jake Scott",
-    "S",
-    "Miami Dolphins",
-    NULL,
-    "1970 - 1975",
-    2010
-  ),
-  (
-    "Bill Stanfill",
-    "DE",
-    "Miami Dolphins",
-    NULL,
-    "1969 - 1976",
-    2010
-  ),
-  (
-    "Jim Mandich",
-    "TE, Radio Broadcaster",
-    "Miami Dolphins",
-    NULL,
-    "1970 - 1977, 1992 - 2004, 2010",
-    2011
-  ),
-  (
-    "Jason Taylor",
+    "Randy Gradishar",
     "LB",
-    "Miami Dolphins",
+    "Denver Broncos",
     NULL,
-    "1997 - 2007, 2009, 2011",
-    2012
+    "1974 - 1983",
+    1989
   ),
   (
-    "Zach Thomas",
+    "Tom Jackson",
     "LB",
-    "Miami Dolphins",
+    "Denver Broncos",
     NULL,
-    "1996 - 2007",
-    2012
-  ),
-  (
-    "Bill Arnsparger",
-    "Defensive Coordinator",
-    "Miami Dolphins",
-    NULL,
-    "1970 - 1973, 1976 - 1983",
-    2012
-  ),
-  (
-    "Super Bowl VII & VIII Team, 1972 Perfect Season Team 17-0",
-    NULL,
-    "Miami Dolphins",
-    "The 1972 Team was inducted into the Honor Roll in 1992, but was updated in 2012 to include the Super Bowl VIII Team.",
-    "1972 - 1973",
-    2012
-  ),
-  (
-    "John Offerdahl",
-    "LB",
-    "Miami Dolphins",
-    NULL,
-    "1986 - 1993",
-    2013
-  ),
-  (
-    "Manny Fernandez",
-    "DT",
-    "Miami Dolphins",
-    NULL,
-    "1968 - 1975",
-    2014
-  ),
-  -- New England Patriots
-  (
-    "John Hannah",
-    "OG",
-    "New England Patriots",
-    NULL,
-    "1973 - 1985",
-    1991
-  ),
-  (
-    "Nick Buoniconti",
-    "LB",
-    "New England Patriots",
-    NULL,
-    "1962 - 1968",
+    "1973 - 1986",
     1992
   ),
   (
-    "Gino Cappelletti",
-    "WR, K",
-    "New England Patriots",
-    NULL,
-    "1960 - 1970",
-    1992
-  ),
-  (
-    "Bob Dee",
-    "DL",
-    "New England Patriots",
-    NULL,
-    "1960 - 1967",
-    1993
-  ),
-  (
-    "Jim Lee Hunt",
-    "DT",
-    "New England Patriots",
-    NULL,
-    "1960 - 1971",
-    1993
-  ),
-  (
-    "Steve Nelson",
-    "LB",
-    "New England Patriots",
-    NULL,
-    "1974 - 1987",
-    1993
-  ),
-  (
-    "Vito 'Babe' Parilli",
-    "QB",
-    "New England Patriots",
-    NULL,
-    "1961 - 1967",
-    1993
-  ),
-  (
-    "Mike Haynes",
+    "Louis Wright",
     "CB",
-    "New England Patriots",
+    "Denver Broncos",
     NULL,
-    "1976 - 1982",
-    1994
+    "1975 - 1986",
+    1993
   ),
   (
-    "Steve Grogan",
-    "QB",
-    "New England Patriots",
+    "John Elway",
+    "QB & General Manager",
+    "Denver Broncos",
     NULL,
-    "1975 - 1990",
-    1995
-  ),
-  (
-    "Andre Tippett",
-    "LB",
-    "New England Patriots",
-    NULL,
-    "1982 - 1993",
+    "1983 - 1998, 2011 - 2020",
     1999
   ),
   (
-    "Bruce Armstrong",
-    "OT",
-    "New England Patriots",
+    "Karl Mecklenburg",
+    "LB",
+    "Denver Broncos",
     NULL,
-    "1987 - 2000",
+    "1983 - 1995",
     2001
   ),
   (
-    "Stanley Morgan",
-    "WR",
-    "New England Patriots",
+    "Dennis Smith",
+    "Safety",
+    "Denver Broncos",
     NULL,
-    "1977 - 1989",
+    "1981 - 1994",
+    2001
+  ),
+  (
+    "Gary Zimmerman",
+    "OT",
+    "Denver Broncos",
+    NULL,
+    "1993 - 1997",
+    2003
+  ),
+  (
+    "Steve Atwater",
+    "Safety",
+    "Denver Broncos",
+    NULL,
+    "1989 - 1998",
+    2005
+  ),
+  (
+    "Terrel Davis",
+    "RB",
+    "Denver Broncos",
+    NULL,
+    "1995 - 2001",
     2007
   ),
   (
-    "Ben Coates",
+    "Shannon Sharpe",
     "TE",
-    "New England Patriots",
+    "Denver Broncos",
     NULL,
-    "1991 - 1999",
-    2008
-  ),
-  (
-    "Jim Nance",
-    "FB",
-    "New England Patriots",
-    NULL,
-    "1965 - 1971",
+    "1990 - 1999, 2002 - 2003",
     2009
   ),
   (
-    "Billy Sullivan",
-    "Founding Owner",
-    "New England Patriots",
+    "Rod Smith",
+    "WR",
+    "Denver Broncos",
     NULL,
-    "1960 - 1988",
-    2009
-  ),
-  (
-    "Sam Cunningham",
-    "RB",
-    "New England Patriots",
-    NULL,
-    "1973 - 1982",
-    2010
-  ),
-  (
-    "Drew Bledsoe",
-    "QB",
-    "New England Patriots",
-    NULL,
-    "1993 - 2001",
-    2011
-  ),
-  (
-    "Jon Morris",
-    "C",
-    "New England Patriots",
-    NULL,
-    "1964 - 1974",
-    2011
-  ),
-  (
-    "Troy Brown",
-    "WR, CB, Punt Returner",
-    "New England Patriots",
-    NULL,
-    "1993 - 2007",
+    "1994 - 2006",
     2012
   ),
   (
-    "Tedy Brushci",
-    "LB",
-    "New England Patriots",
+    "Tom Nalen",
+    "Center",
+    "Denver Broncos",
     NULL,
-    "1996 - 2008",
-    2013
+    "1994 - 2007",
+    2012
   ),
   (
-    "Gil Santos",
-    "Broadcaster",
-    "New England Patriots",
+    "Gene Mingo",
+    "RB, Kicker, Return Specialist",
+    "Denver Broncos",
     NULL,
-    "1972 - 1979, 1991 - 2012",
-    2013
-  ),
-  (
-    "Ty Law",
-    "CB",
-    "New England Patriots",
-    NULL,
-    "1995 - 2004",
+    "1960 - 1964",
     2014
   ),
   (
-    "Willie McGinest",
-    "DE, LB",
-    "New England Patriots",
+    "Dan Reeves",
+    "Head Coach",
+    "Denver Broncos",
     NULL,
-    "1994 - 2005",
+    "1981 - 1992",
+    2014
+  ),
+  (
+    "Rick Upchurch",
+    "WR & Return Specialist",
+    "Denver Broncos",
+    NULL,
+    "1975 - 1983",
+    2014
+  ),
+  (
+    "Pat Bowlen",
+    "Owner",
+    "Denver Broncos",
+    NULL,
+    "1984 - 2013",
     2015
   ),
   (
-    "Houston Antwine",
-    "DL",
-    "New England Patriots",
+    "Jason Elam",
+    "Kicker",
+    "Denver Broncos",
     NULL,
-    "1961 - 1971",
-    2015
-  ),
-  (
-    "Kevin Faulk",
-    "RB",
-    "New England Patriots",
-    NULL,
-    "1999 - 2011",
+    "1993 - 2007",
     2016
   ),
   (
-    "Raymond Clayborn",
-    "CB",
-    "New England Patriots",
+    "Simon Fletcher",
+    "LB & DE",
+    "Denver Broncos",
     NULL,
-    "1977 - 1989",
+    "1985 - 1995",
+    2016
+  ),
+  (
+    "John Lynch",
+    "Safety",
+    "Denver Broncos",
+    NULL,
+    "2004 - 2007",
+    2016
+  ),
+  (
+    "Red Miller",
+    "Head Coach",
+    "Denver Broncos",
+    NULL,
+    "1977 - 1980",
     2017
   ),
   (
-    "Matt Light",
-    "OT",
-    "New England Patriots",
+    "Champ Bailey",
+    "CB",
+    "Denver Broncos",
     NULL,
-    "2001 - 2011",
-    2018
-  ),
-  (
-    "Rodney Harrison",
-    "S",
-    "New England Patriots",
-    NULL,
-    "2003 - 2008",
+    "2004 - 2013",
     2019
   ),
   (
-    "Leon Gray",
-    "OT",
-    "New England Patriots",
-    NULL,
-    "1973 - 1978",
-    2019
-  ),
-  (
-    "Richard Seymour",
-    "DL",
-    "New England Patriots",
-    NULL,
-    "2001 - 2008",
-    2020
-  ),
-  -- New York Jets
-  (
-    "Joe Namath",
+    "Peyton Manning",
     "QB",
-    "New York Jets",
+    "Denver Broncos",
     NULL,
-    "1965 - 1976",
-    2010
+    "2012 - 2015",
+    2021
+  ),
+  -- Detroit Lions
+  (
+    "Lem Barney",
+    "CB",
+    "Detroit Lions",
+    NULL,
+    "1967 - 1977",
+    2009
   ),
   (
-    "Curtis Martin",
-    "RB",
-    "New York Jets",
+    "Jack Christiansen",
+    "CB",
+    "Detroit Lions",
     NULL,
-    "1998 - 2006",
-    2010
+    "1951 - 1958",
+    2009
   ),
   (
-    "Joe Klecko",
-    "DL",
-    "New York Jets",
+    "Dutch Clark",
+    "QB",
+    "Detroit Lions",
     NULL,
-    "1977 - 1987",
-    2010
+    "1934 - 1938",
+    2009
   ),
   (
-    "Don Maynard",
-    "WR",
-    "New York Jets",
+    "Lou Creekmur",
+    "OT & OG",
+    "Detroit Lions",
     NULL,
-    "1960 - 1972",
-    2010
+    "1950 - 1959",
+    2009
   ),
   (
-    "Winston Hill",
-    "OT",
-    "New York Jets",
+    "Dick 'Night Train' Lane",
+    "CB",
+    "Detroit Lions",
     NULL,
-    "1963 - 1976",
-    2010
+    "1960 - 1965",
+    2009
   ),
   (
-    "Weeb Ewbank",
-    "Owner",
-    "New York Jets",
+    "Yale Lary",
+    "CB & Punter",
+    "Detroit Lions",
     NULL,
-    "1963 - 1973",
-    2010
+    "1952 - 1953, 1956 - 1964",
+    2009
   ),
   (
-    "Larry Grantham",
+    "Bobby Layne",
+    "QB",
+    "Detroit Lions",
+    NULL,
+    "1961 - 1974",
+    2009
+  ),
+  (
+    "Charlie Sanders",
+    "TE",
+    "Detroit Lions",
+    NULL,
+    "1968 - 1977",
+    2009
+  ),
+  (
+    "Joe Schmidt",
     "LB",
-    "New York Jets",
+    "Detroit Lions",
     NULL,
-    "1960 - 1972",
-    2011
+    "1953 - 1965",
+    2009
   ),
   (
-    "Freeman McNeil",
+    "Dick Stanfel",
+    "OG",
+    "Detroit Lions",
+    NULL,
+    "1952 - 1955",
+    2009
+  ),
+  (
+    "Doak Walker",
     "RB",
-    "New York Jets",
+    "Detroit Lions",
     NULL,
-    "1981 - 1992",
-    2011
+    "1950 - 1955",
+    2009
   ),
   (
-    "Gerry Philbin",
-    "DE",
-    "New York Jets",
+    "Alex Wojciechowicz",
+    "Center & LB",
+    "Detroit Lions",
     NULL,
-    "1964 - 1972",
-    2011
+    "1938 - 1946",
+    2009
   ),
   (
-    "Al Toon",
-    "WR",
-    "New York Jets",
+    "Dick LeBeau",
+    "CB",
+    "Detroit Lions",
     NULL,
-    "1985 - 1992",
-    2011
+    "1959 - 1972",
+    2010
   ),
   (
-    "Wesley Walker",
-    "WR",
-    "New York Jets",
+    "Jason Hanson",
+    "Kicker",
+    "Detroit Lions",
     NULL,
-    "1977 - 1989",
-    2012
-  ),
-  (
-    "Mark Gastineau",
-    "DE",
-    "New York Jets",
-    NULL,
-    "1979 - 1988",
-    2012
-  ),
-  (
-    "Marty Lyons",
-    "DT",
-    "New York Jets",
-    NULL,
-    "1979 - 1989",
+    "1992 - 2012",
     2013
   ),
   (
-    "Wayne Chrebet",
+    "Roger Brown",
+    "DT",
+    "Detroit Lions",
+    NULL,
+    "1960 - 1966",
+    2018
+  ),
+  (
+    "Alex Karras",
+    "DT",
+    "Detroit Lions",
+    NULL,
+    "1958 - 1970",
+    2018
+  ),
+  (
+    "Herman Moore",
     "WR",
-    "New York Jets",
+    "Detroit Lions",
     NULL,
-    "1995 - 2005",
-    2014
+    "1991 - 2001",
+    2018
   ),
   (
-    "Leon Hess",
-    "Owner",
-    "New York Jets",
-    NULL,
-    "1968 - 1999",
-    2014
-  ),
-  (
-    "Emerson Boozer",
+    "Barry Sanders",
     "RB",
-    "New York Jets",
+    "Detroit Lions",
     NULL,
-    "1966 - 1975",
-    2015
+    "1989 - 1998",
+    2018
+  ),
+  -- Green Bay Packers
+  (
+    "Herb Adderley",
+    "CB",
+    "Green Bay Packers",
+    NULL,
+    "1961 - 1969",
+    NULL
   ),
   (
-    "Matt Snell",
+    "Tony Canadeo",
     "RB",
-    "New York Jets",
+    "Green Bay Packers",
     NULL,
-    "1964 - 1972",
-    2015
+    "1941 - 1944, 1946 - 1952",
+    NULL
   ),
   (
-    "Kevin Mawae",
-    "C",
-    "New York Jets",
+    "Willie Davis",
+    "DE",
+    "Green Bay Packers",
     NULL,
-    "1998 - 2005",
-    2017
+    "1960 - 1969",
+    NULL
+  ),
+  (
+    "Brett Favre",
+    "QB",
+    "Green Bay Packers",
+    NULL,
+    "1992 - 2007",
+    NULL
+  ),
+  (
+    "Forrest Gregg",
+    "OT",
+    "Green Bay Packers",
+    NULL,
+    "1956, 1958 - 1970",
+    NULL
+  ),
+  (
+    "Arnie Herber",
+    "QB",
+    "Green Bay Packers",
+    NULL,
+    "1930 - 1940",
+    NULL
+  ),
+  (
+    "Clarke Hinkle",
+    "FB",
+    "Green Bay Packers",
+    NULL,
+    "1932 - 1941",
+    NULL
+  ),
+  (
+    "Paul Hornung",
+    "RB",
+    "Green Bay Packers",
+    NULL,
+    "1956 - 1964 - 1966",
+    NULL
+  ),
+  (
+    "Cal Hubbard",
+    "OT",
+    "Green Bay Packers",
+    NULL,
+    "1929 - 1933, 1935",
+    NULL
+  ),
+  (
+    "Don Hutson",
+    "TE & DE",
+    "Green Bay Packers",
+    NULL,
+    "1935 - 1945",
+    NULL
+  ),
+  (
+    "Henry Jordan",
+    "DT",
+    "Green Bay Packers",
+    NULL,
+    "1959 - 1969",
+    NULL
+  ),
+  (
+    "Jerry Kramer",
+    "OG",
+    "Green Bay Packers",
+    NULL,
+    "1958 - 1968",
+    NULL
+  ),
+  (
+    "Earl 'Curly' Lambeau",
+    "RB & Head Coach",
+    "Green Bay Packers",
+    "Was the Head Coach starting in 1930",
+    "1919 - 1929, 1930 - 1949",
+    NULL
+  ),
+  (
+    "James Lofton",
+    "WR",
+    "Green Bay Packers",
+    NULL,
+    "1978 - 1986",
+    NULL
+  ),
+  (
+    "Vince Lombardi",
+    "Head Coach",
+    "Green Bay Packers",
+    NULL,
+    "1959 - 1967",
+    NULL
+  ),
+  (
+    "Johnny 'Blood' McNally",
+    "RB",
+    "Green Bay Packers",
+    NULL,
+    "1929 - 1933, 1935 - 1936",
+    NULL
+  ),
+  (
+    "Mike Michalske",
+    "OG",
+    "Green Bay Packers",
+    NULL,
+    "1929 - 1935, 1937",
+    NULL
+  ),
+  (
+    "Ray Nitschke",
+    "LB",
+    "Green Bay Packers",
+    NULL,
+    "1958 - 1972",
+    NULL
+  ),
+  (
+    "Jim Ringo",
+    "Center",
+    "Green Bay Packers",
+    NULL,
+    "1953 - 1963",
+    NULL
+  ),
+  (
+    "Dave Robinson",
+    "LB",
+    "Green Bay Packers",
+    NULL,
+    "1963 - 1972",
+    NULL
+  ),
+  (
+    "Bart Starr",
+    "QB",
+    "Green Bay Packers",
+    NULL,
+    "1956 - 1971",
+    NULL
+  ),
+  (
+    "Jim Taylor",
+    "FB",
+    "Green Bay Packers",
+    NULL,
+    "1958 - 1966",
+    NULL
+  ),
+  (
+    "Reggie White",
+    "DE",
+    "Green Bay Packers",
+    NULL,
+    "1993 - 1998",
+    NULL
+  ),
+  (
+    "Ron Wolf",
+    "General Manager",
+    "Green Bay Packers",
+    NULL,
+    "1991 - 2001",
+    NULL
+  ),
+  (
+    "Willie Wood",
+    "Safety",
+    "Green Bay Packers",
+    NULL,
+    "1960 - 1971",
+    NULL
   ),
   -- Houston Texans
   (
@@ -1860,7 +2026,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jeff Saturday",
-    "C",
+    "Center",
     "Indianapolis Colts",
     NULL,
     "1999 - 2011",
@@ -1947,416 +2113,6 @@ VALUES -- Baltimore Ravens
     "1995 - 2005",
     2016
   ),
-  -- Tennessee Titans
-  (
-    "Elvin Bethea",
-    "DE",
-    "Tennessee Titans",
-    NULL,
-    "1968 - 1983",
-    1999
-  ),
-  (
-    "George Blanda",
-    "QB & K",
-    "Tennessee Titans",
-    NULL,
-    "1960 - 1966",
-    1999
-  ),
-  (
-    "Earl Campbell",
-    "RB",
-    "Tennessee Titans",
-    NULL,
-    "1978 - 1984",
-    1999
-  ),
-  (
-    "Mike Holovak",
-    "General Manager",
-    "Tennessee Titans",
-    NULL,
-    "1989 - 1993",
-    1999
-  ),
-  (
-    "Ken Houston",
-    "S",
-    "Tennessee Titans",
-    NULL,
-    "1967 - 1972",
-    1999
-  ),
-  (
-    "Mike Munchak",
-    "OG",
-    "Tennessee Titans",
-    NULL,
-    "1982 - 1993",
-    1999
-  ),
-  (
-    "Jim Norton",
-    "P",
-    "Tennessee Titans",
-    NULL,
-    "1960 - 1968",
-    1999
-  ),
-  (
-    "Bruce Matthews",
-    "OL",
-    "Tennessee Titans",
-    NULL,
-    "1983 - 2001",
-    2002
-  ),
-  (
-    "Warren Moon",
-    "QB",
-    "Tennessee Titans",
-    NULL,
-    "1984 - 1993",
-    2007
-  ),
-  (
-    "Bud Adams",
-    "Founding Owner",
-    "Tennessee Titans",
-    NULL,
-    "1959 - 2013",
-    2008
-  ),
-  (
-    "Eddie George",
-    "RB",
-    "Tennessee Titans",
-    NULL,
-    "1996 - 2003",
-    2008
-  ),
-  (
-    "Steve McNair",
-    "QB",
-    "Tennessee Titans",
-    NULL,
-    "1995 - 2005",
-    2008
-  ),
-  (
-    "Frank Whycheck",
-    "TE",
-    "Tennessee Titans",
-    NULL,
-    "1995 - 2003",
-    2008
-  ),
-  (
-    "Robert Brazile",
-    "LB",
-    "Tennessee Titans",
-    NULL,
-    "1975 - 1984",
-    2018
-  ),
-  (
-    "Bum Phillips",
-    "Defensive Coordinator & Head Coach",
-    "Tennessee Titans",
-    NULL,
-    "1974 - 1980",
-    2021
-  ),
-  (
-    "Jeff Fisher",
-    "Defensive Coordinator & Head Coach",
-    "Tennessee Titans",
-    NULL,
-    "1994 - 2010",
-    2021
-  ),
-  (
-    "Floyd Reese",
-    "Linebackers Coach, Assistant General Manager, & General Manager",
-    "Tennessee Titans",
-    NULL,
-    "1986 - 2006",
-    2021
-  ),
-  -- Denver Broncos
-  (
-    "Goose Gonsoulin",
-    "S",
-    "Denver Broncos",
-    NULL,
-    "1960 - 1966",
-    1984
-  ),
-  (
-    "Rich Jackson",
-    "DE",
-    "Denver Broncos",
-    NULL,
-    "1967 - 1972",
-    1984
-  ),
-  (
-    "Floyd Little",
-    "RB",
-    "Denver Broncos",
-    NULL,
-    "1967 - 1975",
-    1984
-  ),
-  (
-    "Lionel Taylor",
-    "WR",
-    "Denver Broncos",
-    NULL,
-    "1960 - 1966",
-    1984
-  ),
-  (
-    "Gerald Phipps",
-    "Owner",
-    "Denver Broncos",
-    NULL,
-    "1961 - 1981",
-    1984
-  ),
-  (
-    "Charley Johnson",
-    "QB",
-    "Denver Broncos",
-    NULL,
-    "1972 - 1975",
-    1986
-  ),
-  (
-    "Paul Smith",
-    "DE",
-    "Denver Broncos",
-    NULL,
-    "1968 - 1978",
-    1986
-  ),
-  (
-    "Frank Tripucka",
-    "QB",
-    "Denver Broncos",
-    NULL,
-    "1960 - 1963",
-    1986
-  ),
-  (
-    "Billy Thompson",
-    "CB, S",
-    "Denver Broncos",
-    NULL,
-    "1969 - 1981",
-    1987
-  ),
-  (
-    "Craig Morton",
-    "QB",
-    "Denver Broncos",
-    NULL,
-    "1977 - 1982",
-    1988
-  ),
-  (
-    "Haven Moses",
-    "WR",
-    "Denver Broncos",
-    NULL,
-    "1972 - 1981",
-    1988
-  ),
-  (
-    "Jim Turner",
-    "K",
-    "Denver Broncos",
-    NULL,
-    "1971 - 1979",
-    1988
-  ),
-  (
-    "Randy Gradishar",
-    "LB",
-    "Denver Broncos",
-    NULL,
-    "1974 - 1983",
-    1989
-  ),
-  (
-    "Tom Jackson",
-    "LB",
-    "Denver Broncos",
-    NULL,
-    "1973 - 1986",
-    1992
-  ),
-  (
-    "Louis Wright",
-    "CB",
-    "Denver Broncos",
-    NULL,
-    "1975 - 1986",
-    1993
-  ),
-  (
-    "John Elway",
-    "QB, General Manager",
-    "Denver Broncos",
-    NULL,
-    "1983 - 1998, 2011 - 2020",
-    1999
-  ),
-  (
-    "Karl Mecklenburg",
-    "LB",
-    "Denver Broncos",
-    NULL,
-    "1983 - 1995",
-    2001
-  ),
-  (
-    "Dennis Smith",
-    "S",
-    "Denver Broncos",
-    NULL,
-    "1981 - 1994",
-    2001
-  ),
-  (
-    "Gary Zimmerman",
-    "OT",
-    "Denver Broncos",
-    NULL,
-    "1993 - 1997",
-    2003
-  ),
-  (
-    "Steve Atwater",
-    "S",
-    "Denver Broncos",
-    NULL,
-    "1989 - 1998",
-    2005
-  ),
-  (
-    "Terrel Davis",
-    "RB",
-    "Denver Broncos",
-    NULL,
-    "1995 - 2001",
-    2007
-  ),
-  (
-    "Shannon Sharpe",
-    "TE",
-    "Denver Broncos",
-    NULL,
-    "1990 - 1999, 2002 - 2003",
-    2009
-  ),
-  (
-    "Rod Smith",
-    "WR",
-    "Denver Broncos",
-    NULL,
-    "1994 - 2006",
-    2012
-  ),
-  (
-    "Tom Nalen",
-    "C",
-    "Denver Broncos",
-    NULL,
-    "1994 - 2007",
-    2012
-  ),
-  (
-    "Gene Mingo",
-    "RB, K, Return Specialist",
-    "Denver Broncos",
-    NULL,
-    "1960 - 1964",
-    2014
-  ),
-  (
-    "Dan Reeves",
-    "Head Coach",
-    "Denver Broncos",
-    NULL,
-    "1981 - 1992",
-    2014
-  ),
-  (
-    "Rick Upchurch",
-    "WR, Return Specialist",
-    "Denver Broncos",
-    NULL,
-    "1975 - 1983",
-    2014
-  ),
-  (
-    "Pat Bowlen",
-    "Owner",
-    "Denver Broncos",
-    NULL,
-    "1984 - 2013",
-    2015
-  ),
-  (
-    "Jason Elam",
-    "K",
-    "Denver Broncos",
-    NULL,
-    "1993 - 2007",
-    2016
-  ),
-  (
-    "Simon Fletcher",
-    "LB, DE",
-    "Denver Broncos",
-    NULL,
-    "1985 - 1995",
-    2016
-  ),
-  (
-    "John Lynch",
-    "S",
-    "Denver Broncos",
-    NULL,
-    "2004 - 2007",
-    2016
-  ),
-  (
-    "Red Miller",
-    "Head Coach",
-    "Denver Broncos",
-    NULL,
-    "1977 - 1980",
-    2017
-  ),
-  (
-    "Champ Bailey",
-    "CB",
-    "Denver Broncos",
-    NULL,
-    "2004 - 2013",
-    2019
-  ),
-  (
-    "Peyton Manning",
-    "QB",
-    "Denver Broncos",
-    NULL,
-    "2012 - 2015",
-    2021
-  ),
   -- Kansas City Chiefs
   (
     "Lamar Hunt",
@@ -2370,7 +2126,7 @@ VALUES -- Baltimore Ravens
     "Mack Lee Hill",
     "RB",
     "Kansas City Chiefs",
-    "Passed away suddenly after a knee surgery after a game against the Buffalo Bills.",
+    "Passed away suddenly after a knee surgery after a game against the Buffalo Bills",
     "1961 - 1974",
     1971
   ),
@@ -2392,7 +2148,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Johnny Robinson",
-    "S",
+    "Safety",
     "Kansas City Chiefs",
     NULL,
     "1960 - 1971",
@@ -2408,7 +2164,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "E.J. Holub",
-    "C, LB",
+    "Center & LB",
     "Kansas City Chiefs",
     NULL,
     "1961 - 1970",
@@ -2496,7 +2252,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jerrel Wilson",
-    "P",
+    "Punter",
     "Kansas City Chiefs",
     NULL,
     "1963 - 1977",
@@ -2528,7 +2284,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jan Stenerud",
-    "K",
+    "Kicker",
     "Kansas City Chiefs",
     NULL,
     "1967 - 1979",
@@ -2544,7 +2300,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jack Rudnay",
-    "C",
+    "Center",
     "Kansas City Chiefs",
     NULL,
     "1969 - 1982",
@@ -2560,7 +2316,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Deron Cherry",
-    "S",
+    "Safety",
     "Kansas City Chiefs",
     NULL,
     "1981 - 1991",
@@ -2584,7 +2340,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Lloyd Burruss",
-    "S",
+    "Safety",
     "Kansas City Chiefs",
     NULL,
     "1981 - 1991",
@@ -2602,7 +2358,7 @@ VALUES -- Baltimore Ravens
     "Derrick Thomas",
     "LB",
     "Kansas City Chiefs",
-    "After the 1999 Season, Thomas was in a car accident that left him paralyzed. He passed away a few days after.",
+    "After the 1999 Season, Thomas was in a car accident that left him paralyzed. He passed away a few days after",
     "1989 - 1999",
     2001
   ),
@@ -2626,13 +2382,13 @@ VALUES -- Baltimore Ravens
     "Joe Delaney",
     "RB",
     "Kansas City Chiefs",
-    "Passed away in 1983, after his second year with the Chiefs.",
+    "Passed away in 1983, after his second year with the Chiefs",
     "1981 - 1982",
     2004
   ),
   (
     "Jack Steadman",
-    "President, General Manager",
+    "President & General Manager",
     "Kansas City Chiefs",
     NULL,
     "1988 - 2006",
@@ -2664,7 +2420,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Nick Lowery",
-    "K",
+    "Kicker",
     "Kansas City Chiefs",
     NULL,
     "1980 - 1993",
@@ -2696,7 +2452,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Gary Barbaro",
-    "S",
+    "Safety",
     "Kansas City Chiefs",
     NULL,
     "1976 - 1982",
@@ -2739,7 +2495,7 @@ VALUES -- Baltimore Ravens
     "TE",
     "Kansas City Chiefs",
     NULL,
-    "1997 0 2008",
+    "1997 - 2008",
     2018
   ),
   (
@@ -2752,7 +2508,7 @@ VALUES -- Baltimore Ravens
   ),
   -- Las Vegas Raiders
   (
-    NULL,
+    "No Team Ring of Honor or Team Hall of Fame",
     NULL,
     "Las Vegas Raiders",
     NULL,
@@ -2780,7 +2536,7 @@ VALUES -- Baltimore Ravens
     "Bob Laraba",
     "LB",
     "Los Angeles Chargers",
-    "Died in 1961 after his second season.",
+    "Died in 1961 after his second season",
     "1960 - 1961",
     1976
   ),
@@ -2946,7 +2702,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Rolf Benirschke",
-    "K",
+    "Kicker",
     "Los Angeles Chargers",
     NULL,
     "1978 - 1987",
@@ -3010,7 +2766,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Don Macek",
-    "C",
+    "Center",
     "Los Angeles Chargers",
     NULL,
     "1976 - 1989",
@@ -3042,7 +2798,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Darren Bennett",
-    "P",
+    "Punter",
     "Los Angeles Chargers",
     NULL,
     "1995 - 2003",
@@ -3080,353 +2836,231 @@ VALUES -- Baltimore Ravens
     "1990 - 2000",
     2018
   ),
-  -- Chicago Bears
-  (NULL, NULL, "Chicago Bears", NULL, NULL, NULL),
-  -- Detroit Lions
+  -- Los Angeles Rams
   (
-    "Lem Barney",
-    "CB",
-    "Detroit Lions",
+    "No Team Ring of Honor or Team Hall of Fame",
     NULL,
-    "1967 - 1977",
-    2009
+    "Los Angeles Rams",
+    NULL,
+    NULL,
+    NULL
+  ),
+  -- Miami Dolphins
+  (
+    "Joe Robbie",
+    "Founding Owner",
+    "Miami Dolphins",
+    NULL,
+    "1966 - 1989",
+    1990
   ),
   (
-    "Jack Christiansen",
-    "CB",
-    "Detroit Lions",
+    "Larry Csonka",
+    "FB",
+    "Miami Dolphins",
     NULL,
-    "1951 - 1958",
-    2009
+    "1968 - 1974, 1979",
+    1990
   ),
   (
-    "Dutch Clark",
+    "Bob Griese",
     "QB",
-    "Detroit Lions",
+    "Miami Dolphins",
     NULL,
-    "1934 - 1938",
-    2009
+    "1967 - 1980",
+    1990
   ),
   (
-    "Lou Creekmur",
-    "OT & OG",
-    "Detroit Lions",
+    "Jim Langer",
+    "Center",
+    "Miami Dolphins",
     NULL,
-    "1950 - 1959",
-    2009
+    "1970 - 1979",
+    1990
   ),
   (
-    "Dick 'Night Train' Lane",
-    "CB",
-    "Detroit Lions",
+    "Paul Warfield",
+    "WR",
+    "Miami Dolphins",
     NULL,
-    "1960 - 1965",
-    2009
+    "1970 - 1974",
+    1990
   ),
   (
-    "Yale Lary",
-    "CB & P",
-    "Detroit Lions",
+    "Nick Buoniconti",
+    "LB",
+    "Miami Dolphins",
     NULL,
-    "1952 - 1953, 1956 - 1964",
-    2009
+    "1969 - 1974, 1976",
+    1991
   ),
   (
-    "Bobby Layne",
+    "Larry Little",
+    "OG",
+    "Miami Dolphins",
+    NULL,
+    "1969 - 1980",
+    1993
+  ),
+  (
+    "Dwight Stephenson",
+    "Center",
+    "Miami Dolphins",
+    NULL,
+    "1980 - 1987",
+    1994
+  ),
+  (
+    "Bob Kuechenberg",
+    "OG",
+    "Miami Dolphins",
+    NULL,
+    "1970 - 1984",
+    1995
+  ),
+  (
+    "Don Shula",
+    "Head Coach",
+    "Miami Dolphins",
+    NULL,
+    "1970 - 1995",
+    1996
+  ),
+  (
+    "Nat Moore",
+    "WR",
+    "Miami Dolphins",
+    NULL,
+    "1974 - 1986",
+    1999
+  ),
+  (
+    "Dan Marino",
     "QB",
-    "Detroit Lions",
+    "Miami Dolphins",
     NULL,
-    "1961 - 1974",
-    2009
+    "1983 - 1999",
+    2000
   ),
   (
-    "Charlie Sanders",
-    "TE",
-    "Detroit Lions",
+    "Mark Clayton",
+    "WR",
+    "Miami Dolphins",
+    NULL,
+    "1983 - 1992",
+    2003
+  ),
+  (
+    "Mark Duper",
+    "WR",
+    "Miami Dolphins",
+    NULL,
+    "1982 - 1992",
+    2003
+  ),
+  (
+    "Dick Anderson",
+    "Safety",
+    "Miami Dolphins",
     NULL,
     "1968 - 1977",
-    2009
+    2006
   ),
   (
-    "Joe Schmidt",
-    "LB",
-    "Detroit Lions",
+    "Richmond Webb",
+    "OT",
+    "Miami Dolphins",
     NULL,
-    "1953 - 1965",
-    2009
+    "1990 - 2000",
+    2006
   ),
   (
-    "Dick Stanfel",
-    "OG",
-    "Detroit Lions",
+    "Bob Baumhower",
+    "DT",
+    "Miami Dolphins",
     NULL,
-    "1952 - 1955",
-    2009
+    "1977 - 1986",
+    2008
   ),
   (
-    "Doak Walker",
-    "RB",
-    "Detroit Lions",
+    "Doug Betters",
+    "DE",
+    "Miami Dolphins",
     NULL,
-    "1950 - 1955",
-    2009
+    "1978 - 1987",
+    2008
   ),
   (
-    "Alex Wojciechowicz",
-    "C & LB",
-    "Detroit Lions",
+    "Jake Scott",
+    "Safety",
+    "Miami Dolphins",
     NULL,
-    "1938 - 1946",
-    2009
-  ),
-  (
-    "Dick LeBeau",
-    "CB",
-    "Detroit Lions",
-    NULL,
-    "1959 - 1972",
+    "1970 - 1975",
     2010
   ),
   (
-    "Jason Hanson",
-    "K",
-    "Detroit Lions",
+    "Bill Stanfill",
+    "DE",
+    "Miami Dolphins",
     NULL,
-    "1992 - 2012",
+    "1969 - 1976",
+    2010
+  ),
+  (
+    "Jim Mandich",
+    "TE & Radio Broadcaster",
+    "Miami Dolphins",
+    NULL,
+    "1970 - 1977, 1992 - 2004, 2010",
+    2011
+  ),
+  (
+    "Jason Taylor",
+    "LB",
+    "Miami Dolphins",
+    NULL,
+    "1997 - 2007, 2009, 2011",
+    2012
+  ),
+  (
+    "Zach Thomas",
+    "LB",
+    "Miami Dolphins",
+    NULL,
+    "1996 - 2007",
+    2012
+  ),
+  (
+    "Bill Arnsparger",
+    "Defensive Coordinator",
+    "Miami Dolphins",
+    NULL,
+    "1970 - 1973, 1976 - 1983",
+    2012
+  ),
+  (
+    "Super Bowl VII & VIII Team, 1972 Perfect Season Team 17-0",
+    NULL,
+    "Miami Dolphins",
+    "The 1972 Team was inducted into the Honor Roll in 1992, but was updated in 2012 to include the Super Bowl VIII Team",
+    "1972 - 1973",
+    2012
+  ),
+  (
+    "John Offerdahl",
+    "LB",
+    "Miami Dolphins",
+    NULL,
+    "1986 - 1993",
     2013
   ),
   (
-    "Roger Brown",
+    "Manny Fernandez",
     "DT",
-    "Detroit Lions",
+    "Miami Dolphins",
     NULL,
-    "1960 - 1966",
-    2018
-  ),
-  (
-    "Alex Karras",
-    "DT",
-    "Detroit Lions",
-    NULL,
-    "1958 - 1970",
-    2018
-  ),
-  (
-    "Herman Moore",
-    "WR",
-    "Detroit Lions",
-    NULL,
-    "1991 - 2001",
-    2018
-  ),
-  (
-    "Barry Sanders",
-    "RB",
-    "Detroit Lions",
-    NULL,
-    "1989 - 1998",
-    2018
-  ),
-  -- Green Bay Packers
-  (
-    "Herb Adderley",
-    "CB",
-    "Green Bay Packers",
-    NULL,
-    "1961 - 1969",
-    NULL
-  ),
-  (
-    "Tony Canadeo",
-    "RB",
-    "Green Bay Packers",
-    NULL,
-    "1941 - 1944, 1946 - 1952",
-    NULL
-  ),
-  (
-    "Willie Davis",
-    "DE",
-    "Green Bay Packers",
-    NULL,
-    "1960 - 1969",
-    NULL
-  ),
-  (
-    "Brett Favre",
-    "QB",
-    "Green Bay Packers",
-    NULL,
-    "1992 - 2007",
-    NULL
-  ),
-  (
-    "Forrest Gregg",
-    "OT",
-    "Green Bay Packers",
-    NULL,
-    "1956, 1958 - 1970",
-    NULL
-  ),
-  (
-    "Arnie Herber",
-    "QB",
-    "Green Bay Packers",
-    NULL,
-    "1930 - 1940",
-    NULL
-  ),
-  (
-    "Clarke Hinkle",
-    "FB",
-    "Green Bay Packers",
-    NULL,
-    "1932 - 1941",
-    NULL
-  ),
-  (
-    "Paul Hornung",
-    "RB",
-    "Green Bay Packers",
-    NULL,
-    "1956 - 1964 - 1966",
-    NULL
-  ),
-  (
-    "Cal Hubbard",
-    "OT",
-    "Green Bay Packers",
-    NULL,
-    "1929 - 1933, 1935",
-    NULL
-  ),
-  (
-    "Don Hutson",
-    "TE & DE",
-    "Green Bay Packers",
-    NULL,
-    "1935 - 1945",
-    NULL
-  ),
-  (
-    "Henry Jordan",
-    "DT",
-    "Green Bay Packers",
-    NULL,
-    "1959 - 1969",
-    NULL
-  ),
-  (
-    "Jerry Kramer",
-    "OG",
-    "Green Bay Packers",
-    NULL,
-    "1958 - 1968",
-    NULL
-  ),
-  (
-    "Earl 'Curly' Lambeau",
-    "RB & Head Coach",
-    "Green Bay Packers",
-    "Was the Head Coach starting in 1930.",
-    "1919 - 1929, 1930 - 1949",
-    NULL
-  ),
-  (
-    "James Lofton",
-    "WR",
-    "Green Bay Packers",
-    NULL,
-    "1978 - 1986",
-    NULL
-  ),
-  (
-    "Vince Lombardi",
-    "Head Coach",
-    "Green Bay Packers",
-    NULL,
-    "1959 - 1967",
-    NULL
-  ),
-  (
-    "Johnny 'Blood' McNally",
-    "RB",
-    "Green Bay Packers",
-    NULL,
-    "1929 - 1933, 1935 - 1936",
-    NULL
-  ),
-  (
-    "Mike Michalske",
-    "OG",
-    "Green Bay Packers",
-    NULL,
-    "1929 - 1935, 1937",
-    NULL
-  ),
-  (
-    "Ray Nitschke",
-    "LB",
-    "Green Bay Packers",
-    NULL,
-    "1958 - 1972",
-    NULL
-  ),
-  (
-    "Jim Ringo",
-    "C",
-    "Green Bay Packers",
-    NULL,
-    "1953 - 1963",
-    NULL
-  ),
-  (
-    "Dave Robinson",
-    "LB",
-    "Green Bay Packers",
-    NULL,
-    "1963 - 1972",
-    NULL
-  ),
-  (
-    "Bart Starr",
-    "QB",
-    "Green Bay Packers",
-    NULL,
-    "1956 - 1971",
-    NULL
-  ),
-  (
-    "Jim Taylor",
-    "FB",
-    "Green Bay Packers",
-    NULL,
-    "1958 - 1966",
-    NULL
-  ),
-  (
-    "Reggie White",
-    "DE",
-    "Green Bay Packers",
-    NULL,
-    "1993 - 1998",
-    NULL
-  ),
-  (
-    "Ron Wolf",
-    "General Manager",
-    "Green Bay Packers",
-    NULL,
-    "1991 - 2001",
-    NULL
-  ),
-  (
-    "Willie Wood",
-    "S",
-    "Green Bay Packers",
-    NULL,
-    "1960 - 1971",
-    NULL
+    "1968 - 1975",
+    2014
   ),
   -- Minnnesota Vikings
   (
@@ -3463,7 +3097,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Paul Krause",
-    "S",
+    "Safety",
     "Minnesota Vikings",
     NULL,
     "1968 - 1979",
@@ -3503,7 +3137,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Mick Tingelhoff",
-    "C",
+    "Center",
     "Minnesota Vikings",
     NULL,
     "1962 - 1978",
@@ -3591,7 +3225,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Joey Browner",
-    "S",
+    "Safety",
     "Minnesota Vikings",
     NULL,
     "1983- 1991",
@@ -3637,182 +3271,295 @@ VALUES -- Baltimore Ravens
     "2003 - 2013",
     2021
   ),
-  -- Dallas Cowboys
+  -- New England Patriots
   (
-    "Bob Lilly",
-    "DT",
-    "Dallas Cowboys",
+    "John Hannah",
+    "OG",
+    "New England Patriots",
     NULL,
-    "1961 - 1974",
-    1975
+    "1973 - 1985",
+    1991
   ),
   (
-    "Don Meredith",
-    "QB",
-    "Dallas Cowboys",
-    NULL,
-    "1960 - 1968",
-    1976
-  ),
-  (
-    "Don Perkins",
-    "FB",
-    "Dallas Cowboys",
-    NULL,
-    "1961 - 1968",
-    1976
-  ),
-  (
-    "Chuck Howley",
+    "Nick Buoniconti",
     "LB",
-    "Dallas Cowboys",
+    "New England Patriots",
     NULL,
-    "1961 - 1973",
-    1977
+    "1962 - 1968",
+    1992
   ),
   (
-    "Mel Renfro",
-    "CB",
-    "Dallas Cowboys",
+    "Gino Cappelletti",
+    "WR & Kicker",
+    "New England Patriots",
     NULL,
-    "1964 - 1977",
-    1981
+    "1960 - 1970",
+    1992
   ),
   (
-    "Roger Staubach",
-    "QB",
-    "Dallas Cowboys",
+    "Bob Dee",
+    "DL",
+    "New England Patriots",
     NULL,
-    "1969 - 1979",
-    1983
-  ),
-  (
-    "Lee Roy Jordan",
-    "C, LB",
-    "Dallas Cowboys",
-    NULL,
-    "1963 - 1976",
-    1989
-  ),
-  (
-    "Tom Landry",
-    "Head Coach",
-    "Dallas Cowboys",
-    NULL,
-    "1960 - 1988",
+    "1960 - 1967",
     1993
   ),
   (
-    "Tony Dorsett",
-    "RB",
-    "Dallas Cowboys",
+    "Jim Lee Hunt",
+    "DT",
+    "New England Patriots",
     NULL,
-    "1977 - 1987",
+    "1960 - 1971",
+    1993
+  ),
+  (
+    "Steve Nelson",
+    "LB",
+    "New England Patriots",
+    NULL,
+    "1974 - 1987",
+    1993
+  ),
+  (
+    "Vito 'Babe' Parilli",
+    "QB",
+    "New England Patriots",
+    NULL,
+    "1961 - 1967",
+    1993
+  ),
+  (
+    "Mike Haynes",
+    "CB",
+    "New England Patriots",
+    NULL,
+    "1976 - 1982",
     1994
   ),
   (
-    "Randy White",
-    "DL, LB",
-    "Dallas Cowboys",
+    "Steve Grogan",
+    "QB",
+    "New England Patriots",
     NULL,
-    "1975 - 1988",
-    1994
+    "1975 - 1990",
+    1995
   ),
   (
-    "Bob Hayes",
-    "WR",
-    "Dallas Cowboys",
+    "Andre Tippett",
+    "LB",
+    "New England Patriots",
     NULL,
-    "1965 - 1974",
+    "1982 - 1993",
+    1999
+  ),
+  (
+    "Bruce Armstrong",
+    "OT",
+    "New England Patriots",
+    NULL,
+    "1987 - 2000",
     2001
   ),
   (
-    "Tex Schramm",
-    "General Manager",
-    NULL,
-    "Dallas Cowboys",
-    "1960 - 1989",
-    2003
-  ),
-  (
-    "Cliff Harris",
-    "S",
-    "Dallas Cowboys",
-    NULL,
-    "1970 - 1979",
-    2004
-  ),
-  (
-    "Rayfield Wright",
-    "OT",
-    "Dallas Cowboys",
-    NULL,
-    "1967 - 1979",
-    2004
-  ),
-  (
-    "Troy Aikman",
-    "QB",
-    "Dallas Cowboys",
-    NULL,
-    "1989 - 2000",
-    2005
-  ),
-  (
-    "Michael Irvin",
+    "Stanley Morgan",
     "WR",
-    "Dallas Cowboys",
+    "New England Patriots",
     NULL,
-    "1988 - 1999",
-    2005
+    "1977 - 1989",
+    2007
   ),
   (
-    "Emmitt Smith",
+    "Ben Coates",
+    "TE",
+    "New England Patriots",
+    NULL,
+    "1991 - 1999",
+    2008
+  ),
+  (
+    "Jim Nance",
+    "FB",
+    "New England Patriots",
+    NULL,
+    "1965 - 1971",
+    2009
+  ),
+  (
+    "Billy Sullivan",
+    "Founding Owner",
+    "New England Patriots",
+    NULL,
+    "1960 - 1988",
+    2009
+  ),
+  (
+    "Sam Cunningham",
     "RB",
-    "Dallas Cowboys",
+    "New England Patriots",
     NULL,
-    "1990 - 2002",
-    2005
+    "1973 - 1982",
+    2010
   ),
   (
-    "Drew Pearson",
-    "WR",
-    "Dallas Cowboys",
+    "Drew Bledsoe",
+    "QB",
+    "New England Patriots",
     NULL,
-    "1973 - 1983",
+    "1993 - 2001",
     2011
   ),
   (
-    "Charles Haley",
-    "DE",
-    "Dallas Cowboys",
+    "Jon Morris",
+    "Center",
+    "New England Patriots",
     NULL,
-    "1992 - 1996",
+    "1964 - 1974",
     2011
   ),
   (
-    "Larry Allen",
-    "OG, OT",
-    "Dallas Cowboys",
+    "Troy Brown",
+    "WR, CB, Punt Returner",
+    "New England Patriots",
+    NULL,
+    "1993 - 2007",
+    2012
+  ),
+  (
+    "Tedy Brushci",
+    "LB",
+    "New England Patriots",
+    NULL,
+    "1996 - 2008",
+    2013
+  ),
+  (
+    "Gil Santos",
+    "Broadcaster",
+    "New England Patriots",
+    NULL,
+    "1972 - 1979, 1991 - 2012",
+    2013
+  ),
+  (
+    "Ty Law",
+    "CB",
+    "New England Patriots",
+    NULL,
+    "1995 - 2004",
+    2014
+  ),
+  (
+    "Willie McGinest",
+    "DE & LB",
+    "New England Patriots",
     NULL,
     "1994 - 2005",
-    2011
-  ),
-  (
-    "Darren Woodson",
-    "S",
-    "Dallas Cowboys",
-    NULL,
-    "1992 - 2004",
     2015
   ),
   (
-    "Gil Brandt",
-    "VP Player of Personnel",
-    "Dallas Cowboys",
+    "Houston Antwine",
+    "DL",
+    "New England Patriots",
     NULL,
-    "1960 - 1988",
+    "1961 - 1971",
+    2015
+  ),
+  (
+    "Kevin Faulk",
+    "RB",
+    "New England Patriots",
+    NULL,
+    "1999 - 2011",
+    2016
+  ),
+  (
+    "Raymond Clayborn",
+    "CB",
+    "New England Patriots",
+    NULL,
+    "1977 - 1989",
+    2017
+  ),
+  (
+    "Matt Light",
+    "OT",
+    "New England Patriots",
+    NULL,
+    "2001 - 2011",
     2018
+  ),
+  (
+    "Rodney Harrison",
+    "Safety",
+    "New England Patriots",
+    NULL,
+    "2003 - 2008",
+    2019
+  ),
+  (
+    "Leon Gray",
+    "OT",
+    "New England Patriots",
+    NULL,
+    "1973 - 1978",
+    2019
+  ),
+  (
+    "Richard Seymour",
+    "DL",
+    "New England Patriots",
+    NULL,
+    "2001 - 2008",
+    2020
+  ),
+  -- New Orleans Saints 
+  (
+    "Archie Manning",
+    "QB",
+    "New Orleans Saints",
+    NULL,
+    "1971 - 1982",
+    2013
+  ),
+  (
+    "Rickey Jackson",
+    "LB",
+    "New Orleans Saints",
+    NULL,
+    "1981 - 1993",
+    2013
+  ),
+  (
+    "Willie Roaf",
+    "OT",
+    "New Orleans Saints",
+    NULL,
+    "1993 - 2001",
+    2013
+  ),
+  (
+    "Morten Andersen",
+    "Kicker",
+    "New Orleans Saints",
+    NULL,
+    "1982 - 1994",
+    2015
+  ),
+  (
+    "Tom Benson",
+    "Owner",
+    "New Orleans Saints",
+    NULL,
+    "1985 - 2018",
+    2019
+  ),
+  (
+    "Will Smith",
+    "DE",
+    "New Orleans Saints",
+    NULL,
+    "2004 - 2013",
+    2019
   ),
   -- New York Giants
   (
@@ -3865,7 +3612,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Frank Gifford",
-    "RB, WR",
+    "RB & WR",
     "New York Giants",
     NULL,
     "1952 - 1864",
@@ -3873,7 +3620,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Pete Gogolak",
-    "K",
+    "Kicker",
     "New York Giants",
     NULL,
     "1966 - 1974",
@@ -3881,7 +3628,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Mel Hein",
-    "C, LB",
+    "Center & LB",
     "New York Giants",
     NULL,
     "1931 - 1945",
@@ -3953,7 +3700,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Joe Morrison",
-    "WR, RB",
+    "WR & RB",
     "New York Giants",
     NULL,
     "1959 - 1972",
@@ -3961,9 +3708,9 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Steve Owen",
-    "OT, Head Coach",
+    "OT & Head Coach",
     "New York Giants",
-    "Started to be the Head Coach in the 1930 season.",
+    "Started to be the Head Coach in the 1930 season",
     "1926 - 1953",
     2010
   ),
@@ -4073,7 +3820,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Dave Jennings",
-    "P",
+    "Punter",
     "New York Giants",
     NULL,
     "1974 - 1984",
@@ -4089,7 +3836,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Alex Webster",
-    "FB, Head Coach",
+    "FB & Head Coach",
     "New York Giants",
     NULL,
     "1955 - 1964, 1969 - 1973",
@@ -4105,9 +3852,9 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jack Lummus",
-    "TE, DE",
+    "TE & DE",
     "New York Giants",
-    "Died in the Battle of Iwo Jima during World War II.",
+    "Died in the Battle of Iwo Jima during World War II",
     "1941",
     2015
   ),
@@ -4137,16 +3884,161 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Tom Coughlin",
-    "WR Coach, Head Coach",
+    "WR Coach & Head Coach",
     "New York Giants",
     NULL,
     "1988 - 1990, 2004 - 2015",
     2016
   ),
+  -- New York Jets
+  (
+    "Joe Namath",
+    "QB",
+    "New York Jets",
+    NULL,
+    "1965 - 1976",
+    2010
+  ),
+  (
+    "Curtis Martin",
+    "RB",
+    "New York Jets",
+    NULL,
+    "1998 - 2006",
+    2010
+  ),
+  (
+    "Joe Klecko",
+    "DL",
+    "New York Jets",
+    NULL,
+    "1977 - 1987",
+    2010
+  ),
+  (
+    "Don Maynard",
+    "WR",
+    "New York Jets",
+    NULL,
+    "1960 - 1972",
+    2010
+  ),
+  (
+    "Winston Hill",
+    "OT",
+    "New York Jets",
+    NULL,
+    "1963 - 1976",
+    2010
+  ),
+  (
+    "Weeb Ewbank",
+    "Owner",
+    "New York Jets",
+    NULL,
+    "1963 - 1973",
+    2010
+  ),
+  (
+    "Larry Grantham",
+    "LB",
+    "New York Jets",
+    NULL,
+    "1960 - 1972",
+    2011
+  ),
+  (
+    "Freeman McNeil",
+    "RB",
+    "New York Jets",
+    NULL,
+    "1981 - 1992",
+    2011
+  ),
+  (
+    "Gerry Philbin",
+    "DE",
+    "New York Jets",
+    NULL,
+    "1964 - 1972",
+    2011
+  ),
+  (
+    "Al Toon",
+    "WR",
+    "New York Jets",
+    NULL,
+    "1985 - 1992",
+    2011
+  ),
+  (
+    "Wesley Walker",
+    "WR",
+    "New York Jets",
+    NULL,
+    "1977 - 1989",
+    2012
+  ),
+  (
+    "Mark Gastineau",
+    "DE",
+    "New York Jets",
+    NULL,
+    "1979 - 1988",
+    2012
+  ),
+  (
+    "Marty Lyons",
+    "DT",
+    "New York Jets",
+    NULL,
+    "1979 - 1989",
+    2013
+  ),
+  (
+    "Wayne Chrebet",
+    "WR",
+    "New York Jets",
+    NULL,
+    "1995 - 2005",
+    2014
+  ),
+  (
+    "Leon Hess",
+    "Owner",
+    "New York Jets",
+    NULL,
+    "1968 - 1999",
+    2014
+  ),
+  (
+    "Emerson Boozer",
+    "RB",
+    "New York Jets",
+    NULL,
+    "1966 - 1975",
+    2015
+  ),
+  (
+    "Matt Snell",
+    "RB",
+    "New York Jets",
+    NULL,
+    "1964 - 1972",
+    2015
+  ),
+  (
+    "Kevin Mawae",
+    "Center",
+    "New York Jets",
+    NULL,
+    "1998 - 2005",
+    2017
+  ),
   -- Philadelphia Eagles
   (
     "Chuck Bednarik",
-    "C, LB",
+    "Center & LB",
     "Philadelphia Eagles",
     NULL,
     "1949 - 1962",
@@ -4170,7 +4062,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Bill Hewitt",
-    "TE, DE",
+    "TE & DE",
     "Philadelphia Eagles",
     NULL,
     "1936 - 1939, 1943",
@@ -4210,7 +4102,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Pete Pihos",
-    "TE, DE",
+    "TE & DE",
     "Philadelphia Eagles",
     NULL,
     "1947 - 1955",
@@ -4218,7 +4110,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jim Ringo",
-    "C",
+    "Center",
     "Philadelphia Eagles",
     NULL,
     "1964 - 1977",
@@ -4242,7 +4134,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Alex Wojciechowicz",
-    "C, DT",
+    "C & DT",
     "Philadelphia Eagles",
     NULL,
     "1946 - 1950",
@@ -4314,7 +4206,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Bill Bradley",
-    "S, P",
+    "Safety & Punter",
     "Philadelphia Eagles",
     NULL,
     "1969 - 1976",
@@ -4348,7 +4240,7 @@ VALUES -- Baltimore Ravens
     "Jerome Brown",
     "DT",
     "Philadelphia Eagles",
-    "Died in 1992 before Training Camp.",
+    "Died in 1992 before Training Camp",
     "1987 - 1991",
     1996
   ),
@@ -4402,7 +4294,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Randall Cunningham",
-    "QB, P",
+    "QB & Punter",
     "Philadelphia Eagles",
     "Punted 20 times in his career",
     "1985 - 1995",
@@ -4434,7 +4326,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Brian Dawkins",
-    "S",
+    "Safety",
     "Philadelphia Eagles",
     NULL,
     "1996 - 2008",
@@ -4490,7 +4382,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "David Akers",
-    "K",
+    "Kicker",
     "Philadelphia Eagles",
     NULL,
     "1999 - 2010",
@@ -4514,7 +4406,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Bobby Walston",
-    "WR, TE, K",
+    "WR, TE, Kicker",
     "Philadelphia Eagles",
     NULL,
     "1951 - 1962",
@@ -4536,862 +4428,367 @@ VALUES -- Baltimore Ravens
     "2000 - 2008",
     2021
   ),
-  -- Washington Football Team
+  -- Pittsburgh Steelers
   (
-    "George Allen",
-    "Head Coach",
-    "Washington Football Team",
-    NULL,
-    "1971 - 1977",
-    NULL
-  ),
-  (
-    "Cliff Battles",
+    "Jerome Bettis",
     "RB",
-    "Washington Football Team",
+    "Pittsburgh Steelers",
     NULL,
-    "1932 - 1937",
-    NULL
+    "1996 - 2005",
+    2017
   ),
   (
-    "Sammy Baugh",
+    "Mel Blount",
+    "CB",
+    "Pittsburgh Steelers",
+    NULL,
+    "1970 - 1983",
+    2017
+  ),
+  (
+    "Terry Bradshaw",
     "QB",
-    "Washington Football Team",
+    "Pittsburgh Steelers",
     NULL,
-    "1937 - 1952",
-    NULL
+    "1970 - 1983",
+    2017
   ),
   (
-    "Bobby Beathard",
-    "General Manager",
-    "Washington Football Team",
+    "Jack Butler",
+    "CB",
+    "Pittsburgh Steelers",
     NULL,
-    "1978 - 1988",
-    NULL
+    "1951 - 1959",
+    2017
   ),
   (
-    "Jeff Bostic",
-    "C",
-    "Washington Football Team",
+    "Dermontti Dawson",
+    "Center",
+    "Pittsburgh Steelers",
     NULL,
-    "1980 - 1993",
-    NULL
-  ),
-  (
-    "Gene Brito",
-    "DE",
-    "Washington Football Team",
-    NULL,
-    "1951 - 1953, 1955 - 1958",
-    NULL
-  ),
-  (
-    "Larry Brown",
-    "RB",
-    "Washington Football Team",
-    NULL,
-    "1969 - 1976",
-    NULL
-  ),
-  (
-    "Dave Butz",
-    "OT",
-    "Washington Football Team",
-    NULL,
-    "1975 - 1988",
-    NULL
-  ),
-  (
-    "Gary Clark",
-    "WR",
-    "Washington Football Team",
-    NULL,
-    "1985 - 1992",
-    NULL
-  ),
-  (
-    "Monte Coleman",
-    "LB",
-    "Washington Football Team",
-    NULL,
-    "1979 - 1994",
-    NULL
-  ),
-  (
-    "Jack Kent Cooke",
-    "Owner",
-    "Washington Football Team",
-    NULL,
-    "1961 - 1997",
-    NULL
-  ),
-  (
-    "Wayne Curry",
-    "Prince George's County Executive",
-    "Washington Football Team",
-    "Was pivotal in helping move Washington to Landover, Maryland.",
-    NULL,
-    NULL
+    "1988 - 2000",
+    2017
   ),
   (
     "Bill Dudley",
     "RB",
-    "Washington Football Team",
+    "Pittsburgh Steelers",
     NULL,
-    "1950 - 1951, 1953",
-    NULL
-  ),
-  (
-    "Pat Fischer",
-    "CB",
-    "Washington Football Team",
-    NULL,
-    "1968 - 1977",
-    NULL
-  ),
-  (
-    "London Fletcher",
-    "LB",
-    "Washington Football Team",
-    NULL,
-    "2007 - 2013",
-    NULL
-  ),
-  (
-    "Joe Gibbs",
-    "Head Coach",
-    "Washington Football Team",
-    NULL,
-    "1981 - 1992, 2004 - 2007",
-    NULL
-  ),
-  (
-    "Darrell Green",
-    "CB",
-    "Washington Football Team",
-    NULL,
-    "1983 - 2002",
-    NULL
-  ),
-  (
-    "Russ Grimm",
-    "OG",
-    "Washington Football Team",
-    NULL,
-    "1981 - 1991",
-    NULL
-  ),
-  (
-    "Chris Hanburger",
-    "LB",
-    "Washington Football Team",
-    NULL,
-    "1965 - 1978",
-    NULL
-  ),
-  (
-    "Ken Harvey",
-    "LB",
-    "Washington Football Team",
-    NULL,
-    "1994 - 1998",
-    NULL
-  ),
-  (
-    "Len Hauss",
-    "C",
-    "Washington Football Team",
-    NULL,
-    "1964 - 1977",
-    NULL
-  ),
-  (
-    "Phil Hochberg",
-    "PA Announcer",
-    "Washington Football Team",
-    NULL,
-    "1963 - 2000",
-    NULL
-  ),
-  (
-    "Ken Houston",
-    "S",
-    "Washington Football Team",
-    NULL,
-    "1973 - 1980",
-    NULL
-  ),
-  (
-    "Sam Huff",
-    "LB",
-    "Washington Football Team",
-    NULL,
-    "1964 - 1967, 1969",
-    NULL
-  ),
-  (
-    "Joe Jacoby",
-    "OT, OG",
-    "Washington Football Team",
-    NULL,
-    "1961 - 1974",
-    NULL
-  ),
-  (
-    "Dick James",
-    "RB",
-    "Washington Football Team",
-    NULL,
-    "1956 - 1963",
-    NULL
-  ),
-  (
-    "Sonny Jurgensen",
-    "QB",
-    "Washington Football Team",
-    NULL,
-    "1964 - 1974",
-    NULL
-  ),
-  (
-    "Charlie Justice",
-    "RB",
-    "Washington Football Team",
-    NULL,
-    "1950, 1952 - 1954",
-    NULL
-  ),
-  (
-    "Billy Kilmer",
-    "QB",
-    "Washington Football Team",
-    NULL,
-    "1971 - 1978",
-    NULL
-  ),
-  (
-    "Eddie LeBaron",
-    "QB",
-    "Washington Football Team",
-    NULL,
-    "1952 - 1953, 1055 - 1959",
-    NULL
-  ),
-  (
-    "Vince Lombardi",
-    "Head Coach",
-    "Washington Football Team",
-    NULL,
-    "1969",
-    NULL
-  ),
-  (
-    "Dexter Manley",
-    "DE",
-    "Washington Football Team",
-    NULL,
-    "1981 - 1989",
-    NULL
-  ),
-  (
-    "Charles Mann",
-    "DE",
-    "Washington Football Team",
-    NULL,
-    "1983 - 1989",
-    NULL
-  ),
-  (
-    "Wayne Millner",
-    "TE, DE",
-    "Washington Football Team",
-    NULL,
-    "1936 - 1941, 1945",
-    NULL
-  ),
-  (
-    "Bobby Mitchell",
-    "WR",
-    "Washington Football Team",
-    NULL,
-    "1962 - 1968",
-    NULL
-  ),
-  (
-    "Brian Mitchell",
-    "RB, Return Specialist",
-    "Washington Football Team",
-    NULL,
-    "1990 - 1999",
-    NULL
-  ),
-  (
-    "Art Monk",
-    "WR",
-    "Washington Football Team",
-    NULL,
-    "1980 - 1993",
-    NULL
-  ),
-  (
-    "Mark Moseley",
-    "K",
-    "Washington Football Team",
-    NULL,
-    "1974 - 1986",
-    NULL
-  ),
-  (
-    "Brig Owens",
-    "CB",
-    "Washington Football Team",
-    NULL,
-    "1966 - 1977",
-    NULL
-  ),
-  (
-    "Richie Petitbon",
-    "S, Defensive Coordinator, ",
-    "Washington Football Team",
-    NULL,
-    "1971 - 1972, 1981 - 1993, 1993",
-    NULL
-  ),
-  (
-    "Vince Promuto",
-    "OG",
-    "Washington Football Team",
-    NULL,
-    "1960 - 1970",
-    NULL
-  ),
-  (
-    "John Riggins",
-    "RB",
-    "Washington Football Team",
-    NULL,
-    "1976 - 1979, 1981 - 1985",
-    NULL
-  ),
-  (
-    "Mark Rypien",
-    "QB",
-    "Washington Football Team",
-    NULL,
-    "1986 - 1993",
-    NULL
-  ),
-  (
-    "Chris Samuels",
-    "OT",
-    "Washington Football Team",
-    NULL,
-    "2000 - 2009",
-    NULL
-  ),
-  (
-    "Jerry Smith",
-    "TE",
-    "Washington Football Team",
-    NULL,
-    "1965 - 1977",
-    NULL
-  ),
-  (
-    "Charley Taylor",
-    "WR",
-    "Washington Football Team",
-    NULL,
-    "1964 - 1977",
-    NULL
-  ),
-  (
-    "Sean Taylor",
-    "S",
-    "Washington Football Team",
-    NULL,
-    "2004 - 2007",
-    NULL
-  ),
-  (
-    "Joe Theismann",
-    "QB",
-    "Washington Football Team",
-    NULL,
-    "1974 - 1985",
-    NULL
-  ),
-  (
-    "Lamar 'Bubba' Tyler",
-    "Athletic Trainer",
-    "Washington Football Team",
-    NULL,
-    "1971 - 2002, 2004 - 2008",
-    NULL
-  ),
-  (
-    "Doug Williams",
-    "QB",
-    "Washington Football Team",
-    NULL,
-    "1986 - 1989",
-    NULL
-  ),
-  -- Atlanta Falcons 
-  (
-    "William Andrews",
-    "RB",
-    "Atlanta Falcons",
-    NULL,
-    "1979 - 1983, 1986",
-    2004
-  ),
-  (
-    "Steve Bartkowski",
-    "QB",
-    "Atlanta Falcons",
-    NULL,
-    "1975 - 1985",
-    2004
-  ),
-  (
-    "Tommy Nobis",
-    "LB",
-    "Atlanta Falcons",
-    NULL,
-    "1966 - 1976",
-    2004
-  ),
-  (
-    "Jessie Tuggle",
-    "LB",
-    "Atlanta Falcons",
-    NULL,
-    "1987 - 2000",
-    2004
-  ),
-  (
-    "Jeff Van Note",
-    "C",
-    "Atlanta Falcons",
-    NULL,
-    "1969 - 1986",
-    2006
-  ),
-  (
-    "Claude Humphrey",
-    "DE",
-    "Atlanta Falcons",
-    NULL,
-    "1968 - 1978",
-    2008
-  ),
-  (
-    "Mike Kenn",
-    "OT",
-    "Atlanta Falcons",
-    NULL,
-    "1978 - 1994",
-    2008
-  ),
-  (
-    "Deion Sanders",
-    "CB",
-    "Atlanta Falcons",
-    NULL,
-    "1989 - 1993",
-    2010
-  ),
-  (
-    "Gerald Riggs",
-    "RB",
-    "Atlanta Falcons",
-    NULL,
-    "1982 - 1988",
-    2013
-  ),
-  (
-    "Warrick Dunn",
-    "RB",
-    "Atlanta Falcons",
-    NULL,
-    "2002 - 2007",
+    "1942, 1945 - 1946",
     2017
   ),
   (
-    "Roddy White",
-    "WR",
-    "Atlanta Falcons",
+    "Joe Greene",
+    "DT",
+    "Pittsburgh Steelers",
     NULL,
-    "2005 - 2015",
-    2019
-  ),
-  -- Carolina Panthers 
-  (
-    "Mike McCormack",
-    "President & General Manager",
-    "Carolina Panthers",
-    NULL,
-    "1993 - 1997",
-    1997
+    "1969 - 1981",
+    2017
   ),
   (
-    "Sam Mills",
-    "LB & Coach",
-    "Carolina Panthers",
+    "Kevin Greene",
+    "LB",
+    "Pittsburgh Steelers",
     NULL,
-    "1995 - 2004",
-    1998
+    "1993 - 1995",
+    2017
   ),
   (
-    "Steve Smith Sr.",
-    "WR",
-    "Carolina Panthers",
+    "L.C. Greenwood",
+    "DE",
+    "Pittsburgh Steelers",
     NULL,
-    "2001 - 2013",
-    2019
+    "1969 - 1981",
+    2017
   ),
   (
-    "Jake Delhomme",
-    "QB",
-    "Carolina Panthers",
-    NULL,
-    "2003 - 2009",
-    2019
-  ),
-  (
-    "Wesley Walls",
-    "TE",
-    "Carolina Panthers",
-    NULL,
-    "1996 - 2002",
-    2019
-  ),
-  (
-    "Jordan Gross",
-    "OT",
-    "Carolina Panthers",
-    NULL,
-    "2003 - 2013",
-    2019
-  ),
-  -- New Orleans Saints 
-  (
-    "Archie Manning",
-    "QB",
-    "New Orleans Saints",
+    "Jack Ham",
+    "LB",
+    "Pittsburgh Steelers",
     NULL,
     "1971 - 1982",
-    2013
+    2017
   ),
   (
-    "Rickey Jackson",
-    "LB",
-    "New Orleans Saints",
-    NULL,
-    "1981 - 1993",
-    2013
-  ),
-  (
-    "Willie Roaf",
-    "OT",
-    "New Orleans Saints",
-    NULL,
-    "1993 - 2001",
-    2013
-  ),
-  (
-    "Morten Andersen",
-    "K",
-    "New Orleans Saints",
-    NULL,
-    "1982 - 1994",
-    2015
-  ),
-  (
-    "Tom Benson",
-    "Owner",
-    "New Orleans Saints",
-    NULL,
-    "1985 - 2018",
-    2019
-  ),
-  (
-    "Will Smith",
-    "DE",
-    "New Orleans Saints",
-    NULL,
-    "2004 - 2013",
-    2019
-  ),
-  -- Tampa Bay Buccaneers 
-  (
-    "Lee Roy Selmon",
-    "DE",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1976 - 1984",
-    2009
-  ),
-  (
-    "John McKay",
-    "Head Coach",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1976 - 1984",
-    2010
-  ),
-  (
-    "Jimmie Giles",
-    "TE",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1978 - 1986",
-    2011
-  ),
-  (
-    "Paul Gruber",
-    "OT",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1988 - 1999",
-    2012
-  ),
-  (
-    "Warren Sapp",
-    "DT",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1995 - 2003",
-    2013
-  ),
-  (
-    "Derrick Brooks",
-    "LB",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1995 - 2008",
-    2014
-  ),
-  (
-    "Mike Alstott",
+    "Franco Harris",
     "FB",
-    "Tampa Bay Buccaneers",
+    "Pittsburgh Steelers",
     NULL,
-    "1996 - 2007",
-    2015
+    "1972 - 1983",
+    2017
   ),
   (
-    "Doug Williams",
+    "Dick Hook",
+    "RB & Coach",
+    "Pittsburgh Steelers",
+    NULL,
+    "1961 - 1970, 1972 - 2006",
+    2017
+  ),
+  (
+    "John Henry Johnson",
+    "FB",
+    "Pittsburgh Steelers",
+    NULL,
+    "1960 - 1965",
+    2017
+  ),
+  (
+    "Walt Kiesling",
+    "OG & Head Coach",
+    "Pittsburgh Steelers",
+    NULL,
+    "1937 - 1939, 1939 - 1944, 1954 - 1956",
+    2017
+  ),
+  (
+    "Jack Lambert",
+    "LB",
+    "Pittsburgh Steelers",
+    NULL,
+    "1974 - 1984",
+    2017
+  ),
+  (
+    "Bobby Layne",
     "QB",
-    "Tampa Bay Buccaneers",
+    "Pittsburgh Steelers",
     NULL,
-    "1978 - 1982",
-    2016
-  ),
-  (
-    "John Lynch",
-    "S",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1993 - 2003",
-    2015
-  ),
-  (
-    "Malcolm Glazer",
-    "Owner",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "1995 - 2014",
+    "1958 - 1962",
     2017
   ),
   (
-    "Jon Gruden",
-    "Head Coach",
-    "Tampa Bay Buccaneers",
-    NULL,
-    "2002 - 2008",
+    "Johnny 'Blood' McNally",
+    "FB & Head Coach",
+    "Pittsburgh Steelers",
+    "Hired to be a Player and the Head Coach in 1937",
+    "1934, 1937 - 1939",
     2017
   ),
   (
-    "Tony Dungy",
+    "Chuck Noll",
     "Head Coach",
-    "Tampa Bay Buccaneers",
+    "Pittsburgh Steelers",
     NULL,
-    "1996 - 2001",
+    "1969 - 1991",
+    2017
+  ),
+  (
+    "Art Rooney Sr.",
+    "Founding Owner, President, Chairman of the Board",
+    "Pittsburgh Steelers",
+    NULL,
+    "1933 - 1988",
+    2017
+  ),
+  (
+    "Dan Rooney Sr.",
+    "President, Chairman",
+    "Pittsburgh Steelers",
+    NULL,
+    "1955 - 2017",
+    2017
+  ),
+  (
+    "Andy Russell",
+    "LB",
+    "Pittsburgh Steelers",
+    NULL,
+    "1963, 1966 - 1976",
+    2017
+  ),
+  (
+    "Donnie Shell",
+    "Safety",
+    "Pittsburgh Steelers",
+    NULL,
+    "1974 - 1987",
+    2017
+  ),
+  (
+    "John Stallworth",
+    "WR",
+    "Pittsburgh Steelers",
+    NULL,
+    "1974 - 1987",
+    2017
+  ),
+  (
+    "Ernie Stautner",
+    "DT",
+    "Pittsburgh Steelers",
+    NULL,
+    "1950 - 1963",
+    2017
+  ),
+  (
+    "Lynn Swann",
+    "WR",
+    "Pittsburgh Steelers",
+    NULL,
+    "1974 - 1982",
+    2017
+  ),
+  (
+    "Mike Webster",
+    "Center",
+    "Pittsburgh Steelers",
+    NULL,
+    "1974 - 1988",
+    2017
+  ),
+  (
+    "Rod Woodson",
+    "CB",
+    "Pittsburgh Steelers",
+    NULL,
+    "1987 - 1996",
+    2017
+  ),
+  (
+    "Rocky Bleier",
+    "RB",
+    "Pittsburgh Steelers",
+    NULL,
+    "1968, 1970 - 1980",
     2018
   ),
   (
-    "Ronde Barber",
-    "CB",
-    "Tampa Bay Buccaneers",
+    "Buddy Dial",
+    "WR",
+    "Pittsburgh Steelers",
     NULL,
-    "1997 - 2012",
+    "1959 - 1963",
+    2018
+  ),
+  (
+    "Alan Faneca",
+    "OG",
+    "Pittsburgh Steelers",
+    NULL,
+    "1998 - 2007",
+    2018
+  ),
+  (
+    "Bill Nunn",
+    "Scout, Senior Scout, Assistant Director of Player Personnel",
+    "Pittsburgh Steelers",
+    NULL,
+    "1968 - 2014",
+    2018
+  ),
+  (
+    "Art Rooney Jr.",
+    "Personnel Director & Vice President",
+    "Pittsburgh Steelers",
+    NULL,
+    "1965 - 1986, 1987 - Present",
+    2018
+  ),
+  (
+    "Larry Brown",
+    "TE & OT",
+    "Pittsburgh Steelers",
+    "Switched to OT in 1977",
+    "1971 - 1976, 1977 - 1984",
     2019
   ),
   (
-    "Monte Kiffin",
-    "Defensive Coordinator",
-    "Tampa Bay Buccaneers",
+    "Bill Cowher",
+    "Head Coach",
+    "Pittsburgh Steelers",
     NULL,
-    "1996 - 2008",
+    "1992 - 2006",
+    2019
+  ),
+  (
+    "Elbi Nickel",
+    "TE",
+    "Pittsburgh Steelers",
+    NULL,
+    "1947 - 1957",
+    2019
+  ),
+  (
+    "Hines Ward",
+    "WR",
+    "Pittsburgh Steelers",
+    NULL,
+    "1998 - 2011",
+    2019
+  ),
+  (
+    "James Farrior",
+    "LB",
+    "Pittsburgh Steelers",
+    NULL,
+    "2002 - 2011",
     2020
   ),
-  -- Arizona Cardinals
   (
-    "Charles Bidwill",
-    "Owner",
-    "Arizona Cardinals",
+    "Greg Lloyd",
+    "LB",
+    "Pittsburgh Steelers",
     NULL,
-    "1933 - 1947",
-    2006
+    "1988 - 1997",
+    2020
   ),
   (
-    "Jimmy Conzelman",
-    "Head Coach",
-    "Arizona Cardinals",
+    "Troy Polamalu",
+    "Safety",
+    "Pittsburgh Steelers",
     NULL,
-    "1940 - 1942, 1946 - 1948",
-    2006
+    "2003 - 2014",
+    2020
   ),
   (
-    "John 'Paddy' Driscoll",
-    "QB & Head Coach",
-    "Arizona Cardinals",
-    "Was the Head Coach in 1920 and ended his tenure in 1922",
-    "1920 - 1925, 1920 - 1922",
-    2006
-  ),
-  (
-    "Marshall Goldberg",
-    "RB",
-    "Arizona Cardinals",
+    "Mike Wagner",
+    "Safety",
+    "Pittsburgh Steelers",
     NULL,
-    "1939 - 1943, 1946 - 1948",
-    2006
+    "1971 - 1980",
+    2020
   ),
   (
-    "Dick 'Night Train' Lane",
-    "CB",
-    "Arizona Cardinals",
+    "Dwight White",
+    "DE",
+    "Pittsburgh Steelers",
     NULL,
-    "1954 - 1959",
-    2006
+    "1971 - 1980",
+    2020
   ),
   (
-    "Ollie Matson",
-    "RB",
-    "Arizona Cardinals",
-    NULL,
-    "1952, 1954 - 1958",
-    2006
-  ),
-  (
-    "Ollie Matson",
-    "RB",
-    "Arizona Cardinals",
-    NULL,
-    "1952, 1954 - 1958",
-    2006
-  ),
-  (
-    "Ernie Nevers",
-    "FB & Head Coach",
-    "Arizona Cardinals",
-    "Was the Head Coach of the 1930, 1931, and 1939 seasons.",
-    "1929 - 1931, 1930 - 1931, 1939",
-    2006
-  ),
-  (
-    "Charley Trippi",
-    "RB & QB",
-    "Arizona Cardinals",
-    NULL,
-    "1947 - 1955",
-    2006
-  ),
-  (
-    "Larry Wilson",
-    "S",
-    "Arizona Cardinals",
-    NULL,
-    "1960 - 1972",
-    2006
-  ),
-  (
-    "Dan Dierdorf",
+    "Tunch Ilkin",
     "OT",
-    "Arizona Cardinals",
+    "Pittsburgh Steelers",
     NULL,
-    "1971 - 1983",
-    2006
+    "1980 - 1992",
+    2021
   ),
   (
-    "Pat Tillman",
-    "S",
-    "Arizona Cardinals",
-    "Was Killed in Action while serving in the US Army.",
-    "1998 - 2001",
-    2007
-  ),
-  (
-    "Roger Wehrli",
-    "CB",
-    "Arizona Cardinals",
+    "Jon Kolb",
+    "OT",
+    "Pittsburgh Steelers",
     NULL,
-    "1969 - 1982",
-    2008
+    "1969 - 1981",
+    2021
   ),
   (
-    "Aeneas Williams",
-    "CB",
-    "Arizona Cardinals",
+    "Carnell Lake",
+    "Safety & CB",
+    "Pittsburgh Steelers",
     NULL,
-    "1991 - 2000",
-    2008
+    "1989 - 1998",
+    2021
   ),
   (
-    "Kurt Warner",
-    "QB",
-    "Arizona Cardinals",
-    NULL,
-    "2005 - 2009",
-    2014
-  ),
-  (
-    "Adrian Wilson",
-    "S",
-    "Arizona Cardinals",
-    NULL,
-    "2001 - 2012",
-    2015
-  ),
-  (
-    "Roy Green",
+    "Louis Lipps",
     "WR",
-    "Arizona Cardinals",
+    "Pittsburgh Steelers",
     NULL,
-    "1979 - 1990",
-    2016
+    "1984 - 1991",
+    2021
   ),
-  (
-    "Jim Hart",
-    "QB",
-    "Arizona Cardinals",
-    NULL,
-    "1966 - 1983",
-    2017
-  ),
-  (
-    "Carson Palmer",
-    "QB",
-    "Arizona Cardinals",
-    NULL,
-    "2013 - 2017",
-    2019
-  ),
-  -- Los Angeles Rams
-  (NULL, NULL, "Los Angeles Rams", NULL, NULL, NULL),
   -- San Francisco 49ers
   (
     "Steve Young",
@@ -5443,7 +4840,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Jimmy Johnson",
-    "CB, WR",
+    "CB & WR",
     "San Francisco 49ers",
     NULL,
     "1961 - 1976",
@@ -5459,7 +4856,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Ronnie Lott",
-    "S, CB",
+    "Safety & CB",
     "San Francisco 49ers",
     NULL,
     "1981 - 1990",
@@ -5483,7 +4880,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Leo Nomellini",
-    "OT, DT",
+    "OT & DT",
     "San Francisco 49ers",
     NULL,
     "1950 - 1963",
@@ -5595,7 +4992,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Charles Haley",
-    "DE, LB",
+    "DE & LB",
     "San Francisco 49ers",
     NULL,
     "1986 - 1991, 1998 - 1999",
@@ -5603,7 +5000,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Tom Rathman",
-    "FB, RB Coach",
+    "FB & RB Coach",
     "San Francisco 49ers",
     NULL,
     "1986 - 1991, 1997 - 2002, 2009 - 2016",
@@ -5676,7 +5073,7 @@ VALUES -- Baltimore Ravens
   ),
   (
     "Kenny Easley",
-    "S",
+    "Safety",
     "Seattle Seahawks",
     NULL,
     "1981 - 1987",
@@ -5721,4 +5118,655 @@ VALUES -- Baltimore Ravens
     NULL,
     "1996 - 2018",
     2019
+  ),
+  -- Tampa Bay Buccaneers 
+  (
+    "Lee Roy Selmon",
+    "DE",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1976 - 1984",
+    2009
+  ),
+  (
+    "John McKay",
+    "Head Coach",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1976 - 1984",
+    2010
+  ),
+  (
+    "Jimmie Giles",
+    "TE",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1978 - 1986",
+    2011
+  ),
+  (
+    "Paul Gruber",
+    "OT",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1988 - 1999",
+    2012
+  ),
+  (
+    "Warren Sapp",
+    "DT",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1995 - 2003",
+    2013
+  ),
+  (
+    "Derrick Brooks",
+    "LB",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1995 - 2008",
+    2014
+  ),
+  (
+    "Mike Alstott",
+    "FB",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1996 - 2007",
+    2015
+  ),
+  (
+    "Doug Williams",
+    "QB",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1978 - 1982",
+    2016
+  ),
+  (
+    "John Lynch",
+    "Safety",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1993 - 2003",
+    2015
+  ),
+  (
+    "Malcolm Glazer",
+    "Owner",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1995 - 2014",
+    2017
+  ),
+  (
+    "Jon Gruden",
+    "Head Coach",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "2002 - 2008",
+    2017
+  ),
+  (
+    "Tony Dungy",
+    "Head Coach",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1996 - 2001",
+    2018
+  ),
+  (
+    "Ronde Barber",
+    "CB",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1997 - 2012",
+    2019
+  ),
+  (
+    "Monte Kiffin",
+    "Defensive Coordinator",
+    "Tampa Bay Buccaneers",
+    NULL,
+    "1996 - 2008",
+    2020
+  ),
+  -- Tennessee Titans
+  (
+    "Elvin Bethea",
+    "DE",
+    "Tennessee Titans",
+    NULL,
+    "1968 - 1983",
+    1999
+  ),
+  (
+    "George Blanda",
+    "QB & Kicker",
+    "Tennessee Titans",
+    NULL,
+    "1960 - 1966",
+    1999
+  ),
+  (
+    "Earl Campbell",
+    "RB",
+    "Tennessee Titans",
+    NULL,
+    "1978 - 1984",
+    1999
+  ),
+  (
+    "Mike Holovak",
+    "General Manager",
+    "Tennessee Titans",
+    NULL,
+    "1989 - 1993",
+    1999
+  ),
+  (
+    "Ken Houston",
+    "Safety",
+    "Tennessee Titans",
+    NULL,
+    "1967 - 1972",
+    1999
+  ),
+  (
+    "Mike Munchak",
+    "OG",
+    "Tennessee Titans",
+    NULL,
+    "1982 - 1993",
+    1999
+  ),
+  (
+    "Jim Norton",
+    "Punter",
+    "Tennessee Titans",
+    NULL,
+    "1960 - 1968",
+    1999
+  ),
+  (
+    "Bruce Matthews",
+    "OL",
+    "Tennessee Titans",
+    NULL,
+    "1983 - 2001",
+    2002
+  ),
+  (
+    "Warren Moon",
+    "QB",
+    "Tennessee Titans",
+    NULL,
+    "1984 - 1993",
+    2007
+  ),
+  (
+    "Bud Adams",
+    "Founding Owner",
+    "Tennessee Titans",
+    NULL,
+    "1959 - 2013",
+    2008
+  ),
+  (
+    "Eddie George",
+    "RB",
+    "Tennessee Titans",
+    NULL,
+    "1996 - 2003",
+    2008
+  ),
+  (
+    "Steve McNair",
+    "QB",
+    "Tennessee Titans",
+    NULL,
+    "1995 - 2005",
+    2008
+  ),
+  (
+    "Frank Whycheck",
+    "TE",
+    "Tennessee Titans",
+    NULL,
+    "1995 - 2003",
+    2008
+  ),
+  (
+    "Robert Brazile",
+    "LB",
+    "Tennessee Titans",
+    NULL,
+    "1975 - 1984",
+    2018
+  ),
+  (
+    "Bum Phillips",
+    "Defensive Coordinator & Head Coach",
+    "Tennessee Titans",
+    NULL,
+    "1974 - 1980",
+    2021
+  ),
+  (
+    "Jeff Fisher",
+    "Defensive Coordinator & Head Coach",
+    "Tennessee Titans",
+    NULL,
+    "1994 - 2010",
+    2021
+  ),
+  (
+    "Floyd Reese",
+    "LB Coach, Assistant General Manager, General Manager",
+    "Tennessee Titans",
+    NULL,
+    "1986 - 2006",
+    2021
+  ),
+  -- Washington Football Team
+  (
+    "George Allen",
+    "Head Coach",
+    "Washington Football Team",
+    NULL,
+    "1971 - 1977",
+    NULL
+  ),
+  (
+    "Cliff Battles",
+    "RB",
+    "Washington Football Team",
+    NULL,
+    "1932 - 1937",
+    NULL
+  ),
+  (
+    "Sammy Baugh",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1937 - 1952",
+    NULL
+  ),
+  (
+    "Bobby Beathard",
+    "General Manager",
+    "Washington Football Team",
+    NULL,
+    "1978 - 1988",
+    NULL
+  ),
+  (
+    "Jeff Bostic",
+    "Center",
+    "Washington Football Team",
+    NULL,
+    "1980 - 1993",
+    NULL
+  ),
+  (
+    "Gene Brito",
+    "DE",
+    "Washington Football Team",
+    NULL,
+    "1951 - 1953, 1955 - 1958",
+    NULL
+  ),
+  (
+    "Larry Brown",
+    "RB",
+    "Washington Football Team",
+    NULL,
+    "1969 - 1976",
+    NULL
+  ),
+  (
+    "Dave Butz",
+    "OT",
+    "Washington Football Team",
+    NULL,
+    "1975 - 1988",
+    NULL
+  ),
+  (
+    "Gary Clark",
+    "WR",
+    "Washington Football Team",
+    NULL,
+    "1985 - 1992",
+    NULL
+  ),
+  (
+    "Monte Coleman",
+    "LB",
+    "Washington Football Team",
+    NULL,
+    "1979 - 1994",
+    NULL
+  ),
+  (
+    "Jack Kent Cooke",
+    "Owner",
+    "Washington Football Team",
+    NULL,
+    "1961 - 1997",
+    NULL
+  ),
+  (
+    "Wayne Curry",
+    "Prince George's County Executive",
+    "Washington Football Team",
+    "Was pivotal in helping move Washington to Landover, Maryland",
+    NULL,
+    NULL
+  ),
+  (
+    "Bill Dudley",
+    "RB",
+    "Washington Football Team",
+    NULL,
+    "1950 - 1951, 1953",
+    NULL
+  ),
+  (
+    "Pat Fischer",
+    "CB",
+    "Washington Football Team",
+    NULL,
+    "1968 - 1977",
+    NULL
+  ),
+  (
+    "London Fletcher",
+    "LB",
+    "Washington Football Team",
+    NULL,
+    "2007 - 2013",
+    NULL
+  ),
+  (
+    "Joe Gibbs",
+    "Head Coach",
+    "Washington Football Team",
+    NULL,
+    "1981 - 1992, 2004 - 2007",
+    NULL
+  ),
+  (
+    "Darrell Green",
+    "CB",
+    "Washington Football Team",
+    NULL,
+    "1983 - 2002",
+    NULL
+  ),
+  (
+    "Russ Grimm",
+    "OG",
+    "Washington Football Team",
+    NULL,
+    "1981 - 1991",
+    NULL
+  ),
+  (
+    "Chris Hanburger",
+    "LB",
+    "Washington Football Team",
+    NULL,
+    "1965 - 1978",
+    NULL
+  ),
+  (
+    "Ken Harvey",
+    "LB",
+    "Washington Football Team",
+    NULL,
+    "1994 - 1998",
+    NULL
+  ),
+  (
+    "Len Hauss",
+    "Center",
+    "Washington Football Team",
+    NULL,
+    "1964 - 1977",
+    NULL
+  ),
+  (
+    "Phil Hochberg",
+    "PA Announcer",
+    "Washington Football Team",
+    NULL,
+    "1963 - 2000",
+    NULL
+  ),
+  (
+    "Ken Houston",
+    "Safety",
+    "Washington Football Team",
+    NULL,
+    "1973 - 1980",
+    NULL
+  ),
+  (
+    "Sam Huff",
+    "LB",
+    "Washington Football Team",
+    NULL,
+    "1964 - 1967, 1969",
+    NULL
+  ),
+  (
+    "Joe Jacoby",
+    "OT & OG",
+    "Washington Football Team",
+    NULL,
+    "1961 - 1974",
+    NULL
+  ),
+  (
+    "Dick James",
+    "RB",
+    "Washington Football Team",
+    NULL,
+    "1956 - 1963",
+    NULL
+  ),
+  (
+    "Sonny Jurgensen",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1964 - 1974",
+    NULL
+  ),
+  (
+    "Charlie Justice",
+    "RB",
+    "Washington Football Team",
+    NULL,
+    "1950, 1952 - 1954",
+    NULL
+  ),
+  (
+    "Billy Kilmer",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1971 - 1978",
+    NULL
+  ),
+  (
+    "Eddie LeBaron",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1952 - 1953, 1055 - 1959",
+    NULL
+  ),
+  (
+    "Vince Lombardi",
+    "Head Coach",
+    "Washington Football Team",
+    NULL,
+    "1969",
+    NULL
+  ),
+  (
+    "Dexter Manley",
+    "DE",
+    "Washington Football Team",
+    NULL,
+    "1981 - 1989",
+    NULL
+  ),
+  (
+    "Charles Mann",
+    "DE",
+    "Washington Football Team",
+    NULL,
+    "1983 - 1989",
+    NULL
+  ),
+  (
+    "Wayne Millner",
+    "TE & DE",
+    "Washington Football Team",
+    NULL,
+    "1936 - 1941, 1945",
+    NULL
+  ),
+  (
+    "Bobby Mitchell",
+    "WR",
+    "Washington Football Team",
+    NULL,
+    "1962 - 1968",
+    NULL
+  ),
+  (
+    "Brian Mitchell",
+    "RB & Return Specialist",
+    "Washington Football Team",
+    NULL,
+    "1990 - 1999",
+    NULL
+  ),
+  (
+    "Art Monk",
+    "WR",
+    "Washington Football Team",
+    NULL,
+    "1980 - 1993",
+    NULL
+  ),
+  (
+    "Mark Moseley",
+    "Kicker",
+    "Washington Football Team",
+    NULL,
+    "1974 - 1986",
+    NULL
+  ),
+  (
+    "Brig Owens",
+    "CB",
+    "Washington Football Team",
+    NULL,
+    "1966 - 1977",
+    NULL
+  ),
+  (
+    "Richie Petitbon",
+    "Safety, DB Coach, Defensive Coordinator, Head Coach",
+    "Washington Football Team",
+    "Was the Head Coach for the 1993 season",
+    "1971 - 1972, 1978 - 1993",
+    NULL
+  ),
+  (
+    "Vince Promuto",
+    "OG",
+    "Washington Football Team",
+    NULL,
+    "1960 - 1970",
+    NULL
+  ),
+  (
+    "John Riggins",
+    "RB",
+    "Washington Football Team",
+    NULL,
+    "1976 - 1979, 1981 - 1985",
+    NULL
+  ),
+  (
+    "Mark Rypien",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1986 - 1993",
+    NULL
+  ),
+  (
+    "Chris Samuels",
+    "OT",
+    "Washington Football Team",
+    NULL,
+    "2000 - 2009",
+    NULL
+  ),
+  (
+    "Jerry Smith",
+    "TE",
+    "Washington Football Team",
+    NULL,
+    "1965 - 1977",
+    NULL
+  ),
+  (
+    "Charley Taylor",
+    "WR",
+    "Washington Football Team",
+    NULL,
+    "1964 - 1977",
+    NULL
+  ),
+  (
+    "Sean Taylor",
+    "Safety",
+    "Washington Football Team",
+    "Passed away during the 2007 season",
+    "2004 - 2007",
+    NULL
+  ),
+  (
+    "Joe Theismann",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1974 - 1985",
+    NULL
+  ),
+  (
+    "Lamar 'Bubba' Tyler",
+    "Athletic Trainer",
+    "Washington Football Team",
+    NULL,
+    "1971 - 2002, 2004 - 2008",
+    NULL
+  ),
+  (
+    "Doug Williams",
+    "QB",
+    "Washington Football Team",
+    NULL,
+    "1986 - 1989",
+    NULL
   );

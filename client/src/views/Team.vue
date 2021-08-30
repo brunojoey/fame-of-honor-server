@@ -1,15 +1,32 @@
 <template>
-  <h1 :key="team.id">{{team.team_name}}</h1>
-  <img :src="team.logo" :alt="team.logo" />
-  <p><strong>Ring of Honor History: </strong> {{team.history}}</p>
-    <h2>{{team.team_name}} Inductees</h2>
+  <div class="inductee">
+    <h1 :key="team.id">{{ team.team_name }}</h1>
+    <img v-bind:src="team.logo" :alt="team.logo" class="team-page-logo"/>
+    <p class="history-ring"><strong>Ring of Honor History: </strong> {{ team.history }}</p>
+    <h2 class="inductee-team">{{ team.team_name }} Inductees</h2>
+  </div>
   <div class="inductee-page">
-    <div :key="inductee.id" v-for="inductee in inductees" class="inductee-card" v-bind:style="{backgroundColor: team.color}">
-      <p v-if="inductee.full_name"><strong>Name: </strong>{{inductee.full_name}}</p>
-      <p v-if="inductee.player_position"><strong>Position: </strong>{{inductee.player_position}}</p>
-      <p v-if="inductee.notes"><strong>Additional Notes: </strong> {{inductee.notes}}</p>
-      <p v-if="inductee.years_active"><strong>Years Active: </strong>{{inductee.years_active}}</p>
-      <p v-if="inductee.year_inducted"><strong>Year Inducted: </strong>{{inductee.year_inducted}}</p>
+    <div
+      :key="inductee.id"
+      v-for="inductee in inductees"
+      class="inductee-card"
+      v-bind:style="{ backgroundColor: team.color, borderColor: team.border_color }"
+    >
+      <p v-if="inductee.full_name">
+        <strong>Name: </strong>{{ inductee.full_name }}
+      </p>       
+      <p v-if="inductee.player_position">
+        <strong>Position: </strong>{{ inductee.player_position }}
+      </p>
+      <p v-if="inductee.notes">
+        <strong>Additional Notes: </strong> {{ inductee.notes }}
+      </p>
+      <p v-if="inductee.years_active">
+        <strong>Years Active: </strong>{{ inductee.years_active }}
+      </p>
+      <p v-if="inductee.year_inducted">
+        <strong>Year Inducted: </strong>{{ inductee.year_inducted }}
+      </p>
     </div>
   </div>
 </template>
@@ -22,7 +39,7 @@ export default {
   data() {
     return {
       team: {},
-      inductees: []
+      inductees: [],
     };
   },
   methods: {
@@ -37,15 +54,15 @@ export default {
         });
     },
     async getTeamInductees(id) {
-      await DataService.getTeamInductees(id) 
+      await DataService.getTeamInductees(id)
         .then((response) => {
           this.inductees = response.data;
           console.log("Inductees", response.data);
         })
         .catch((err) => {
-          console.log("error", err)
+          console.log("error", err);
         });
-    }
+    },
   },
   mounted() {
     this.getTeam(this.$route.params.id);
@@ -55,22 +72,43 @@ export default {
 </script>
 
 <style>
-  .inductee-page {
-    display: grid;
-    grid-template-columns: repeat(4, 6fr);
-    column-gap: 10rem;
-    row-gap: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
-  }
+.inductee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
 
-  .inductee-card {
-    color: white;
-    border-radius: .5rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: left;
-  }
+.team-page-logo {
+  width: 30em;
+  height: 30em;
+  margin-bottom: .5rem;
+}
+
+.history-ring {
+  font-size: 1.15rem;
+}
+
+.inductee-page {
+  display: grid;
+  grid-template-columns: repeat(4, 6fr);
+  column-gap: 8rem;
+  row-gap: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.inductee-card {
+  color: white;
+  text-align: left;
+  border-width: .35rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: .25ch .25ch .5ch grey;
+  white-space: normal;
+}
 
 </style>
