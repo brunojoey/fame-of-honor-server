@@ -23,6 +23,11 @@ app.use(cors(corsOptions));
 app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
 
+app.use(express.static(path.join(__dirname, "./dist")))
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, './dist', 'index.html'))
+});
+
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`)
 });
