@@ -56,8 +56,22 @@
     border-radius: .5rem;
     padding: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     box-shadow: .25ch .25ch .5ch grey;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    .position-page {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .player-card {
+      transform: scale(1.25, 1.25);
+      margin-bottom: 3.5rem;
+      width: 100%;
+    }
   }
 </style>

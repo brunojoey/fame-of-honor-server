@@ -54,6 +54,7 @@ export default {
   grid-template-columns: repeat(3, 2fr);
   column-gap: 6rem;
   row-gap: 2rem;
+  margin-bottom: 1rem;
 }
 .team-card {
   text-align: center;
@@ -84,5 +85,13 @@ export default {
   -webkit-text-fill-color: #111e2c; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: white;
+}
+
+@media screen and (max-width: 37.5em) {
+  .team-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 </style>

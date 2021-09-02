@@ -284,14 +284,6 @@ VALUES
     2006
   ),
   (
-    "Ollie Matson",
-    "RB",
-    "Arizona Cardinals",
-    NULL,
-    "1952, 1954 - 1958",
-    2006
-  ),
-  (
     "Ernie Nevers",
     "FB & Head Coach",
     "Arizona Cardinals",
@@ -1787,7 +1779,7 @@ VALUES
     "RB",
     "Green Bay Packers",
     NULL,
-    "1956 - 1964 - 1966",
+    "1956 - 1964, 1966",
     NULL
   ),
   (
@@ -1827,7 +1819,7 @@ VALUES
     "RB & Head Coach",
     "Green Bay Packers",
     "Was the Head Coach starting in 1930",
-    "1919 - 1929, 1930 - 1949",
+    "1919 - 1949",
     NULL
   ),
   (
@@ -1888,10 +1880,10 @@ VALUES
   ),
   (
     "Bart Starr",
-    "QB",
+    "QB & Head Coach",
     "Green Bay Packers",
-    NULL,
-    "1956 - 1971",
+    "Began his Head Coach tenure in 1975",
+    "1956 - 1971, 1975 - 1983",
     NULL
   ),
   (
@@ -4321,7 +4313,7 @@ VALUES
     "Ticket Manager",
     "Philadelphia Eagles",
     NULL,
-    "1960 - 1982, 1085 - 2015",
+    "1960 - 1982, 1985 - 2015",
     2012
   ),
   (
@@ -4518,8 +4510,8 @@ VALUES
     2017
   ),
   (
-    "Dick Hook",
-    "RB & Coach",
+    "Dick Hoak",
+    "RB & RB Coach",
     "Pittsburgh Steelers",
     NULL,
     "1961 - 1970, 1972 - 2006",
@@ -4583,7 +4575,7 @@ VALUES
   ),
   (
     "Dan Rooney Sr.",
-    "President, Chairman",
+    "President & Chairman",
     "Pittsburgh Steelers",
     NULL,
     "1955 - 2017",
@@ -4690,7 +4682,7 @@ VALUES
     "TE & OT",
     "Pittsburgh Steelers",
     "Switched to OT in 1977",
-    "1971 - 1976, 1977 - 1984",
+    "1971 - 1984",
     2019
   ),
   (
@@ -4951,7 +4943,7 @@ VALUES
     2010
   ),
   (
-    "RC Owens",
+    "R.C. Owens",
     "WR",
     "San Francisco 49ers",
     NULL,
@@ -5310,7 +5302,7 @@ VALUES
     "Founding Owner",
     "Tennessee Titans",
     NULL,
-    "1959 - 2013",
+    "1960 - 2013",
     2008
   ),
   (
@@ -5567,7 +5559,7 @@ VALUES
     "OT & OG",
     "Washington Football Team",
     NULL,
-    "1961 - 1974",
+    "1981 - 1993",
     NULL
   ),
   (
@@ -5607,7 +5599,7 @@ VALUES
     "QB",
     "Washington Football Team",
     NULL,
-    "1952 - 1953, 1055 - 1959",
+    "1952 - 1953, 1955 - 1959",
     NULL
   ),
   (

@@ -24,8 +24,5 @@ CREATE TABLE players (
   PRIMARY KEY (id)
 );
 
-/* ALTER TABLE players
-ADD FOREIGN KEY (team_name) REFERENCES team(team_name); */
-
 SELECT * FROM team;
 SELECT * FROM players;

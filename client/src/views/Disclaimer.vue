@@ -3,15 +3,17 @@
     <h1 class="disclaimer-header">Disclaimer for The Fame of Honors</h1>
     <p>
       If you require any more information or have any questions about our site's
-      disclaimer, please feel free to contact us by email at fameofhonors@gmail.com.
+      disclaimer, please feel free to contact us by email at
+      fameofhonors@gmail.com.
     </p>
     <p>
       All the information on this website is published in good faith and for
       general information purpose only. The Fame of Honors does not make any
       warranties about the completeness, reliability, and accuracy of this
       information. Any action you take upon the information you find on this
-      website is strictly at your own risk. The Fame of Honors will not be liable
-      for any losses and/or damages in connection with the use of our website.
+      website is strictly at your own risk. The Fame of Honors will not be
+      liable for any losses and/or damages in connection with the use of our
+      website.
     </p>
 
     <p>
@@ -47,9 +49,15 @@
 </template>
   
 <style>
-  .disclaimer-page {
-    margin: 1rem;
-    font-size: 1.15rem;
-  };
-  
+.disclaimer-page {
+  margin: 1rem;
+  font-size: 1.15rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .disclaimer-page > h1{
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
 </style>

@@ -2,13 +2,17 @@
   <header class="navbar-header">
     <nav>
       <strong class="nav-item">
-        <router-link class="nav-item link" :to="'/'">The Fame of Honors</router-link>
+        <router-link class="nav-item link" :to="'/'"
+          >The Fame of Honors</router-link
+        >
       </strong>
       <strong>
         <router-link class="nav-item link" :to="'/teams'">Teams</router-link>
       </strong>
       <strong>
-        <router-link class="nav-item link" :to="'/positions'">Positions</router-link>
+        <router-link class="nav-item link" :to="'/positions'"
+          >Positions</router-link
+        >
       </strong>
     </nav>
   </header>
@@ -30,5 +34,20 @@
 .link {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 37.5em) {
+  .navbar-header {
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-item {
+    padding: 0;
+    font-weight: bold;
+  }
+
 }
 </style>

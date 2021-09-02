@@ -29,4 +29,9 @@ export default {
   height: 35rem;
 }
 
+@media screen and (max-width: 37.5em) {
+  .content {
+    height: inherit;
+  }
+}
 </style>

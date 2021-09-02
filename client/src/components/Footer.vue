@@ -43,8 +43,41 @@
 }
 
 .nav-item:active {
-  -webkit-text-fill-color: rgb(32, 87, 236); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: rgb(
+    32,
+    87,
+    236
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+
+@media screen and (max-width: 37.5em) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-footer {
+    height: 7.5rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .nav-item {
+    color: white;
+    text-decoration: underline;
+    font-size: 100%;
+  }
+
+  .nav-item:hover {
+    color: white;
+    font-size: 100%;
+  }
+
+  .nav-item:active {
+    color: white;
+    font-size: 100%;
+  }
 }
 </style>
