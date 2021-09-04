@@ -1,4 +1,4 @@
-<template >
+<template>
   <Header />
   <router-view class="content"/> 
   <Footer />

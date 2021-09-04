@@ -164,7 +164,7 @@
   .positions-page {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     height: inherit;
   }
 }

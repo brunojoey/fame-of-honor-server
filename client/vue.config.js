@@ -11,9 +11,6 @@ module.exports = {
         logLevel: 'debug',
         pathRewrite: { '^/api': '/'},
       },
-    },
-    publicPath: process.env.NODE_ENV === 'production'
-    ? '/home'
-    : '/'  
+    }
   }
 }
