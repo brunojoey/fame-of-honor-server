@@ -10,14 +10,6 @@ const connection = mysql.createPool({
   database: config.database
 });
 
-connection.connect(err => {
-  if (err) {
-    throw err;
-  } else {
-    console.log("MySQL Connected")
-  }
-});
-
 connection.query = util.promisify(connection.query);
 
 export default connection;

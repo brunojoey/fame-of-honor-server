@@ -1,4 +1,5 @@
 <template>
+<div>
   <h1 class="team-header">Teams</h1>
   <div class="team-page">
     <div :key="team.id" v-for="team in teams" class="team-card">
@@ -10,6 +11,7 @@
       <img class="team-logo" :src="team.logo" :alt="team.logo" />
     </div>
   </div>
+</div>
 </template>
 
 <script>

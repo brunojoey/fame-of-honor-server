@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="inductee">
     <h1 :key="team.id">{{ team.team_name }}</h1>
     <img v-bind:src="team.logo" :alt="team.logo" class="team-page-logo" />
@@ -34,6 +35,7 @@
       </p>
     </div>
   </div>
+</div>
 </template>
 
 <script>
