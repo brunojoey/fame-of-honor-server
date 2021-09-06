@@ -1,12 +1,13 @@
 // Creates the Connection to the Database
 import mysql from "mysql";
-import util from "util"
+import util from "util";
+import config from "./config.js";
 
-const connection = mysql.createConnection({
-  host: "us-cdbr-east-04.cleardb.com",
-  user: "ba46ffa2322ebf",
-  password: "d9478934",
-  database: "heroku_5d8ce2984bd7118"
+const connection = mysql.createPool({
+  host: config.host,
+  user: config.user,
+  password: config.password,
+  database: config.database
 });
 
 connection.connect(err => {

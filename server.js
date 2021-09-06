@@ -30,7 +30,7 @@ app.use("/api/positions", positionRoutes);
 app.use(express.static(path.join(__dirname, "./dist")));
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(process.env.__dirname, './dist/index.html'))
+    res.sendFile(path.join(__dirname, './dist', ))
 });
 
 app.listen(PORT, function() {
