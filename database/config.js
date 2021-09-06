@@ -1,8 +1,8 @@
 const config = {
   host: "us-cdbr-east-04.cleardb.com",
-  user: "ba46ffa2322ebf",
-  password: "d9478934",
-  database: "heroku_5d8ce2984bd7118"
+  user: "b01c6a16a2cb9d",
+  password: "586edf03",
+  database: "heroku_c1f9fd03d63a564"
 };
 
 export default config
