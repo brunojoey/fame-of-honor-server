@@ -22,7 +22,7 @@ let corsOptions = {
   origin: "http://localhost:8080"
 };
 
-app.use(cors(corsOptions));
+app.use("*", cors(corsOptions));
 
 app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
