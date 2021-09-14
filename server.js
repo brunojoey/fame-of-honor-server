@@ -21,12 +21,11 @@ connection; // Calls the Database
 app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
 
-// let corsOptions = {
-//   origin: process.env.DATABASE_URL || "http://localhost:8080"
-// };
+let corsOptions = {
+  origin: process.env.DATABASE_URL || "http://localhost:8080"
+};
 
-// app.use("*", cors(corsOptions));
-app.use(cors());
+app.use("*", cors(corsOptions));
 
 
 app.use(express.static(path.join(__dirname, "./dist")));

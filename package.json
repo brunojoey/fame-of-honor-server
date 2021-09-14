@@ -7,8 +7,6 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm run serve --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,8 +27,6 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.12",
     "path": "^0.12.7",
-    "pg": "^8.7.1",
-    "pgloader": "^1.1.6",
     "util": "^0.12.4"
   }
 }
