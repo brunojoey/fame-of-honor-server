@@ -22,7 +22,7 @@ app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
 
 let corsOptions = {
-  origin: process.env.DATABASE_URL || "http://localhost:8080"
+  origin: "https://the-fame-of-honor.herokuapp.com" || "http://localhost:8080"
 };
 
 app.use("*", cors(corsOptions));
