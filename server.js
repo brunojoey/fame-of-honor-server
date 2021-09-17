@@ -22,8 +22,7 @@ app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
 
 app.use(cors({
-  origin: ["https://the-fame-of-honor.herokuapp.com", "http://localhost:8080"],
-  allowedHeaders: "'Access-Control-Allow-Origin': 'https://the-fame-of-honor.herokuapp.com', 'Access-Control-Allow-Credentials': 'true'"
+  origin: ["https://the-fame-of-honor.herokuapp.com", "http://localhost:8080"]
 }));
 
 app.listen(PORT, function() {
