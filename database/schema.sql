@@ -24,5 +24,8 @@ CREATE TABLE players (
   PRIMARY KEY (id)
 );
 
+ALTER TABLE team AUTO_INCREMENT = 1;
+ALTER TABLE players AUTO_INCREMENT = 1;
+
 SELECT * FROM team;
 SELECT * FROM players;
