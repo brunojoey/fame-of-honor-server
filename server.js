@@ -14,13 +14,13 @@ app.use(express.urlencoded({ extended: true }));
 
 connection; // Calls the Database
 
+app.use(cors({
+  origin: ["https://the-fame-of-honor.herokuapp.com", "http://localhost:8080"],
+}));
+
 app.use("/api/teams", teamRoutes);
 app.use("/api/positions", positionRoutes);
 
-app.use(cors({
-  origin: ["https://the-fame-of-honor.herokuapp.com", "http://localhost:8080"],
-  allowedHeaders: [{"Mode": "No-Cors"}, {"Credentials": "Include"}]
-}));
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`)
