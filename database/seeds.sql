@@ -1,4 +1,4 @@
-USE heroku_c1f9fd03d63a564;
+USE ringHonorDB;
 INSERT INTO team (team_name, history, logo, color, border_color)
 VALUES (
     "Arizona Cardinals",
