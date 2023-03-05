@@ -3,224 +3,224 @@ INSERT INTO team (team_name, history, logo, color, border_color)
 VALUES (
     "Arizona Cardinals",
     "To mark the opening of State Farm Stadium in 2006, the Cardinals began a Ring of Honor to showcase all eras of the franchise.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ARI.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/ARI",
     "#97233F",
     "#000000"
   ),
   (
     "Atlanta Falcons",
     "While they don't retire jersey numbers, the Atlanta Falcons want to honor their former players by including them in their franchise's Ring of Honor.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ATL.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/ATL",
     "#A71930",
     "#000000"
   ),
   (
     "Baltimore Ravens",
     "Created in 2000, the Baltimore Ravens Ring of Honor is to honor former players and personnel who made outstanding contributions to the Baltimore Ravens and the Baltimore Colts organizations.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BAL.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/BAL",
     "#241773",
     "#000000"
   ),
   (
     "Buffalo Bills",
     "The Buffalo Bills Wall of Fame was created in 1980 to honor former players, administrators, and coaches who had a significant role in the franchise. The requirements to get inducted into the Wall of Fame are: the individual must have played with the team for three years and must be retired. The selection committee is comprised of club personnel and media members.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BUF.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/BUF",
     "#00338D",
     "#C60C30"
   ),
   (
     "Carolina Panthers",
     "The Hall of Honor was established in 1997 as a still young franchsie. They've inducted six people who define being a Carolina Panther.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CAR.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CAR",
     "#0085CA",
     "#101820"
   ),
   (
     "Chicago Bears",
     "The Chicago Bears currently do not have a Ring of Honor or team Hall of Fame to commemorate players, coaches, or executives.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CHI.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CHI",
     "#0B162A",
     "#C83803"
   ),
   (
     "Cincinnati Bengals",
     "The Cincinnati Bengals introduced a Ring of Honor for their historical team in April of 2021. They announced two inductees, but will let their fans choose two others between a list of 17 other great players to complete its first Ring of Honor class. The fans chose Ken Anderson and Ken Riley.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CIN.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CIN",
     "#FB4F14",
     "#000000"
   ),
   (
     "Cleveland Browns",
     "Established in 2010, the Cleveland Browns Ring of Honor commemorates the past greats of the Cleveland Browns franchise. The Inaugural class featured the 16 players who were already inducted into the Pro Football Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CLE.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/CLE",
     "#311D00",
     "#FF3C00"
   ),
   (
     "Dallas Cowboys",
     "First introduced in Texas Stadium in Irving, Texas, the Cowboys Ring of Honor, in the words of Jerry Jones: 'stands for men who built this franchise and it had it call America's Team.'",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DAL.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DAL",
     "#041E42",
     "#869397"
   ),
   (
     "Denver Broncos",
     "Began in 1984, the Denver Broncos have a Ring of Fame to honor their former players, executives, and coaches who have made a great impact on the team.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DEN.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DEN",
     "#FB4F14",
     "#002244"
   ),
   (
     "Detroit Lions",
-    "The Pride of the Lions begun in 2009 with an introductory class of 12 players. Only three players in the Pride of the Lions are not in the Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/DET.svg",
+    "The Pride of the Lions began in 2009 with an introductory class of 12 players. Only three players in the Pride of the Lions are not in the Hall of Fame.",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/DET",
     "#0076B6",
     "#B0B7BC"
   ),
   (
     "Green Bay Packers",
     "For the Lambeau Field Ring of Honor that is dedicated to former Packers greats, the only requirements for to be inducted into it seemingly, is to be a Hall of Famer and contributed to the Packers organization in meaningful ways. The Packers do have a team Hall of Fame that includes over 150 former franchise greats.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/GB.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/GB",
     "#203731",
     "#FFB612"
   ),
   (
     "Houston Texans",
     "As the newest NFL Franchise, the Houston Texans began their Ring of Honor in 2017.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/HOU",
     "#03202F",
     "#A71930"
   ),
   (
     "Indianapolis Colts",
     "Established in 1996 and inducted longtime owner, Robert Irsay, as its first inductee before his passing the year following.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/IND.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/IND",
     "#002C5F",
     "#A2AAAD"
   ),
   (
     "Jacksonville Jaguars",
     "Called the Pride of the Jaguars by the fans in 2006, it represents the Ring of Honor for one of the newest franchises in the NFL. It was unveiled in the 2006 NFL season against the New York Jets.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/JAX.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/JAX",
     "#006778",
     "#9F792C"
   ),
   (
     "Kansas City Chiefs",
     "A Team Hall of Fame that was established in 1970. Each year except 1983 and 2020, has included one inductee. Requirements for induction are that a player, coach, or contributor must have been with the team for four years and been retired for four years. Three exceptions to that are Mack Lee Hill, Joe Delaney, and Derrick Thomas.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/KC.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/KC",
     "#E31837",
     "#FFB81C"
   ),
   (
     "Las Vegas Raiders",
     "The Las Vegas Raiders currently do not have a Ring of Honor or team Hall of Fame to commemorate their players, coaches, or executives.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LV.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LV",
     "#000000",
     "#A5ACAF"
   ),
   (
     "Los Angeles Chargers",
     "Began in 1976, the Chargers Hall of Fame acts as their Ring of Honor. All four inductees in this year were inducted posthumously. In 2012, the team allowed the fans to induct that year's inductee, choosing Punter, Darren Bennett. After moving to Los Angeles in 2017, the Chargers inducted Bobby Beathard to the Team Hall of Fame in 2018.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LAC.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LAC",
     "#0080C6",
     "#FFC20E"
   ),
   (
     "Los Angeles Rams",
     "While St. Louis did have a Ring of Fame for football in its city, the Los Angeles Rams do not specifically have a Ring of Honor or Team Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LA.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/LAR",
     "#003594",
     "#FF8200"
   ),
   (
     "Miami Dolphins",
     "The Miami Dolphins Honor Roll was created in 1990 with the induction of five people from the franchise's history. The Honor Roll helps demonstrate the great players and adminstrators from the history of the Dolphins who helped make significant contributions to the team.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/MIA.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/MIA",
     "#008E97",
     "#FC4C02"
   ),
   (
     "Minnesota Vikings",
     "Started in 1998, the Minnesota Vikings Ring of Honor was begun with six players, coaches, and executives.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/MIN.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/MIN",
     "#4F2683",
     "#FFC62F"
   ),
   (
     "New England Patriots",
     "Begun in 1991, the New England Patriots Team Hall of Fame features franchise greats who impacted the franchise greatly. In order to be eligible, players and coaches must be retired for at least four years.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NE.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NE",
     "#002244",
     "#B0B7BC"
   ),
   (
     "New Orleans Saints",
     "Beginning in 2013, the New Orleans Saints began honoring their history with the creation of the Ring of Honor in Caesars Superdome. They inducted the first three nominees during halftime against the Cowboys in 2013.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NO.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NO",
     "#101820",
     "#D3BC8D"
   ),
   (
     "New York Giants",
     "The Giants Ring of Honor was unveiled in 2010 during a game against the Chicago Bears. Their inaugural induction class featured 30 players, coaches, and executives who made a great impact on the franchise.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NYG.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NYG",
     "#0B2265",
     "#A71930"
   ),
   (
     "New York Jets",
     "The New York Jets Ring of Honor was established in July 2010 to commemorate and honor former players. Players are nominated by an internal committee before being inducted into the Ring of Honor.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/NYJ.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/NYJ",
     "#125740",
     "#000000"
   ),
   (
     "Philadelphia Eagles",
     "Began in 1987 as the Eagles Honor Roll, it serves to honors players, executives, and coaches from the franchise's long history. Their inaugural induction class in 1987 was included with every player who was inducted into the Pro Football Hall of Fame as an Eagle. Players must be retired for three years to be considered to be included in the Eagles Hall of Fame.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/PHI.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/PHI",
     "#004C54",
     "#A5ACAF"
   ),
   (
     "Pittsburgh Steelers",
     "Begun in 2017 with an inaugural inductee class of 27, the Pittsburgh Steelers Hall of Honor commemorates the franchise's history.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/PIT.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/PIT",
     "#000000",
     "#FFB612"
   ),
   (
     "San Francisco 49ers",
     "Started in 2009, the Edward DeBartolo Sr. 49ers Hall of Fame is the team's official hall of honor.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/SF.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/SF",
     "#AA0000",
     "#B3995D"
   ),
   (
     "Seattle Seahawks",
     "The Seattle Seahawks Ring of Honor was established in 1989 and has inducted 12 people thus far who exemplify being a Seattle Seahawk.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/SEA.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/SEA",
     "#002244",
     "#69BE28"
   ),
   (
     "Tampa Bay Buccaneers",
     "In November 2009, the team unveiled a Ring of Honor at their current stadium, Raymond James Stadium.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/TB.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/TB",
     "#D50A0A",
     "#34302B"
   ),
   (
     "Tennessee Titans",
     "Establishment of the Titans/Oilers Hall of Fame coincides with the 40th anniversary of the franchise by Owner, Bud Adams. It encompasses the history of the Houston Oilers and the Tennessee Titans respectively.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/TEN.svg",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/TEN",
     "#0C2340",
     "#4B92DB"
   ),
   (
-    "Washington Football Team",
-    "Beginning with the creation of FedEx Field, the Washington Football Team begun having a Ring of Fame for their team history to honor players, executives and coaches who made a large impact on the team's history.",
-    "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/WAS.svg",
+    "Washington Commanders",
+    "Beginning with the creation of FedEx Field, the Washington Commanders began having a Ring of Fame for their team history to honor players, executives, and coaches who made a large impact on the team's history.",
+    "https://static.www.nfl.com/t_headshot_desktop_2x/f_auto/league/api/clubs/logos/WAS",
     "#5a1414",
     "#FFB612"
   );

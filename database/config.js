@@ -5,4 +5,4 @@ const config = {
   database: "heroku_c1f9fd03d63a564"
 };
 
-export default config
+export default config;
