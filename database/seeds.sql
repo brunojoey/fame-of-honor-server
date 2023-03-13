@@ -5361,11 +5361,11 @@ VALUES
     "1986 - 2006",
     2021
   ),
-  -- Washington Football Team
+  -- Washington Commanders
   (
     "George Allen",
     "Head Coach",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1971 - 1977",
     NULL
@@ -5373,7 +5373,7 @@ VALUES
   (
     "Cliff Battles",
     "RB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1932 - 1937",
     NULL
@@ -5381,7 +5381,7 @@ VALUES
   (
     "Sammy Baugh",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1937 - 1952",
     NULL
@@ -5389,7 +5389,7 @@ VALUES
   (
     "Bobby Beathard",
     "General Manager",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1978 - 1988",
     NULL
@@ -5397,7 +5397,7 @@ VALUES
   (
     "Jeff Bostic",
     "Center",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1980 - 1993",
     NULL
@@ -5405,7 +5405,7 @@ VALUES
   (
     "Gene Brito",
     "DE",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1951 - 1953, 1955 - 1958",
     NULL
@@ -5413,7 +5413,7 @@ VALUES
   (
     "Larry Brown",
     "RB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1969 - 1976",
     NULL
@@ -5421,7 +5421,7 @@ VALUES
   (
     "Dave Butz",
     "OT",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1975 - 1988",
     NULL
@@ -5429,7 +5429,7 @@ VALUES
   (
     "Gary Clark",
     "WR",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1985 - 1992",
     NULL
@@ -5437,7 +5437,7 @@ VALUES
   (
     "Monte Coleman",
     "LB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1979 - 1994",
     NULL
@@ -5445,7 +5445,7 @@ VALUES
   (
     "Jack Kent Cooke",
     "Owner",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1961 - 1997",
     NULL
@@ -5453,7 +5453,7 @@ VALUES
   (
     "Wayne Curry",
     "Prince George's County Executive",
-    "Washington Football Team",
+    "Washington Commanders",
     "Was pivotal in helping move Washington to Landover, Maryland",
     NULL,
     NULL
@@ -5461,7 +5461,7 @@ VALUES
   (
     "Bill Dudley",
     "RB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1950 - 1951, 1953",
     NULL
@@ -5469,7 +5469,7 @@ VALUES
   (
     "Pat Fischer",
     "CB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1968 - 1977",
     NULL
@@ -5477,7 +5477,7 @@ VALUES
   (
     "London Fletcher",
     "LB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "2007 - 2013",
     NULL
@@ -5485,7 +5485,7 @@ VALUES
   (
     "Joe Gibbs",
     "Head Coach",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1981 - 1992, 2004 - 2007",
     NULL
@@ -5493,7 +5493,7 @@ VALUES
   (
     "Darrell Green",
     "CB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1983 - 2002",
     NULL
@@ -5501,7 +5501,7 @@ VALUES
   (
     "Russ Grimm",
     "OG",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1981 - 1991",
     NULL
@@ -5509,7 +5509,7 @@ VALUES
   (
     "Chris Hanburger",
     "LB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1965 - 1978",
     NULL
@@ -5517,7 +5517,7 @@ VALUES
   (
     "Ken Harvey",
     "LB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1994 - 1998",
     NULL
@@ -5525,7 +5525,7 @@ VALUES
   (
     "Len Hauss",
     "Center",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1964 - 1977",
     NULL
@@ -5533,7 +5533,7 @@ VALUES
   (
     "Phil Hochberg",
     "PA Announcer",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1963 - 2000",
     NULL
@@ -5541,7 +5541,7 @@ VALUES
   (
     "Ken Houston",
     "Safety",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1973 - 1980",
     NULL
@@ -5549,7 +5549,7 @@ VALUES
   (
     "Sam Huff",
     "LB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1964 - 1967, 1969",
     NULL
@@ -5557,7 +5557,7 @@ VALUES
   (
     "Joe Jacoby",
     "OT & OG",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1981 - 1993",
     NULL
@@ -5565,7 +5565,7 @@ VALUES
   (
     "Dick James",
     "RB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1956 - 1963",
     NULL
@@ -5573,7 +5573,7 @@ VALUES
   (
     "Sonny Jurgensen",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1964 - 1974",
     NULL
@@ -5581,7 +5581,7 @@ VALUES
   (
     "Charlie Justice",
     "RB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1950, 1952 - 1954",
     NULL
@@ -5589,7 +5589,7 @@ VALUES
   (
     "Billy Kilmer",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1971 - 1978",
     NULL
@@ -5597,7 +5597,7 @@ VALUES
   (
     "Eddie LeBaron",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1952 - 1953, 1955 - 1959",
     NULL
@@ -5605,7 +5605,7 @@ VALUES
   (
     "Vince Lombardi",
     "Head Coach",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1969",
     NULL
@@ -5613,7 +5613,7 @@ VALUES
   (
     "Dexter Manley",
     "DE",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1981 - 1989",
     NULL
@@ -5621,7 +5621,7 @@ VALUES
   (
     "Charles Mann",
     "DE",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1983 - 1989",
     NULL
@@ -5629,7 +5629,7 @@ VALUES
   (
     "Wayne Millner",
     "TE & DE",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1936 - 1941, 1945",
     NULL
@@ -5637,7 +5637,7 @@ VALUES
   (
     "Bobby Mitchell",
     "WR",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1962 - 1968",
     NULL
@@ -5645,7 +5645,7 @@ VALUES
   (
     "Brian Mitchell",
     "RB & Return Specialist",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1990 - 1999",
     NULL
@@ -5653,7 +5653,7 @@ VALUES
   (
     "Art Monk",
     "WR",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1980 - 1993",
     NULL
@@ -5661,7 +5661,7 @@ VALUES
   (
     "Mark Moseley",
     "Kicker",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1974 - 1986",
     NULL
@@ -5669,7 +5669,7 @@ VALUES
   (
     "Brig Owens",
     "CB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1966 - 1977",
     NULL
@@ -5677,7 +5677,7 @@ VALUES
   (
     "Richie Petitbon",
     "Safety, DB Coach, Defensive Coordinator, Head Coach",
-    "Washington Football Team",
+    "Washington Commanders",
     "Was the Head Coach for the 1993 season",
     "1971 - 1972, 1978 - 1993",
     NULL
@@ -5685,7 +5685,7 @@ VALUES
   (
     "Vince Promuto",
     "OG",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1960 - 1970",
     NULL
@@ -5693,7 +5693,7 @@ VALUES
   (
     "John Riggins",
     "RB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1976 - 1979, 1981 - 1985",
     NULL
@@ -5701,7 +5701,7 @@ VALUES
   (
     "Mark Rypien",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1986 - 1993",
     NULL
@@ -5709,7 +5709,7 @@ VALUES
   (
     "Chris Samuels",
     "OT",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "2000 - 2009",
     NULL
@@ -5717,7 +5717,7 @@ VALUES
   (
     "Jerry Smith",
     "TE",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1965 - 1977",
     NULL
@@ -5725,7 +5725,7 @@ VALUES
   (
     "Charley Taylor",
     "WR",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1964 - 1977",
     NULL
@@ -5733,7 +5733,7 @@ VALUES
   (
     "Sean Taylor",
     "Safety",
-    "Washington Football Team",
+    "Washington Commanders",
     "Passed away during the 2007 season",
     "2004 - 2007",
     NULL
@@ -5741,7 +5741,7 @@ VALUES
   (
     "Joe Theismann",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1974 - 1985",
     NULL
@@ -5749,7 +5749,7 @@ VALUES
   (
     "Lamar 'Bubba' Tyler",
     "Athletic Trainer",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1971 - 2002, 2004 - 2008",
     NULL
@@ -5757,7 +5757,7 @@ VALUES
   (
     "Doug Williams",
     "QB",
-    "Washington Football Team",
+    "Washington Commanders",
     NULL,
     "1986 - 1989",
     NULL
