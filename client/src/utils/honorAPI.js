@@ -4,12 +4,12 @@ const getTeams = () => {
   return httpConfig.get("/teams");
 };
 
-const getTeam = (teamId) => {
-  return httpConfig.get("/teams/:teamId");
+const getTeam = (id) => {
+  return httpConfig.get(`/teams/${id}`);
 };
 
-const getTeamInductees = (teamId) => {
-  return httpConfig.get("/teams/:teamId/inductees");
+const getTeamInductees = (id) => {
+  return httpConfig.get(`/teams/${id}/inductees`);
 };
 
 const getPlayersByPosition = (player_position) => {

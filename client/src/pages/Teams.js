@@ -16,14 +16,14 @@ const Teams = () => {
   })
 
   return (
-    <div>
+    <div className="teams">
       <h1>Teams</h1>
       <div className="teams-list">
         {teams.map((team) => {
           return (
             <div className="team-card">
-              <img src={team.logo} />
-              <h2>{team.team_name}</h2>
+              <img src={team.logo} alt={team.team_name + " logo"}/>
+              <h2 onClick={() => navigate(`/teams/${team.id}`)}>{team.team_name}</h2>
             </div>
           );
         })}

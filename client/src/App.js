@@ -17,9 +17,25 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/positions" element={<Positions />}/>
-          <Route path="/positions/:player_position" element={<Position />}/>
+          <Route
+            exact
+            path="/positions/:player_position"
+            loader={({ params }) => {
+              console.log("params", params.player_position);
+            }}
+            action={({ params }) => {}}
+            element={<Position />}
+          />
           <Route path="/teams" element={<Teams />}/>
-          <Route path="/teams/:id" element={<Team />}/>
+          <Route
+            exact
+            path="/teams/:id"
+            loader={({ params }) => {
+              console.log("params", params.id);
+            }}
+            action={({ params }) => {}}
+            element={<Team />}
+          />
           <Route path="/disclaimer" element={<Disclaimer />}/>
           <Route path="/*" element={<NotFound />}/>
         </Routes>
