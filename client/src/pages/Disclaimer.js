@@ -15,7 +15,6 @@ const Disclaimer = () => {
       liable for any losses and/or damages in connection with the use of our
       website.
     </p>
-
     <p>
       From our website, you can visit other websites by following hyperlinks to
       such external sites. While we strive to provide only quality links to

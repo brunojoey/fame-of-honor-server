@@ -13,7 +13,7 @@ const getTeamInductees = (id) => {
 };
 
 const getPlayersByPosition = (player_position) => {
-  return httpConfig.get("/positions/:player_position");
+  return httpConfig.get(`/positions/${player_position}`);
 };
 
 const honorAPI = { getTeams, getTeam, getTeamInductees, getPlayersByPosition };
